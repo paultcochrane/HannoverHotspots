@@ -64,7 +64,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "ok",
-	"url" : "http://pausentraum.de",
+	"url" : "",
 	"power_points" : "",
 	"last_visit" : ""
     },
@@ -76,7 +76,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "good",
-	"url" : "",
+	"url" : "http://pausentraum.de",
 	"power_points" : "",
 	"last_visit" : ""
     },
