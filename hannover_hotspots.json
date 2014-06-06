@@ -28,5 +28,60 @@
 	"speed" : "bad",
 	"url"  : "",
 	"last_visit" : "2014-06-06"
+    },
+    "CafeSpandau" : {
+	"gps" : "",
+	"name" : "Cafe Spandau",
+	"ssid" : "SPANDAU_G",
+	"password" : "Ask the friendly staff",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "good",
+	"url" : "",
+	"last_visit" : ""
+    },
+    "Cheers" : {
+	"gps" : "",
+	"name" : "Cheers",
+	"ssid" : "Cheers-Gast",
+	"password" : "Ask the friendly staff",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "good",
+	"url" : "",
+	"last_visit" : ""
+    },
+    "DublinInn" : {
+	"gps" : "",
+	"name" : "Dublin Inn",
+	"ssid" : "DublinInn",
+	"password" : "Ask the friendly staff",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "ok",
+	"url" : "",
+	"last_visit" : ""
+    },
+    "Pausentraum" : {
+	"gps" : "",
+	"name" : "Pausentraum",
+	"ssid" : "Pausentraum",
+	"password" : "Ask the friendly staff",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "good",
+	"url" : "",
+	"last_visit" : ""
+    },
+    "ExtrablattGeorgsplatz" : {
+	"gps" : "",
+	"name" : "Extrablatt (Georgsplatz)",
+	"ssid" : "Cafe Extrablatt (FREE)",
+	"password" : "none (web login required)",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "ok",
+	"url" : "",
+	"last_visit" : ""
     }
 }
