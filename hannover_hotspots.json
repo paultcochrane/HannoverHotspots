@@ -1,0 +1,32 @@
+{
+    "LindenCentrum" : {
+	"gps" : "",
+	"name" : "Linden Centrum",
+	"ssid" : "LindenerCentrum",
+	"password" : "Ask the nice staff",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "good",
+	"url"  : "",
+	"last_visit" : "2014-05-30"
+    },
+    "Moca" : {
+	"gps" : "",
+	"name" : "Moca",
+	"wlan" : "no",
+	"free" : "on",
+	"url"  : "",
+	"last_visit" : "2014-06-06"
+    },
+    "Beans" : {
+	"gps" : "",
+	"name" : "Beans",
+	"ssid" : "BEANS",
+	"password" : "none",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "bad",
+	"url"  : "",
+	"last_visit" : "2014-06-06"
+    }
+}
