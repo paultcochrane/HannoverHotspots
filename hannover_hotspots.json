@@ -7,7 +7,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "good",
-	"url"  : "",
+	"url"  : "http://www.lindens-centrum.de/",
 	"power_points" : "",
 	"last_visit" : "2014-05-30"
     },
@@ -16,7 +16,7 @@
 	"name" : "Moca",
 	"wlan" : "no",
 	"free" : "on",
-	"url"  : "",
+	"url"  : "http://www.mocacafe.de/",
 	"power_points" : "",
 	"last_visit" : "2014-06-06"
     },
@@ -28,7 +28,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "bad",
-	"url"  : "",
+	"url"  : "http://www.sincecoffee.de/",
 	"power_points" : "One, upstairs, next to corner window",
 	"last_visit" : "2014-06-06"
     },
@@ -40,7 +40,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "good",
-	"url" : "",
+	"url" : "http://www.spandau-projekt.de/",
 	"power_points" : "",
 	"last_visit" : ""
     },
@@ -52,7 +52,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "good",
-	"url" : "",
+	"url" : "http://www.cheers-hannover.de/",
 	"power_points" : "",
 	"last_visit" : ""
     },
@@ -64,7 +64,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "ok",
-	"url" : "",
+	"url" : "http://www.irishpub-hannover.de/",
 	"power_points" : "",
 	"last_visit" : ""
     },
@@ -88,7 +88,7 @@
 	"wlan" : "yes",
 	"free" : "yes",
 	"speed" : "ok",
-	"url" : "",
+	"url" : "http://intranet.cafe-extrablatt.de/",
 	"power_points" : "",
 	"last_visit" : ""
     },
