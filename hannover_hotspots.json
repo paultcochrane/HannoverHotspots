@@ -91,5 +91,41 @@
 	"url" : "",
 	"power_points" : "",
 	"last_visit" : ""
+    },
+    "Treibhaus" : {
+	"gps" : "",
+	"name" : "Treibhaus",
+	"ssid" : "Kabel Deutschland Hotspot",
+	"password" : "none (web login required)",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "ok",
+	"url" : "http://www.treibhaus-hannover.de/",
+	"power_points" : "Several",
+	"last_visit" : "2014-05-30"
+    },
+    "StarbucksHauptbahnhof" : {
+	"gps" : "",
+	"name" : "Starbucks (Hauptbahnhof)",
+	"ssid" : "BTOpenzone",
+	"password" : "none (web login required)",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "ok",
+	"url" : "http://www.starbucks.de/",
+	"power_points" : "One, rear end of the shop",
+	"last_visit" : "2014-05-26"
+    },
+    "StarbucksErnstAugustGallerie" : {
+	"gps" : "",
+	"name" : "Starbucks (Ernst August Gallerie)",
+	"ssid" : "BTOpenzone",
+	"password" : "none (web login required)",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "ok",
+	"url" : "http://www.starbucks.de/",
+	"power_points" : "None",
+	"last_visit" : "2014-06-03"
     }
 }
