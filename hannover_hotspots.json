@@ -139,6 +139,6 @@
 	"url" : "",
 	"power_points" : "several, spread around ",
 	"last_visit" : "2014-06-07",
-	"notes" : "SSH blocked; HTTP(S) works"
+	"notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
     }
 }
