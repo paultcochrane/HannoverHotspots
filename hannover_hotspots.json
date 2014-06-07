@@ -138,6 +138,7 @@
 	"speed" : "ok",
 	"url" : "",
 	"power_points" : "several, spread around ",
-	"last_visit" : "2014-06-07"
+	"last_visit" : "2014-06-07",
+	"notes" : "SSH blocked; HTTP(S) works"
     }
 }
