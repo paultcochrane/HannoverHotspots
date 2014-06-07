@@ -140,5 +140,17 @@
 	"power_points" : "several, spread around ",
 	"last_visit" : "2014-06-07",
 	"notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
+    },
+    "BalzacCoffeeInnenstadt" : {
+	"gps" : "",
+	"name" : "Balzac Coffee (Innenstadt)",
+	"ssid" : "BalzacCoffee-23007-Hannover",
+	"password" : "1-hour access tickets available from the friendly staff",
+	"wlan" : "yes",
+	"free" : "yes and no",
+	"speed" : "Download: 4.9 Mbps; Upload: 0.3 Mbps",
+	"url" : "http://balzaccoffee.com",
+	"power_points" : "Upstairs: at almost every table",
+	"last_visit" : "2014-06-07"
     }
 }
