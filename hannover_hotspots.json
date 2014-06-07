@@ -127,5 +127,17 @@
 	"url" : "http://www.starbucks.de/",
 	"power_points" : "None",
 	"last_visit" : "2014-06-03"
+    },
+    "CafeBarCelonaAltstadt" : {
+	"gps" : "",
+	"name" : "Cafe & Bar Celona (Altstadt)",
+	"ssid" : "htp-hotspot",
+	"password" : "none (web login required)",
+	"wlan" : "yes",
+	"free" : "yes",
+	"speed" : "ok",
+	"url" : "",
+	"power_points" : "several, spread around ",
+	"last_visit" : "2014-06-07"
     }
 }
