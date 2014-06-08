@@ -1,181 +1,293 @@
 {
-    "LindensCentrum" : {
-	"gps" : "",
-	"name" : "Lindens Centrum",
-	"address" : "",
-	"ssid" : "LindenerCentrum",
-	"password" : "Ask the friendly staff",
-	"wlan" : "yes",
-	"free" : "yes",
-	"speed" : "good",
-	"url"  : "http://www.lindens-centrum.de/",
-	"power_points" : "",
-	"last_update" : "2014-05-30"
-    },
-    "Moca" : {
-	"gps" : "",
-	"name" : "Moca",
-	"address" : "",
-	"wlan" : "no",
-	"free" : "on",
-	"url"  : "http://www.mocacafe.de/",
-	"power_points" : "",
-	"last_update" : "2014-06-06"
-    },
-    "Beans" : {
-        "gps" : "",
-        "name" : "Beans",
-        "address" : "",
-        "ssid" : "BEANS",
-        "password" : "none",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "bad",
-        "url"  : "http://www.sincecoffee.de/",
-        "power_points" : "One, upstairs, next to corner window",
-        "last_update" : "2014-06-06"
-    },
-    "CafeSpandau" : {
-        "gps" : "",
-        "name" : "Cafe Spandau",
-        "address" : "",
-        "ssid" : "SPANDAU_G",
-        "password" : "Ask the friendly staff",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "good",
-        "url" : "http://www.spandau-projekt.de/",
-        "power_points" : "",
-        "last_update" : ""
-    },
-    "Cheers" : {
-        "gps" : "",
-        "name" : "Cheers",
-        "address" : "",
-        "ssid" : "Cheers-Gast",
-        "password" : "Ask the friendly staff",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "good",
-        "url" : "http://www.cheers-hannover.de/",
-        "power_points" : "",
-        "last_update" : ""
-    },
-    "DublinInn" : {
-        "gps" : "",
-        "name" : "Dublin Inn",
-        "address" : "",
-        "ssid" : "DublinInn",
-        "password" : "Ask the friendly staff",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "ok",
-        "url" : "http://www.irishpub-hannover.de/",
-        "power_points" : "",
-        "last_update" : ""
-    },
-    "Pausentraum" : {
-        "gps" : "",
-        "name" : "Pausentraum",
-        "address" : "",
-        "ssid" : "Pausentraum",
-        "password" : "Ask the friendly staff",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "good",
-        "url" : "http://pausentraum.de",
-        "power_points" : "",
-        "last_update" : ""
-    },
-    "ExtrablattGeorgsplatz" : {
-        "gps" : "",
-        "name" : "Extrablatt (Georgsplatz)",
-        "address" : "",
-        "ssid" : "Cafe Extrablatt (FREE)",
-        "password" : "none (web login required)",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "ok",
-        "url" : "http://intranet.cafe-extrablatt.de/",
-        "power_points" : "",
-        "last_update" : ""
-    },
-    "Treibhaus" : {
-        "gps" : "",
-        "name" : "Treibhaus",
-        "address" : "",
-        "ssid" : "Kabel Deutschland Hotspot",
-        "password" : "none (web login required)",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "ok",
-        "url" : "http://www.treibhaus-hannover.de/",
-        "power_points" : "Several",
-        "last_update" : "2014-05-30"
-    },
-    "StarbucksHauptbahnhof" : {
-        "gps" : "",
-        "name" : "Starbucks (Hauptbahnhof)",
-        "address" : "",
-        "ssid" : "BTOpenzone",
-        "password" : "none (web login required)",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "ok",
-        "url" : "http://www.starbucks.de/",
-        "power_points" : "One, rear end of the shop",
-        "last_update" : "2014-05-26"
-    },
-    "StarbucksErnstAugustGallerie" : {
-        "gps" : "",
-        "name" : "Starbucks (Ernst August Gallerie)",
-        "address" : "",
-        "ssid" : "BTOpenzone",
-        "password" : "none (web login required)",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "ok",
-        "url" : "http://www.starbucks.de/",
-        "power_points" : "None",
-        "last_update" : "2014-06-03"
-    },
-    "CafeBarCelonaAltstadt" : {
-        "gps" : "",
-        "name" : "Cafe & Bar Celona (Altstadt)",
-        "address" : "",
-        "ssid" : "htp-hotspot",
-        "password" : "none (web login required)",
-        "wlan" : "yes",
-        "free" : "yes",
-        "speed" : "ok",
-        "url" : "",
-        "power_points" : "several, spread around ",
-        "last_update" : "2014-06-07",
-        "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
-    },
-    "BalzacCoffeeInnenstadt" : {
-        "gps" : "",
-        "name" : "Balzac Coffee (Innenstadt)",
-        "address" : "",
-        "ssid" : "BalzacCoffee-23007-Hannover",
-        "password" : "1-hour access tickets available from the friendly staff",
-        "wlan" : "yes",
-        "free" : "yes and no",
-        "speed" : "Download: 4.9 Mbps; Upload: 0.3 Mbps",
-        "url" : "http://balzaccoffee.com",
-        "power_points" : "Upstairs: at almost every table",
-        "last_update" : "2014-06-07"
-    }
-    "Moca" : {
-        "gps" : "",
-        "name" : "Moca",
-        "address" : "",
-        "wlan" : "no",
-        "free" : "on",
-        "url"  : "http://www.mocacafe.de/",
-        "power_points" : "",
-        "last_update" : "2014-06-06"
-    },
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.714223, 52.367205
+                    ]
+            },
+            "properties": {
+                "marker-symbol": "bar",
+                "name" : "Lindens Centrum",
+                "address" : "",
+                "ssid" : "LindenerCentrum",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "good",
+                "url"  : "http://www.lindens-centrum.de/",
+                "power_points" : "",
+                "last_update" : "2014-05-30"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.735836, 52.374242
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Beans",
+                "address" : "",
+                "ssid" : "BEANS",
+                "password" : "none",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "bad",
+                "url"  : "http://www.sincecoffee.de/",
+                "power_points" : "One, upstairs, next to corner window",
+                "last_update" : "2014-06-06"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.725181, 52.384377
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Cafe Spandau",
+                "address" : "",
+                "ssid" : "SPANDAU_G",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "good",
+                "url" : "http://www.spandau-projekt.de/",
+                "power_points" : "",
+                "last_update" : ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.726451, 52.382126
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "bar",
+                "name" : "Cheers",
+                "address" : "",
+                "ssid" : "Cheers-Gast",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "good",
+                "url" : "http://www.cheers-hannover.de/",
+                "power_points" : "",
+                "last_update" : ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.735485, 52.371187
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "bar",
+                "name" : "Dublin Inn",
+                "address" : "",
+                "ssid" : "DublinInn",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "ok",
+                "url" : "http://www.irishpub-hannover.de/",
+                "power_points" : "",
+                "last_update" : ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.716048, 52.386535
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Pausentraum",
+                "address" : "",
+                "ssid" : "Pausentraum",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "good",
+                "url" : "http://pausentraum.de",
+                "power_points" : "",
+                "last_update" : ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.741249, 52.370834
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Extrablatt (Georgsplatz)",
+                "address" : "",
+                "ssid" : "Cafe Extrablatt (FREE)",
+                "password" : "none (web login required)",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "ok",
+                "url" : "http://intranet.cafe-extrablatt.de/",
+                "power_points" : "",
+                "last_update" : ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.749105, 52.390394
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "restaurant",
+                "name" : "Treibhaus",
+                "address" : "",
+                "ssid" : "Kabel Deutschland Hotspot",
+                "password" : "none (web login required)",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "ok",
+                "url" : "http://www.treibhaus-hannover.de/",
+                "power_points" : "Several",
+                "last_update" : "2014-05-30"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.740914, 52.376393
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Starbucks (Hauptbahnhof)",
+                "address" : "",
+                "ssid" : "BTOpenzone",
+                "password" : "none (web login required)",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "ok",
+                "url" : "http://www.starbucks.de/",
+                "power_points" : "One, rear end of the shop",
+                "last_update" : "2014-05-26"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.737735, 52.377250
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Starbucks (Ernst August Gallerie)",
+                "address" : "",
+                "ssid" : "BTOpenzone",
+                "password" : "none (web login required)",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "ok",
+                "url" : "http://www.starbucks.de/",
+                "power_points" : "None",
+                "last_update" : "2014-06-03"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.734129, 52.371885
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Cafe & Bar Celona (Altstadt)",
+                "address" : "",
+                "ssid" : "htp-hotspot",
+                "password" : "none (web login required)",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "ok",
+                "url" : "",
+                "power_points" : "several, spread around ",
+                "last_update" : "2014-06-07",
+                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.735396, 52.373713
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Balzac Coffee (Innenstadt)",
+                "address" : "",
+                "ssid" : "BalzacCoffee-23007-Hannover",
+                "password" : "1-hour access tickets available from the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes and no",
+                "speed" : "Download: 4.9 Mbps; Upload: 0.3 Mbps",
+                "url" : "http://balzaccoffee.com",
+                "power_points" : "Upstairs: at almost every table",
+                "last_update" : "2014-06-07"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.732651, 52.377223
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Moca",
+                "address" : "",
+                "wlan" : "no",
+                "free" : "on",
+                "url"  : "http://www.mocacafe.de/",
+                "power_points" : "",
+                "last_update" : "2014-06-06"
+            }
+        }
+    ]
+}
+
 }
 
 // vim: expandtab shiftwidth=4 softtabstop=4
