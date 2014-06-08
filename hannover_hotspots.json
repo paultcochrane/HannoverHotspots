@@ -1,7 +1,7 @@
 {
-    "LindenCentrum" : {
+    "LindensCentrum" : {
 	"gps" : "",
-	"name" : "Linden Centrum",
+	"name" : "Lindens Centrum",
 	"ssid" : "LindenerCentrum",
 	"password" : "Ask the nice staff",
 	"wlan" : "yes",
