@@ -2,4 +2,4 @@
 
 ## Internet speed tests
 
-Use the results from http://speedmeter.de/
+Use the results from http://speedmeter.de/.
