@@ -12,6 +12,7 @@
             "properties": {
                 "marker-symbol": "bar",
                 "title" : "Lindens Centrum",
+		"popupContent" : "Lindens Centrum",
                 "name" : "Lindens Centrum",
                 "address" : "",
                 "ssid" : "LindenerCentrum",
