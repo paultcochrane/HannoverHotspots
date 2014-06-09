@@ -21,7 +21,13 @@
                 "url"  : "http://www.lindens-centrum.de/",
                 "power_points" : "",
                 "last_update" : "2014-05-30"
-            }
+            },
+	    "crs": {
+		"type": "link", 
+		"properties": {
+		    "href": "http://www.lindens-centrum.de/"
+		}
+	    }
         },
         {
             "type": "Feature",
