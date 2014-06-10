@@ -1,4 +1,6 @@
+language: python
+
 install:
-    - pip install requests
+    - "pip install requests"
     
 script: ./bin/check_geojson.py
