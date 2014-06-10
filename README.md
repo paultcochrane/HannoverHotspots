@@ -6,7 +6,7 @@ Which cafes and pubs in Hannover have wireless internet?
 
 ## How to contribute?
 
-    1. fork the repository
-    2. add a new entry or edit an existing one
-    3. check that the geoJSON works (see http://geojsonlint.com/)
-    4. submit a pull request
+  1. fork the repository
+  2. add a new entry or edit an existing one
+  3. check that the geoJSON works (see http://geojsonlint.com/)
+  4. submit a pull request
