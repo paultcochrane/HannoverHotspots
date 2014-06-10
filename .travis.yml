@@ -1,0 +1,1 @@
+script: ./bin/check_geojson.py
