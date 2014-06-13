@@ -8,3 +8,5 @@
    * World Coffee Hauptbahnhof
    * Cafe K
    * Gig Linden Mitte
+   * Zeitlos
+   * Cafe Safran
