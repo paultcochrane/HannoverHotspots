@@ -280,7 +280,7 @@
                 "name" : "Moca",
                 "address" : "",
                 "wlan" : "no",
-                "free" : "on",
+                "free" : "no",
                 "url"  : "http://www.mocacafe.de/",
                 "power_points" : "",
                 "last_update" : "2014-06-06"
