@@ -272,6 +272,28 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+		    9.739055, 52.376569
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "Balzac Coffee (Ernst August Platz)",
+                "address" : "",
+                "ssid" : "BalzacCoffee-23004-Hannover",
+                "password" : "1-hour access tickets available from the friendly staff (?)",
+                "wlan" : "yes",
+                "free" : "yes and no",
+                "speed" : "not yet getested",
+                "url" : "http://balzaccoffee.com",
+                "power_points" : "At table in the corner",
+                "last_update" : "2014-06-13"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     9.732651, 52.377223
                     ]
             },
