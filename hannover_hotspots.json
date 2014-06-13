@@ -307,6 +307,28 @@
                 "power_points" : "",
                 "last_update" : "2014-06-06"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.740596, 52.376546
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "World Coffee (Ernst August Platz)",
+                "address" : "Ernst-August-Platz",
+                "ssid" : "Worldcoffee-23001-Hannover",
+                "password" : "after purchasing a 1-hour ticket via web interface",
+                "wlan" : "yes",
+                "free" : "no",
+                "speed" : "not yet getested",
+                "url" : "http://www.worldcoffee.de/de/site/index.xml",
+                "power_points" : "4 in the mezzanine level",
+                "last_update" : "2014-06-13"
+            }
         }
     ]
 }
