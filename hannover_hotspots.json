@@ -349,7 +349,8 @@
                 "speed" : "good",
                 "url" : "http://www.hugendubel.de/",
                 "power_points" : "in the pillars next to the windows",
-                "last_update" : "2014-06-13"
+                "last_update" : "2014-06-13",
+                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
             }
         }
     ]
