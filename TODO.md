@@ -8,5 +8,8 @@
    * World Coffee Hauptbahnhof
    * Cafe K
    * Gig Linden Mitte
+   * Stubenwechsel
+   * Uni Biergarten
+   * Gretchen
    * Zeitlos
    * Cafe Safran
