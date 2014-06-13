@@ -329,6 +329,28 @@
                 "power_points" : "4 in the mezzanine level",
                 "last_update" : "2014-06-13"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+		    9.738669, 52.374874
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "name" : "World Coffee (Hugendubel)",
+                "address" : "Bahnhofstrasse 14",
+                "ssid" : "Hugendubel",
+                "password" : "none",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "good",
+                "url" : "http://www.hugendubel.de/",
+                "power_points" : "in the pillars next to the windows",
+                "last_update" : "2014-06-13"
+            }
         }
     ]
 }
