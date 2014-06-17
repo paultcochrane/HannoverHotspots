@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+print "Welcome to the Hannover Hotspot editor, version 0.1"
+print "Use Ctrl+D to exit, type 'help' or '?' for help."
+
+# vim: expandtab shiftwidth=4 softtabstop=4
