@@ -6,7 +6,7 @@ from subprocess import Popen, PIPE
 import re
 
 @given(u'the program hotzen_spotz is run')
-def run_hotzen_spotz(context):
+def hotzen_spotz_is_run(context):
     process = Popen("bin/hotzen_spotz", shell=True,
             stdin=PIPE, stdout=PIPE, stderr=PIPE,
             close_fds=True)
