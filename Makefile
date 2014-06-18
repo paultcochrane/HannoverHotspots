@@ -1,4 +1,4 @@
-.PHONY: check_json
+.PHONY: check_json acceptance
 
 test: check_json acceptance
 
