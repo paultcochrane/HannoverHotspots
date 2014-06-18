@@ -10,6 +10,7 @@ def hotzen_spotz_is_run(context):
     process = Popen("bin/hotzen_spotz", shell=True,
             stdin=PIPE, stdout=PIPE, stderr=PIPE,
             close_fds=True)
+    process.stdin.write('exit')
     context.stdout, context.stderr = process.communicate()
 
     assert_equal(process.returncode, 0)

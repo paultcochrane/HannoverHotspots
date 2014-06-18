@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from cmd import Cmd
+import sys
 
 class HPCommand(Cmd):
     def __init__(self):
@@ -12,9 +13,14 @@ Welcome to the Hannover Hotspot editor, version 0.1
 Use Ctrl+D to exit, type 'help' or '?' for help.
 """
 
+    def do_exit(self, param):
+        """
+        Exit the program.
+        """
+        sys.exit(0)
+
 command = HPCommand()
 command.prompt = "spotz_editor>"
-print command.intro
-print command.prompt
+command.cmdloop()
 
 # vim: expandtab shiftwidth=4 softtabstop=4
