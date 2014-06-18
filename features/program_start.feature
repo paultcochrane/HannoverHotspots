@@ -4,7 +4,7 @@ Feature: Simple startup, display welcome
     I want to see a welcome message
 
     Scenario: welcome screen
-	When the program hotzen_spotz is run
+	Given the program hotzen_spotz is run
 	Then I should see the welcome screen
 	    """
 	    Welcome to the Hannover Hotspot editor, version 0.1

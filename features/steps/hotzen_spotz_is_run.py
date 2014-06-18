@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from behave import when, then
+from behave import given, then
 from subprocess import Popen, PIPE
 
-@when(u'the program hotzen_spotz is run')
+@given(u'the program hotzen_spotz is run')
 def run_hotzen_spotz(context):
     process = Popen("bin/hotzen_spotz", shell=True,
             stdin=PIPE, stdout=PIPE, stderr=PIPE,
