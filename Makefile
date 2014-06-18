@@ -6,4 +6,4 @@ check_json:
 	python bin/check_geojson.py
 
 acceptance:
-	behave
+	behave -t ~wip
