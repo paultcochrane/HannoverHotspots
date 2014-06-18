@@ -4,9 +4,11 @@ Feature: Simple startup, display welcome
     I want to see a welcome message
 
     Scenario: welcome screen
-	Given the program hotzen_spotz is run
-	Then I should see the welcome screen
-	    """
-	    Welcome to the Hannover Hotspot editor, version 0.1
-	    Use Ctrl+D to exit, type 'help' or '?' for help.
-	    """
+        Given the program hotzen_spotz is run
+        Then I should see the welcome screen
+            """
+            Welcome to the Hannover Hotspot editor, version 0.1
+            Use Ctrl+D to exit, type 'help' or '?' for help.
+            """
+
+# vim: expandtab shiftwidth=4 softtabstop=4
