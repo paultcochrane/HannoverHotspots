@@ -1,7 +1,7 @@
 Feature: interactive commands
     As a user of hotzen spotz
     When I enter commands
-    I want the program to respond to the appropriately
+    I want the program to respond to them appropriately
 
     @wip
     Scenario: exit command
