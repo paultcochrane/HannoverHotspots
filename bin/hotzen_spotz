@@ -1,7 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-print "Welcome to the Hannover Hotspot editor, version 0.1"
-print "Use Ctrl+D to exit, type 'help' or '?' for help."
+from cmd import Cmd
+
+class HPCommand(Cmd):
+    def __init__(self):
+        Cmd.__init__(self)
+
+        self.intro = """\
+Welcome to the Hannover Hotspot editor, version 0.1
+Use Ctrl+D to exit, type 'help' or '?' for help.
+"""
+
+command = HPCommand()
+print command.intro
 
 # vim: expandtab shiftwidth=4 softtabstop=4

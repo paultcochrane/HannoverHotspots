@@ -14,8 +14,10 @@ def run_hotzen_spotz(context):
 
 @then(u'I should see the welcome screen')
 def see_welcome_screen(context):
-    output = context.stdout.strip()
+    output = context.stdout.strip().split('\n')[:2]
+    welcome_message = context.text.strip().split('\n')[:2]
 
-    assert output == context.text
+    assert output[0] == welcome_message[0]
+    assert output[1] == welcome_message[1]
 
 # vim: expandtab shiftwidth=4 softtabstop=4
