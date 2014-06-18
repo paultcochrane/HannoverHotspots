@@ -4,4 +4,4 @@ install:
     - "pip install requests"
     - "pip install behave"
 
-script: ./bin/check_geojson.py
+script: make test
