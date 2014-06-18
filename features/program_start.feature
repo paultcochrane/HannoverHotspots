@@ -10,5 +10,9 @@ Feature: Simple startup, display welcome
             Welcome to the Hannover Hotspot editor, version 0.1
             Use Ctrl+D to exit, type 'help' or '?' for help.
             """
+        And I should see the command prompt
+            """
+            spotz_editor>
+            """
 
 # vim: expandtab shiftwidth=4 softtabstop=4

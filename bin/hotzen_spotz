@@ -13,6 +13,8 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
 """
 
 command = HPCommand()
+command.prompt = "spotz_editor>"
 print command.intro
+print command.prompt
 
 # vim: expandtab shiftwidth=4 softtabstop=4
