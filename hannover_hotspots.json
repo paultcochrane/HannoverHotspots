@@ -250,7 +250,7 @@
                 "wlan" : "yes",
                 "free" : "yes",
                 "speed" : "ok",
-                "url" : "",
+                "url" : "http://www.cafe-bar-celona.de/",
                 "power_points" : "several, spread around ",
                 "last_update" : "2014-06-07",
                 "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
