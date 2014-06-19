@@ -2,6 +2,7 @@ language: python
 
 install:
     - "pip install requests"
+    - "pip install pexpect"
     - "pip install behave"
 
 script: make test
