@@ -3,7 +3,6 @@ Feature: interactive commands
     When I enter commands
     I want the program to respond to them appropriately
 
-    @wip
     Scenario: exit command
         Given the program hotzen_spotz is run
         When I enter "exit"
