@@ -3,14 +3,15 @@ Feature: interactive commands
     When I enter commands
     I want the program to respond to them appropriately
 
-    Scenario: exit command
+    Background:
         Given the program hotzen_spotz is run
+
+    Scenario: exit command
         When I enter "exit"
         Then the program should exit cleanly
 
     @wip
     Scenario: add command
-        Given the program hotzen_spotz is run
         When I enter "add"
         Then I should be asked to add an entry
 
