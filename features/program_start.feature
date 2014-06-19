@@ -7,8 +7,5 @@ Feature: Simple startup, display welcome
         Given the program hotzen_spotz is run
         Then I should see the welcome screen
         And I should see the command prompt
-            """
-            spotz_editor>
-            """
 
 # vim: expandtab shiftwidth=4 softtabstop=4
