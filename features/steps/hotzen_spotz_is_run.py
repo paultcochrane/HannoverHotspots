@@ -30,8 +30,8 @@ def see_command_prompt(context):
     assert_equal(output, "")
 
     context.process.sendline("")  # flush the command line
-    output = context.process.readline().strip()
-    command_prompt = "spotz_editor>"
+    output = context.process.readline().strip('\r\n')
+    command_prompt = "spotz_editor> "
     assert_equal(output, command_prompt)
 
 # vim: expandtab shiftwidth=4 softtabstop=4

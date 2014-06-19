@@ -15,7 +15,7 @@ def i_enter_add(context):
     assert_equal(output.strip(), "")
 
     output = context.process.readline()
-    assert_equal(output.strip(), "spotz_editor>add")
+    assert_equal(output.strip(), "spotz_editor> add")
 
 @then(u'I should be asked to add an entry')
 def the_program_exits(context):
