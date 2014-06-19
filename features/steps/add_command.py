@@ -11,10 +11,16 @@ def i_enter_add(context):
     context.process.sendline("") # flush
     assert_true(context.process.isalive())
 
+    output = context.process.readline()
+    assert_equal(output.strip(), "")
+
+    output = context.process.readline()
+    assert_equal(output.strip(), "spotz_editor>add")
+
 @then(u'I should be asked to add an entry')
 def the_program_exits(context):
     add_prompt_text = "Please enter cafe/bar's name:"
     output = context.process.readline()
-    assert_equal(output, add_prompt_text)
+    assert_equal(output.strip(), add_prompt_text)
 
 # vim: expandtab shiftwidth=4 softtabstop=4
