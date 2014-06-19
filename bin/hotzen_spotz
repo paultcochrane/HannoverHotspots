@@ -19,6 +19,12 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
         """
         sys.exit(0)
 
+    def do_add(self, param):
+        """
+        Add a cafe/bar to the list of hotspots
+        """
+        print "Please enter cafe/bar's name:"
+
 command = HPCommand()
 command.prompt = "spotz_editor>"
 command.cmdloop()
