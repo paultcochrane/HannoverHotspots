@@ -299,6 +299,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "ff0000",
                 "name" : "Moca",
                 "address" : "",
                 "wlan" : "no",
