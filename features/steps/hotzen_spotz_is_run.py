@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from behave import given, then
-from nose.tools import assert_false, assert_equal, assert_regexp_matches
+from nose.tools import assert_true, assert_equal, assert_regexp_matches
 import pexpect
 import re
 
@@ -10,7 +10,7 @@ def hotzen_spotz_is_run(context):
     process = pexpect.spawn("python -u bin/hotzen_spotz")
 
     context.process = process
-    assert_false(process.eof())
+    assert_true(process.isalive())
 
 @then(u'I should see the welcome screen')
 def see_welcome_screen(context):
