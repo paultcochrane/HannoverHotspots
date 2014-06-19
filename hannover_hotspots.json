@@ -11,6 +11,7 @@
             },
             "properties": {
                 "marker-symbol": "bar",
+                "marker-color": "00ff00",
                 "title" : "Lindens Centrum",
                 "name" : "Lindens Centrum",
                 "address" : "",
@@ -34,6 +35,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Beans",
                 "address" : "",
                 "ssid" : "BEANS",
@@ -56,6 +58,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Cafe Spandau",
                 "address" : "",
                 "ssid" : "SPANDAU_G",
@@ -78,6 +81,7 @@
             },
             "properties" : {
                 "marker-symbol": "bar",
+                "marker-color": "00ff00",
                 "name" : "Cheers",
                 "address" : "",
                 "ssid" : "Cheers-Gast",
@@ -100,6 +104,7 @@
             },
             "properties" : {
                 "marker-symbol": "bar",
+                "marker-color": "00ff00",
                 "name" : "Dublin Inn",
                 "address" : "",
                 "ssid" : "DublinInn",
@@ -122,6 +127,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Pausentraum",
                 "address" : "",
                 "ssid" : "Pausentraum",
@@ -144,6 +150,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Extrablatt (Georgsplatz)",
                 "address" : "",
                 "ssid" : "Cafe Extrablatt (FREE)",
@@ -166,6 +173,7 @@
             },
             "properties" : {
                 "marker-symbol": "restaurant",
+                "marker-color": "00ff00",
                 "name" : "Treibhaus",
                 "address" : "",
                 "ssid" : "Kabel Deutschland Hotspot",
@@ -188,6 +196,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Starbucks (Hauptbahnhof)",
                 "address" : "",
                 "ssid" : "BTOpenzone",
@@ -210,6 +219,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Starbucks (Ernst August Gallerie)",
                 "address" : "",
                 "ssid" : "BTOpenzone",
@@ -232,6 +242,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Cafe & Bar Celona (Altstadt)",
                 "address" : "",
                 "ssid" : "htp-hotspot",
@@ -255,6 +266,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Balzac Coffee (Innenstadt)",
                 "address" : "",
                 "ssid" : "BalzacCoffee-23007-Hannover",
@@ -277,6 +289,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "Balzac Coffee (Ernst August Platz)",
                 "address" : "",
                 "ssid" : "BalzacCoffee-23004-Hannover",
@@ -319,6 +332,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "World Coffee (Ernst August Platz)",
                 "address" : "Ernst-August-Platz",
                 "ssid" : "Worldcoffee-23001-Hannover",
@@ -341,6 +355,7 @@
             },
             "properties" : {
                 "marker-symbol": "cafe",
+                "marker-color": "00ff00",
                 "name" : "World Coffee (Hugendubel)",
                 "address" : "Bahnhofstrasse 14",
                 "ssid" : "Hugendubel",
