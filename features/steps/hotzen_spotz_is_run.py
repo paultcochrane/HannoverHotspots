@@ -14,7 +14,11 @@ def hotzen_spotz_is_run(context):
 
 @then(u'I should see the welcome screen')
 def see_welcome_screen(context):
-    welcome_message = context.text.strip().split('\n')[:2]
+    welcome_message = """\
+Welcome to the Hannover Hotspot editor, version 0.1
+Use Ctrl+D to exit, type 'help' or '?' for help.
+    """
+    welcome_message = welcome_message.split('\n')
     output = context.process.readline().strip()
 
     assert_equal(output, welcome_message[0])
