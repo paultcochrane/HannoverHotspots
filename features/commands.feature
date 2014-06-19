@@ -5,6 +5,7 @@ Feature: interactive commands
 
     Background:
         Given the program hotzen_spotz is run
+        And I have seen the welcome screen
 
     Scenario: exit command
         When I enter "exit"

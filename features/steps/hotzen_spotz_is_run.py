@@ -11,6 +11,7 @@ def hotzen_spotz_is_run(context):
     assert_true(process.isalive())
 
 @then(u'I should see the welcome screen')
+@given(u'I have seen the welcome screen')
 def see_welcome_screen(context):
     welcome_message = """\
 Welcome to the Hannover Hotspot editor, version 0.1
