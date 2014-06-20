@@ -11,7 +11,6 @@ Feature: interactive commands
         When I enter "exit"
         Then the program should exit cleanly
 
-    @wip
     Scenario: add command
         When I enter "add"
         Then I should be asked to add an entry
