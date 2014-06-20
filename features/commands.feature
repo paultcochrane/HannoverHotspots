@@ -13,6 +13,6 @@ Feature: interactive commands
 
     Scenario: add command
         When I enter "add"
-        Then I should be asked to add an entry
+        Then I should be prompted for the cafe's name
 
 # vim: expandtab shiftwidth=4 softtabstop=4
