@@ -19,8 +19,8 @@ def i_enter_add(context):
 
 @then(u'I should be asked to add an entry')
 def the_program_exits(context):
-    add_prompt_text = "Please enter cafe/bar's name:"
+    add_prompt_text = "Please enter cafe/bar's name: "
     output = context.process.readline()
-    assert_equal(output.strip(), add_prompt_text)
+    assert_equal(output.strip('\r\n'), add_prompt_text)
 
 # vim: expandtab shiftwidth=4 softtabstop=4
