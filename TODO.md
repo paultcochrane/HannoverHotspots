@@ -10,3 +10,5 @@
    * Gretchen
    * Zeitlos
    * Cafe Safran
+   * El Solin
+   * Mittendrin/Lindenblatt
