@@ -392,6 +392,30 @@
                 "last_update" : "2014-06-27",
                 "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+		    9.735165, 52.374303
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "restaurant",
+                "marker-color": "00ff00",
+                "name" : "Vapiano",
+                "address" : "Heiliger Straße 3",
+                "ssid" : "htp-hotspot",
+                "password" : "none (web login required)",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "not yet tested",
+                "url" : "http://vapiano.de",
+                "power_points" : "",
+                "last_update" : "2014-06-27",
+                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
+            }
         }
     ]
 }
