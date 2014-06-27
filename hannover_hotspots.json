@@ -368,6 +368,30 @@
                 "last_update" : "2014-06-13",
                 "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+		    9.704928, 52.374461
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "bar",
+                "marker-color": "00ff00",
+                "name" : "Stubenwechsel",
+                "address" : "Kötnerholzweg 30",
+                "ssid" : "Stubenwechsel",
+                "password" : "ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "no",
+                "speed" : "not yet tested",
+                "url" : "",
+                "power_points" : "",
+                "last_update" : "2014-06-27",
+                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
+            }
         }
     ]
 }
