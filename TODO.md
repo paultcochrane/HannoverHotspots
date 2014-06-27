@@ -5,10 +5,8 @@
    * Campus Suite Callinstrasse
    * Cafe K
    * Gig Linden Mitte
-   * Stubenwechsel
    * Uni Biergarten
    * Gretchen
    * Zeitlos
    * Cafe Safran
    * El Solin
-   * Mittendrin/Lindenblatt
