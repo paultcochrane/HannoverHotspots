@@ -385,7 +385,7 @@
                 "ssid" : "Stubenwechsel",
                 "password" : "ask the friendly staff",
                 "wlan" : "yes",
-                "free" : "no",
+                "free" : "yes",
                 "speed" : "not yet tested",
                 "url" : "",
                 "power_points" : "",
