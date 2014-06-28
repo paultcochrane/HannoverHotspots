@@ -23,7 +23,10 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
         """
         Add a cafe/bar to the list of hotspots
         """
-        print "Please enter location's name: "
+        location_name = raw_input("Please enter location's name: ")
+        location_type_prompt = \
+                "Please enter location's type (cafe, bar, restaurant): "
+        location_type = raw_input(location_type_prompt)
 
 command = HPCommand()
 command.prompt = "spotz_editor> "

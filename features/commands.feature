@@ -14,5 +14,7 @@ Feature: interactive commands
     Scenario: add command
         When I enter "add"
         Then I should be prompted for the location's name
+        When I enter the location's name
+        Then I should be prompted for the type of location
 
 # vim: expandtab shiftwidth=4 softtabstop=4
