@@ -17,8 +17,8 @@ def i_enter_add(context):
     output = context.spotz.readline()
     assert_equal(output.strip(), "spotz_editor> add")
 
-@then(u'I should be prompted for the cafe\'s name')
-def prompt_for_cafes_name(context):
+@then(u'I should be prompted for the location\'s name')
+def prompt_for_location_name(context):
     add_prompt_text = "Please enter cafe/bar's name: "
     output = context.spotz.readline()
     assert_equal(output.strip('\r\n'), add_prompt_text)
