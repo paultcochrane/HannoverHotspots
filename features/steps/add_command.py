@@ -40,4 +40,11 @@ def prompt_from_location_type(context):
     output = context.spotz.match.strip('\r\n')
     assert_equal(output, location_type_prompt)
 
+@when(u'I enter the location\'s type')
+def enter_location_type(context):
+    bytes_sent = context.spotz.sendline("cafe")
+    assert_equal(bytes_sent, 5)
+
+    assert_true(context.spotz.isalive())
+
 # vim: expandtab shiftwidth=4 softtabstop=4
