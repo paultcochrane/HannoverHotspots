@@ -47,4 +47,72 @@ def enter_location_type(context):
 
     assert_true(context.spotz.isalive())
 
+@then(u'I should be asked if the WLAN is free')
+def ask_if_wlan_is_free(context):
+    assert False
+
+@when(u'I enter yes or no')
+def enter_yes_or_no(context):
+    assert False
+
+@then(u'I should be prompted for the location\'s street address')
+def prompt_for_location_street_address(context):
+    assert False
+
+@when(u'I enter the location\'s street address')
+def enter_location_street_address(context):
+    assert False
+
+@then(u'I should be prompted for the location\'s URL')
+def prompt_for_location_url(context):
+    assert False
+
+@when(u'I enter the location\'s URL')
+def enter_location_url(context):
+    assert False
+
+@then(u'I should be prompted for the location\'s latitude')
+def prompt_for_location_latitude(context):
+    assert False
+
+@when(u'I enter the location\'s latitude')
+def enter_location_latitude(context):
+    assert False
+
+@then(u'I should be prompted for the location\'s longitude')
+def prompt_for_location_longitude(context):
+    assert False
+
+@when(u'I enter the location\'s longitude')
+def enter_location_longitude(context):
+    assert False
+
+@then(u'I should be asked about power points')
+def ask_about_power_points(context):
+    assert False
+
+@when(u'I enter notes about power points')
+def enter_power_points_notes(context):
+    assert False
+
+@then(u'I should be asked about the network speed')
+def ask_about_network_speed(context):
+    assert False
+
+@when(u'I enter notes about the network speed')
+def enter_network_speed_notes(context):
+    assert False
+
+@then(u'I should be asked for extra notes')
+def ask_for_extra_notes(context):
+    assert False
+
+@when(u'I enter extra notes')
+def enter_extra_notes(context):
+    assert False
+
+@then(u'I should see an overview of the entered information')
+def show_entry_overview(context):
+    assert False
+
 # vim: expandtab shiftwidth=4 softtabstop=4
