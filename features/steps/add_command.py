@@ -161,11 +161,19 @@ def enter_power_points_notes(context):
 
 @then(u'I should be asked about the network speed')
 def ask_about_network_speed(context):
-    assert False
+    network_speed_prompt = "Please enter notes about location's network speed: "
+    index = context.spotz.expect_exact(network_speed_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, network_speed_prompt)
 
 @when(u'I enter notes about the network speed')
 def enter_network_speed_notes(context):
-    assert False
+    bytes_sent = context.spotz.sendline("Good; 500kbs download; 200kbs upload")
+    assert_equal(bytes_sent, 37)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should be asked for extra notes')
 def ask_for_extra_notes(context):
