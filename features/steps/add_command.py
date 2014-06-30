@@ -25,8 +25,8 @@ def prompt_for_location_name(context):
 
 @when(u'I enter the location\'s name')
 def enter_location_name(context):
-    bytes_sent = context.spotz.sendline("Cafe")
-    assert_equal(bytes_sent, 5)
+    bytes_sent = context.spotz.sendline("Cafe with WLAN")
+    assert_equal(bytes_sent, 15)
 
     assert_true(context.spotz.isalive())
 
