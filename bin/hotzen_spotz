@@ -23,25 +23,62 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
         """
         Add a cafe/bar to the list of hotspots
         """
+        entry = {}
+
         location_name = raw_input("Please enter location's name: ")
+        entry['location_name'] = location_name
+
         location_type_prompt = \
                 "Please enter location's type (cafe, bar, restaurant): "
         location_type = raw_input(location_type_prompt)
+        entry['location_type'] = location_type
+
         location_ssid = raw_input("Please enter location's SSID: ")
+        entry['location_ssid'] = location_ssid
+
         is_wlan_free = raw_input("Is WLAN free here? (yes/no): ")
+        entry['is_wlan_free'] = is_wlan_free
+
         street_address = \
                 raw_input("Please enter the location's street address: ")
+        entry['street_address'] = street_address
+
         location_url = raw_input("Please enter the location's URL: ")
+        entry['location_url'] = location_url
+
         location_latitude = \
                 raw_input("Please enter the location's latitude (in degrees): ")
+        entry['location_latitude'] = location_latitude
+
         location_longitude = \
                 raw_input("Please enter the location's longitude (in degrees): ")
+        entry['location_longitude'] = location_longitude
+
         power_points_notes = \
                 raw_input("Please enter notes about location's power points: ")
+        entry['power_points_notes'] = power_points_notes
+
         network_speed_notes = \
                 raw_input("Please enter notes about location's network speed: ")
+        entry['network_speed_notes'] = network_speed_notes
+
         extra_notes = \
                 raw_input("Please enter extra notes about the location: ")
+        entry['extra_notes'] = extra_notes
+
+        print "Entry information:"
+        print "    Location name: ",       location_name
+        print "    Location type: ",       location_type
+        print "    Location SSID: ",       location_ssid
+        print "    Free WLAN?: ",          is_wlan_free
+        print "    Street address: ",      street_address
+        print "    Location URL: ",        location_url
+        print "    Location latitude: ",   location_latitude
+        print "    Location longitude: ",  location_longitude
+        print "    Power points notes: ",  power_points_notes
+        print "    Network speed notes: ", network_speed_notes
+        print "    Extra notes: ",         extra_notes
+
 
 command = HPCommand()
 command.prompt = "spotz_editor> "

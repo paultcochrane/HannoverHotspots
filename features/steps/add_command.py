@@ -28,8 +28,11 @@ def prompt_for_location_name(context):
 
 @when(u'I enter the location\'s name')
 def enter_location_name(context):
-    bytes_sent = context.spotz.sendline("Cafe with WLAN")
+    answer = "Cafe with WLAN"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 15)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -45,8 +48,11 @@ def prompt_for_location_type(context):
 
 @when(u'I enter the location\'s type')
 def enter_location_type(context):
-    bytes_sent = context.spotz.sendline("cafe")
+    answer = "cafe"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 5)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -61,8 +67,11 @@ def prompt_for_location_ssid(context):
 
 @when(u'I enter the location\'s SSID')
 def enter_location_ssid(context):
-    bytes_sent = context.spotz.sendline("CafeWLAN")
+    answer = "CafeWLAN"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 9)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -77,8 +86,11 @@ def ask_if_wlan_is_free(context):
 
 @when(u'I enter yes or no')
 def enter_yes_or_no(context):
-    bytes_sent = context.spotz.sendline("yes")
+    answer = "yes"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 4)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -93,8 +105,11 @@ def prompt_for_location_street_address(context):
 
 @when(u'I enter the location\'s street address')
 def enter_location_street_address(context):
-    bytes_sent = context.spotz.sendline("Unbekannter Weg 1")
+    answer = "Unbekannter Weg 1"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 18)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -109,8 +124,11 @@ def prompt_for_location_url(context):
 
 @when(u'I enter the location\'s URL')
 def enter_location_url(context):
-    bytes_sent = context.spotz.sendline("http://cafewlan.de")
+    answer = "http://cafewlan.de"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 19)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -125,8 +143,11 @@ def prompt_for_location_latitude(context):
 
 @when(u'I enter the location\'s latitude')
 def enter_location_latitude(context):
-    bytes_sent = context.spotz.sendline("50.123456")
+    answer = "50.123456"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 10)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -141,8 +162,11 @@ def prompt_for_location_longitude(context):
 
 @when(u'I enter the location\'s longitude')
 def enter_location_longitude(context):
-    bytes_sent = context.spotz.sendline("9.654321")
+    answer = "9.654321"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 9)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -157,8 +181,11 @@ def ask_about_power_points(context):
 
 @when(u'I enter notes about power points')
 def enter_power_points_notes(context):
-    bytes_sent = context.spotz.sendline("Upstairs, in the corner")
+    answer = "Upstairs, in the corner"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 24)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -173,8 +200,11 @@ def ask_about_network_speed(context):
 
 @when(u'I enter notes about the network speed')
 def enter_network_speed_notes(context):
-    bytes_sent = context.spotz.sendline("Good; 500kbs download; 200kbs upload")
+    answer = "Good; 500kbs download; 200kbs upload"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 37)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
@@ -189,13 +219,21 @@ def ask_for_extra_notes(context):
 
 @when(u'I enter extra notes')
 def enter_extra_notes(context):
-    bytes_sent = context.spotz.sendline("SSH blocked; HTTP(S) allowed")
+    answer = "SSH blocked; HTTP(S) allowed"
+    bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 29)
+
+    context.add_entry_overview.append(answer)
 
     assert_true(context.spotz.isalive())
 
 @then(u'I should see an overview of the entered information')
 def show_entry_overview(context):
-    assert False
+    index = context.spotz.expect("Entry information:")
+    assert_equal(index, 0)
+
+    for line in context.add_entry_overview:
+        index = context.spotz.expect_exact(line)
+        assert_equal(index, 0)
 
 # vim: expandtab shiftwidth=4 softtabstop=4
