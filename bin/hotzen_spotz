@@ -31,6 +31,7 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
         is_wlan_free = raw_input("Is WLAN free here? (yes/no): ")
         street_address = \
                 raw_input("Please enter the location's street address: ")
+        location_url = raw_input("Please enter the location's URL: ")
 
 command = HPCommand()
 command.prompt = "spotz_editor> "

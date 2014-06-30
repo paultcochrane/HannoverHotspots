@@ -97,11 +97,19 @@ def enter_location_street_address(context):
 
 @then(u'I should be prompted for the location\'s URL')
 def prompt_for_location_url(context):
-    assert False
+    location_url_prompt = "Please enter the location's URL: "
+    index = context.spotz.expect_exact(location_url_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, location_url_prompt)
 
 @when(u'I enter the location\'s URL')
 def enter_location_url(context):
-    assert False
+    bytes_sent = context.spotz.sendline("http://cafewlan.de")
+    assert_equal(bytes_sent, 19)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should be prompted for the location\'s latitude')
 def prompt_for_location_latitude(context):
