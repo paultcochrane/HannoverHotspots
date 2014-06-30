@@ -145,11 +145,19 @@ def enter_location_longitude(context):
 
 @then(u'I should be asked about power points')
 def ask_about_power_points(context):
-    assert False
+    power_points_prompt = "Please enter notes about location's power points: "
+    index = context.spotz.expect_exact(power_points_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, power_points_prompt)
 
 @when(u'I enter notes about power points')
 def enter_power_points_notes(context):
-    assert False
+    bytes_sent = context.spotz.sendline("Upstairs, in the corner")
+    assert_equal(bytes_sent, 24)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should be asked about the network speed')
 def ask_about_network_speed(context):

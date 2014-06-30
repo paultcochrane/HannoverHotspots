@@ -36,6 +36,8 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
                 raw_input("Please enter the location's latitude (in degrees): ")
         location_longitude = \
                 raw_input("Please enter the location's longitude (in degrees): ")
+        power_points_notes = \
+                raw_input("Please enter notes about location's power points: ")
 
 command = HPCommand()
 command.prompt = "spotz_editor> "
