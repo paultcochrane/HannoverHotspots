@@ -129,11 +129,19 @@ def enter_location_latitude(context):
 
 @then(u'I should be prompted for the location\'s longitude')
 def prompt_for_location_longitude(context):
-    assert False
+    longitude_prompt = "Please enter the location's longitude (in degrees): "
+    index = context.spotz.expect_exact(longitude_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, longitude_prompt)
 
 @when(u'I enter the location\'s longitude')
 def enter_location_longitude(context):
-    assert False
+    bytes_sent = context.spotz.sendline("9.654321")
+    assert_equal(bytes_sent, 9)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should be asked about power points')
 def ask_about_power_points(context):
