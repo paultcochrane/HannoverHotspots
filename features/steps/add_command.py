@@ -47,6 +47,22 @@ def enter_location_type(context):
 
     assert_true(context.spotz.isalive())
 
+@then(u'I should be prompted for the location\'s SSID')
+def prompt_for_location_ssid(context):
+    location_ssid_prompt = "Please enter location's SSID: "
+    index = context.spotz.expect_exact(location_ssid_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, location_ssid_prompt)
+
+@when(u'I enter the location\'s SSID')
+def enter_location_ssid(context):
+    bytes_sent = context.spotz.sendline("CafeWLAN")
+    assert_equal(bytes_sent, 9)
+
+    assert_true(context.spotz.isalive())
+
 @then(u'I should be asked if the WLAN is free')
 def ask_if_wlan_is_free(context):
     assert False
