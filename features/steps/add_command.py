@@ -81,11 +81,19 @@ def enter_yes_or_no(context):
 
 @then(u'I should be prompted for the location\'s street address')
 def prompt_for_location_street_address(context):
-    assert False
+    street_address_prompt = "Please enter the location's street address: "
+    index = context.spotz.expect_exact(street_address_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, street_address_prompt)
 
 @when(u'I enter the location\'s street address')
 def enter_location_street_address(context):
-    assert False
+    bytes_sent = context.spotz.sendline("Unbekannter Weg 1")
+    assert_equal(bytes_sent, 18)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should be prompted for the location\'s URL')
 def prompt_for_location_url(context):
