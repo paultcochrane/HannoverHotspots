@@ -8,14 +8,14 @@ def i_enter_add(context):
     bytes_sent = context.spotz.sendline("add")
     assert_equal(bytes_sent, 4)
 
-    context.spotz.sendline("") # flush
-    assert_true(context.spotz.isalive())
+    prompt_text = "spotz_editor> add"
+    index = context.spotz.expect_exact(prompt_text)
+    assert_equal(index, 0)
 
-    output = context.spotz.readline()
-    assert_equal(output.strip(), "")
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, prompt_text)
 
-    output = context.spotz.readline()
-    assert_equal(output.strip(), "spotz_editor> add")
+    context.add_entry_overview = []
 
 @then(u'I should be prompted for the location\'s name')
 def prompt_for_location_name(context):
