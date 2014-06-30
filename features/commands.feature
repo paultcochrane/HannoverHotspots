@@ -16,5 +16,26 @@ Feature: interactive commands
         Then I should be prompted for the location's name
         When I enter the location's name
         Then I should be prompted for the type of location
+        When I enter the location's type
+        Then I should be prompted for the location's SSID
+        When I enter the location's SSID
+        Then I should be asked if the WLAN is free
+        When I enter yes or no
+        Then I should be prompted for the location's street address
+        When I enter the location's street address
+        Then I should be prompted for the location's URL
+        When I enter the location's URL
+        Then I should be prompted for the location's latitude
+        When I enter the location's latitude
+        Then I should be prompted for the location's longitude
+        When I enter the location's longitude
+        Then I should be asked about power points
+        When I enter notes about power points
+        Then I should be asked about the network speed
+        When I enter notes about the network speed
+        Then I should be asked for extra notes
+        When I enter extra notes
+        Then I should see an overview of the entered information
+        And I should see the command prompt
 
 # vim: expandtab shiftwidth=4 softtabstop=4
