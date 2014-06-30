@@ -31,7 +31,7 @@ def enter_location_name(context):
     assert_true(context.spotz.isalive())
 
 @then(u'I should be prompted for the type of location')
-def prompt_from_location_type(context):
+def prompt_for_location_type(context):
     location_type_prompt = \
             "Please enter location's type (cafe, bar, restaurant): "
     index = context.spotz.expect_exact(location_type_prompt)
