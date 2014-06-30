@@ -20,8 +20,11 @@ def i_enter_add(context):
 @then(u'I should be prompted for the location\'s name')
 def prompt_for_location_name(context):
     add_prompt_text = "Please enter location's name: "
-    output = context.spotz.readline()
-    assert_equal(output.strip('\r\n'), add_prompt_text)
+    index = output = context.spotz.expect_exact(add_prompt_text)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, add_prompt_text)
 
 @when(u'I enter the location\'s name')
 def enter_location_name(context):
