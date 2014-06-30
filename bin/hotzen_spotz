@@ -40,6 +40,8 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
                 raw_input("Please enter notes about location's power points: ")
         network_speed_notes = \
                 raw_input("Please enter notes about location's network speed: ")
+        extra_notes = \
+                raw_input("Please enter extra notes about the location: ")
 
 command = HPCommand()
 command.prompt = "spotz_editor> "

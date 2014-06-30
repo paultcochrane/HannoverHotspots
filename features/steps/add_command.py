@@ -177,11 +177,19 @@ def enter_network_speed_notes(context):
 
 @then(u'I should be asked for extra notes')
 def ask_for_extra_notes(context):
-    assert False
+    extra_notes_prompt = "Please enter extra notes about the location: "
+    index = context.spotz.expect_exact(extra_notes_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, extra_notes_prompt)
 
 @when(u'I enter extra notes')
 def enter_extra_notes(context):
-    assert False
+    bytes_sent = context.spotz.sendline("SSH blocked; HTTP(S) allowed")
+    assert_equal(bytes_sent, 29)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should see an overview of the entered information')
 def show_entry_overview(context):
