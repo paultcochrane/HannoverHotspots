@@ -32,6 +32,8 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
         street_address = \
                 raw_input("Please enter the location's street address: ")
         location_url = raw_input("Please enter the location's URL: ")
+        location_latitude = \
+                raw_input("Please enter the location's latitude (in degrees): ")
 
 command = HPCommand()
 command.prompt = "spotz_editor> "

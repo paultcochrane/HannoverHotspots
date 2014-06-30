@@ -113,11 +113,19 @@ def enter_location_url(context):
 
 @then(u'I should be prompted for the location\'s latitude')
 def prompt_for_location_latitude(context):
-    assert False
+    latitude_prompt = "Please enter the location's latitude (in degrees): "
+    index = context.spotz.expect_exact(latitude_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, latitude_prompt)
 
 @when(u'I enter the location\'s latitude')
 def enter_location_latitude(context):
-    assert False
+    bytes_sent = context.spotz.sendline("50.123456")
+    assert_equal(bytes_sent, 10)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should be prompted for the location\'s longitude')
 def prompt_for_location_longitude(context):
