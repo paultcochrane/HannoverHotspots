@@ -28,6 +28,7 @@ Use Ctrl+D to exit, type 'help' or '?' for help.
                 "Please enter location's type (cafe, bar, restaurant): "
         location_type = raw_input(location_type_prompt)
         location_ssid = raw_input("Please enter location's SSID: ")
+        is_wlan_free = raw_input("Is WLAN free here? (yes/no): ")
 
 command = HPCommand()
 command.prompt = "spotz_editor> "

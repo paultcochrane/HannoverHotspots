@@ -65,11 +65,19 @@ def enter_location_ssid(context):
 
 @then(u'I should be asked if the WLAN is free')
 def ask_if_wlan_is_free(context):
-    assert False
+    wlan_free_prompt = "Is WLAN free here? (yes/no): "
+    index = context.spotz.expect_exact(wlan_free_prompt)
+    assert_equal(index, 0)
+
+    output = context.spotz.match.strip('\r\n')
+    assert_equal(output, wlan_free_prompt)
 
 @when(u'I enter yes or no')
 def enter_yes_or_no(context):
-    assert False
+    bytes_sent = context.spotz.sendline("yes")
+    assert_equal(bytes_sent, 4)
+
+    assert_true(context.spotz.isalive())
 
 @then(u'I should be prompted for the location\'s street address')
 def prompt_for_location_street_address(context):
