@@ -7,6 +7,5 @@
    * Gig Linden Mitte
    * Uni Biergarten
    * Gretchen
-   * Zeitlos
    * Cafe Safran
    * El Solin
