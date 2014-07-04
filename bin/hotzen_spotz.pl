@@ -88,6 +88,9 @@ sub add {
 
     $prompt = "Please enter the location's longitude (in degrees): ";
     prompt("-p" => $prompt, -num);
+
+    $prompt = "Please enter notes about location's power points: ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();

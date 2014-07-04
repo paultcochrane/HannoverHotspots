@@ -118,5 +118,17 @@ When qr/I enter the location's longitude/, func($context) {
     is($spotz->match_number(), 1, "Location longitude entry");
 };
 
+Then qr/I should be asked about power points/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter notes about location's power points: ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Power points prompt");
+};
+
+When qr/I enter notes about power points/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("Upstairs, in the corner\n");
+    is($spotz->match_number(), 1, "Power points entry");
+};
 
 # vim: expandtab shiftwidth=4 softtabstop=4
