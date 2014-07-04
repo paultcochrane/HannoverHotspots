@@ -91,6 +91,9 @@ sub add {
 
     $prompt = "Please enter notes about location's power points: ";
     prompt("-p" => $prompt, -raw_input);
+
+    $prompt = "Please enter notes about location's network speed: ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();

@@ -131,4 +131,17 @@ When qr/I enter notes about power points/, func($context) {
     is($spotz->match_number(), 1, "Power points entry");
 };
 
+Then qr/I should be asked about the network speed/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter notes about location's network speed: ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Network speed prompt");
+};
+
+When qr/I enter notes about the network speed/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("Good; 500kbs download; 200kbs upload\n");
+    is($spotz->match_number(), 1, "Network speed entry");
+};
+
 # vim: expandtab shiftwidth=4 softtabstop=4
