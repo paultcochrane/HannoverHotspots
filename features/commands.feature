@@ -38,4 +38,9 @@ Feature: interactive commands
         Then I should see an overview of the entered information
         And I should see the command prompt
 
+    Scenario: unknown command
+        When I enter an unknown command
+        Then I should be told that the command is unknown
+        And I should see the command prompt
+
 # vim: expandtab shiftwidth=4 softtabstop=4

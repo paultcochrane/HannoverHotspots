@@ -51,10 +51,15 @@ sub hotzen_spots {
 
     my $prompt = "spotz_editor> ";
     while( prompt $prompt ) {
-        exit(0) if $_ eq "exit";
-
-        add() if $_ eq "add";
-        print $_, "\n";
+        if ($_ eq "exit") {
+            exit(0);
+        }
+        elsif ($_ eq "add") {
+            add();
+        }
+        else {
+            print "Unknown command: $_\n";
+        }
     }
 }
 
