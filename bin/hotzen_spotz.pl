@@ -53,8 +53,20 @@ sub hotzen_spots {
     while( prompt $prompt ) {
         exit(0) if $_ eq "exit";
 
+        add() if $_ eq "add";
         print $_, "\n";
     }
+}
+
+=item add()
+
+Add a WLAN hotspot entry.
+
+=cut
+
+sub add {
+    my $prompt = "Please enter the location's name: ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();
