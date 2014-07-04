@@ -52,4 +52,18 @@ When qr/I enter the location's SSID/, func($context) {
     is($spotz->match_number(), 1, "Location SSID entry");
 };
 
+Then qr/I should be asked if the WLAN is free/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Is WLAN free here? (yes/no): ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Is WLAN free prompt");
+};
+
+When qr/I enter yes/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("yes\n");
+    is($spotz->match_number(), 1, "Is WLAN free entry");
+};
+
+
 # vim: expandtab shiftwidth=4 softtabstop=4
