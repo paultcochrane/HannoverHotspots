@@ -66,37 +66,37 @@ Add a WLAN hotspot entry.
 
 sub add {
     my $prompt = "Please enter the location's name: ";
-    prompt("-p" => $prompt, -raw_input);
+    my $location_name = prompt("-p" => $prompt, -raw_input);
 
     $prompt = "Please enter location's type (cafe, bar, restaurant): ";
-    prompt("-p" => $prompt, -raw_input);
+    my $location_type = prompt("-p" => $prompt, -raw_input);
 
     $prompt = "Please enter location's SSID: ";
-    prompt("-p" => $prompt, -raw_input);
+    my $location_ssid = prompt("-p" => $prompt, -raw_input);
 
     $prompt = "Is WLAN free here? (yes/no): ";
-    prompt("-p" => $prompt, -yes_no);
+    my $is_wlan_free = prompt("-p" => $prompt, -yes_no);
 
     $prompt = "Please enter the location's street address: ";
-    prompt("-p" => $prompt, -raw_input);
+    my $location_street_address = prompt("-p" => $prompt, -raw_input);
 
     $prompt = "Please enter the location's URL: ";
-    prompt("-p" => $prompt, -raw_input);
+    my $location_url = prompt("-p" => $prompt, -raw_input);
 
     $prompt = "Please enter the location's latitude (in degrees): ";
-    prompt("-p" => $prompt, -num);
+    my $location_latitude = prompt("-p" => $prompt, -num);
 
     $prompt = "Please enter the location's longitude (in degrees): ";
-    prompt("-p" => $prompt, -num);
+    my $location_longitude = prompt("-p" => $prompt, -num);
 
     $prompt = "Please enter notes about location's power points: ";
-    prompt("-p" => $prompt, -raw_input);
+    my $power_points_notes = prompt("-p" => $prompt, -raw_input);
 
     $prompt = "Please enter notes about location's network speed: ";
-    prompt("-p" => $prompt, -raw_input);
+    my $network_speed_notes = prompt("-p" => $prompt, -raw_input);
 
     $prompt = "Please enter extra notes about the location: ";
-    prompt("-p" => $prompt, -raw_input);
+    my $extra_notes = prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();
