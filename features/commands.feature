@@ -20,7 +20,7 @@ Feature: interactive commands
         Then I should be prompted for the location's SSID
         When I enter the location's SSID
         Then I should be asked if the WLAN is free
-        When I enter yes or no
+        When I enter yes
         Then I should be prompted for the location's street address
         When I enter the location's street address
         Then I should be prompted for the location's URL

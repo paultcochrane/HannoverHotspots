@@ -84,8 +84,8 @@ def ask_if_wlan_is_free(context):
     output = context.spotz.match.strip('\r\n')
     assert_equal(output, wlan_free_prompt)
 
-@when(u'I enter yes or no')
-def enter_yes_or_no(context):
+@when(u'I enter yes')
+def enter_yes(context):
     answer = "yes"
     bytes_sent = context.spotz.sendline(answer)
     assert_equal(bytes_sent, 4)
