@@ -76,6 +76,9 @@ sub add {
 
     $prompt = "Is WLAN free here? (yes/no): ";
     prompt("-p" => $prompt, -yes_no);
+
+    $prompt = "Please enter the location's street address: ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();

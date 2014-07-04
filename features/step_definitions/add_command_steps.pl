@@ -65,5 +65,19 @@ When qr/I enter yes/, func($context) {
     is($spotz->match_number(), 1, "Is WLAN free entry");
 };
 
+Then qr/I should be prompted for the location's street address/,
+    func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter the location's street address: ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Location street address prompt");
+};
+
+When qr/I enter the location's street address/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("Unbekannter Weg 1\n");
+    is($spotz->match_number(), 1, "Location street address entry");
+};
+
 
 # vim: expandtab shiftwidth=4 softtabstop=4
