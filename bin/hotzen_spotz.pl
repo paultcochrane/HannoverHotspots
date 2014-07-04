@@ -97,6 +97,19 @@ sub add {
 
     $prompt = "Please enter extra notes about the location: ";
     my $extra_notes = prompt("-p" => $prompt, -raw_input);
+
+    print "Entry information:\n";
+    print "    Location name: ",       $location_name, "\n";
+    print "    Location type: ",       $location_type, "\n";
+    print "    Location SSID: ",       $location_ssid, "\n";
+    print "    Free WLAN?: ",          $is_wlan_free, "\n";
+    print "    Street address: ",      $location_street_address, "\n";
+    print "    Location URL: ",        $location_url, "\n";
+    print "    Location latitude: ",   $location_latitude, "\n";
+    print "    Location longitude: ",  $location_longitude, "\n";
+    print "    Power points notes: ",  $power_points_notes, "\n";
+    print "    Network speed notes: ", $network_speed_notes, "\n";
+    print "    Extra notes: ",         $extra_notes, "\n";
 }
 
 hotzen_spots() unless caller();

@@ -193,6 +193,19 @@ When qr/I enter extra notes/, func($context) {
     push $context->stash->{'scenario'}->{'add_entry_overview'}, $answer;
 };
 
+Then qr/I should see an overview of the entered information/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $message = "Entry information:";
+    my $index = $spotz->expect(1, $message);
+    is($index, 1, "Entry information overview");
+
+    my @add_entry_overview =
+        @{$context->stash->{'scenario'}->{'add_entry_overview'}};
+    print join "\n", @add_entry_overview;
+    for my $entry ( @add_entry_overview ) {
+        $index = $spotz->expect(1, $entry);
+        is($index, 1, "Entry overview: $entry");
+    }
 };
 
 # vim: expandtab shiftwidth=4 softtabstop=4
