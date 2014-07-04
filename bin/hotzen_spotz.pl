@@ -2,6 +2,7 @@
 
 use warnings;
 use strict;
+use autodie;
 
 use IO::Prompt;
 
