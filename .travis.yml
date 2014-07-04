@@ -6,6 +6,7 @@ perl:
 
 install:
     - "sudo pip install requests"
+    - "cpanm Method::Signatures"
     - "cpanm Test::BDD::Cucumber"
 
 script: make test
