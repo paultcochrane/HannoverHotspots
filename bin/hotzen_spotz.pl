@@ -10,6 +10,8 @@ print "Use Ctrl+D to exit, type 'help' or '?' for help.\n";
  
 my $prompt = "spotz_editor> ";
 while( prompt $prompt ) {
+    exit(0) if $_ eq "exit";
+
     print $_, "\n";
 }
 
