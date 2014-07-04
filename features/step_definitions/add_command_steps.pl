@@ -16,7 +16,6 @@ When qr/I enter "add"/, func($context) {
 Then qr/I should be prompted for the location's name/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
     my $prompt = "Please enter the location's name: ";
-    $spotz->expect($prompt);
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location name prompt");
 };
