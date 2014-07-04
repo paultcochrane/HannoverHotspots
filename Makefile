@@ -9,4 +9,4 @@ accept:
 	pherkin -t ~wip
 
 podchecker:
-	podchecker bin/hotzen_spotz.pl
+	podchecker bin/hotzen_spotz
