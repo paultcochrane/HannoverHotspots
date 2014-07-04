@@ -70,6 +70,9 @@ sub add {
 
     $prompt = "Please enter location's type (cafe, bar, restaurant): ";
     prompt("-p" => $prompt, -raw_input);
+
+    $prompt = "Please enter location's SSID: ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();

@@ -39,4 +39,17 @@ When qr/I enter the location's type/, func($context) {
     is($spotz->match_number(), 1, "Location type entry");
 };
 
+Then qr/I should be prompted for the location's SSID/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter location's SSID: ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Location SSID prompt");
+};
+
+When qr/I enter the location's SSID/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("CafeWLAN\n");
+    is($spotz->match_number(), 1, "Location SSID entry");
+};
+
 # vim: expandtab shiftwidth=4 softtabstop=4
