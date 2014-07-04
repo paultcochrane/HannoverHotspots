@@ -8,7 +8,7 @@ use Method::Signatures;
 use Expect;
 
 Given qr/the program hotzen_spotz is run/, func($context) {
-    my $command = "bin/hotzen_spotz.pl";
+    my $command = "bin/hotzen_spotz";
     my $spotz = Expect->spawn($command)
 	or die "Cannot spawn $command: $!\n";
     ok(defined($spotz->pid()), "No PID; command appears not to be running");
