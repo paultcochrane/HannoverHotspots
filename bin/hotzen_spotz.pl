@@ -79,6 +79,9 @@ sub add {
 
     $prompt = "Please enter the location's street address: ";
     prompt("-p" => $prompt, -raw_input);
+
+    $prompt = "Please enter the location's URL: ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();

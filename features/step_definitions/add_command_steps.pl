@@ -79,5 +79,18 @@ When qr/I enter the location's street address/, func($context) {
     is($spotz->match_number(), 1, "Location street address entry");
 };
 
+Then qr/I should be prompted for the location's URL/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter the location's URL: ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Location URL prompt");
+};
+
+When qr/I enter the location's URL/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("http://cafewlan.de\n");
+    is($spotz->match_number(), 1, "Location URL entry");
+};
+
 
 # vim: expandtab shiftwidth=4 softtabstop=4
