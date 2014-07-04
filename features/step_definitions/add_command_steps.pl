@@ -9,7 +9,8 @@ use Expect;
 
 When qr/I enter "add"/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("add\n");
+    my $answer = "add";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Add command entry");
 };
 
@@ -22,7 +23,8 @@ Then qr/I should be prompted for the location's name/, func($context) {
 
 When qr/I enter the location's name/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("Cafe with WLAN\n");
+    my $answer = "Cafe with WLAN";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Location name entry");
 };
 
@@ -35,7 +37,8 @@ Then qr/I should be prompted for the type of location/, func($context) {
 
 When qr/I enter the location's type/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("cafe\n");
+    my $answer = "cafe";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Location type entry");
 };
 
@@ -48,7 +51,8 @@ Then qr/I should be prompted for the location's SSID/, func($context) {
 
 When qr/I enter the location's SSID/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("CafeWLAN\n");
+    my $answer = "CafeWLAN";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Location SSID entry");
 };
 
@@ -61,7 +65,8 @@ Then qr/I should be asked if the WLAN is free/, func($context) {
 
 When qr/I enter yes/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("yes\n");
+    my $answer = "yes";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Is WLAN free entry");
 };
 
@@ -75,7 +80,8 @@ Then qr/I should be prompted for the location's street address/,
 
 When qr/I enter the location's street address/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("Unbekannter Weg 1\n");
+    my $answer = "Unbekannter Weg 1";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Location street address entry");
 };
 
@@ -88,7 +94,8 @@ Then qr/I should be prompted for the location's URL/, func($context) {
 
 When qr/I enter the location's URL/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("http://cafewlan.de\n");
+    my $answer = "http://cafewlan.de";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Location URL entry");
 };
 
@@ -101,7 +108,8 @@ Then qr/I should be prompted for the location's latitude/, func($context) {
 
 When qr/I enter the location's latitude/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("50.123456\n");
+    my $answer = 50.123456;
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Location latitude entry");
 };
 
@@ -114,7 +122,8 @@ Then qr/I should be prompted for the location's longitude/, func($context) {
 
 When qr/I enter the location's longitude/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("9.654321\n");
+    my $answer = 9.654321;
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Location longitude entry");
 };
 
@@ -127,7 +136,8 @@ Then qr/I should be asked about power points/, func($context) {
 
 When qr/I enter notes about power points/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("Upstairs, in the corner\n");
+    my $answer = "Upstairs, in the corner";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Power points entry");
 };
 
@@ -140,7 +150,8 @@ Then qr/I should be asked about the network speed/, func($context) {
 
 When qr/I enter notes about the network speed/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("Good; 500kbs download; 200kbs upload\n");
+    my $answer = "Good; 500kbs download; 200kbs upload";
+    $spotz->send("$answer\n");
     is($spotz->match_number(), 1, "Network speed entry");
 };
 
