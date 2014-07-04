@@ -6,7 +6,7 @@ check_json:
 	python bin/check_geojson.py
 
 accept:
-	behave -t ~wip
+	pherkin -t ~wip
 
 podchecker:
 	podchecker bin/hotzen_spotz.pl
