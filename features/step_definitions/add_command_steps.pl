@@ -92,5 +92,18 @@ When qr/I enter the location's URL/, func($context) {
     is($spotz->match_number(), 1, "Location URL entry");
 };
 
+Then qr/I should be prompted for the location's latitude/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter the location's latitude (in degrees): ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Location latitude prompt");
+};
+
+When qr/I enter the location's latitude/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("50.123456\n");
+    is($spotz->match_number(), 1, "Location latitude entry");
+};
+
 
 # vim: expandtab shiftwidth=4 softtabstop=4
