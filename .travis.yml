@@ -5,7 +5,7 @@ perl:
     - "5.14"
 
 install:
-    - "pip install requests"
+    - "sudo apt-get install python-requests"
     - "cpanm Test::BDD::Cucumber"
 
 script: make test
