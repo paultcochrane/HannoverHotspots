@@ -19,7 +19,7 @@ def i_enter_add(context):
 
 @then(u'I should be prompted for the location\'s name')
 def prompt_for_location_name(context):
-    add_prompt_text = "Please enter location's name: "
+    add_prompt_text = "Please enter the location's name: "
     index = output = context.spotz.expect_exact(add_prompt_text)
     assert_equal(index, 0)
 
