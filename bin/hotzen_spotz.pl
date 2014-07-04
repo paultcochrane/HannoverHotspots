@@ -67,6 +67,9 @@ Add a WLAN hotspot entry.
 sub add {
     my $prompt = "Please enter the location's name: ";
     prompt("-p" => $prompt, -raw_input);
+
+    $prompt = "Please enter location's type (cafe, bar, restaurant): ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();

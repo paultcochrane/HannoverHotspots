@@ -26,4 +26,17 @@ When qr/I enter the location's name/, func($context) {
     is($spotz->match_number(), 1, "Location name entry");
 };
 
+Then qr/I should be prompted for the type of location/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter location's type (cafe, bar, restaurant): ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Location type prompt");
+};
+
+When qr/I enter the location's type/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("cafe\n");
+    is($spotz->match_number(), 1, "Location type entry");
+};
+
 # vim: expandtab shiftwidth=4 softtabstop=4
