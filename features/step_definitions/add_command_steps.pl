@@ -144,4 +144,17 @@ When qr/I enter notes about the network speed/, func($context) {
     is($spotz->match_number(), 1, "Network speed entry");
 };
 
+Then qr/I should be asked for extra notes/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    my $prompt = "Please enter extra notes about the location: ";
+    my $index = $spotz->expect(1, $prompt);
+    is($index, 1, "Extra notes prompt");
+};
+
+When qr/I enter extra notes/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("SSH blocked; HTTP(S) allowed");
+    is($spotz->match_number(), 1, "Extra notes entry");
+};
+
 # vim: expandtab shiftwidth=4 softtabstop=4

@@ -94,6 +94,9 @@ sub add {
 
     $prompt = "Please enter notes about location's network speed: ";
     prompt("-p" => $prompt, -raw_input);
+
+    $prompt = "Please enter extra notes about the location: ";
+    prompt("-p" => $prompt, -raw_input);
 }
 
 hotzen_spots() unless caller();
