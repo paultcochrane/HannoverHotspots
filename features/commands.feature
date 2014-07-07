@@ -38,6 +38,12 @@ Feature: interactive commands
         Then I should see an overview of the entered information
         And I should see the command prompt
 
+    @wip
+    Scenario: list command
+        When I enter "list"
+        Then I should see a list of available entries
+        And I should see the command prompt
+
     Scenario: unknown command
         When I enter an unknown command
         Then I should be told that the command is unknown

@@ -36,6 +36,7 @@ use autodie;
 use Pod::Usage;
 
 use IO::Prompt;
+use JSON;
 
 =over 4
 
@@ -56,6 +57,9 @@ sub hotzen_spots {
         }
         elsif ($_ eq "add") {
             add();
+        }
+        elsif ($_ eq "list") {
+            list();
         }
         else {
             print "Unknown command: $_\n";
@@ -115,6 +119,30 @@ sub add {
     print "    Power points notes: ",  $power_points_notes, "\n";
     print "    Network speed notes: ", $network_speed_notes, "\n";
     print "    Extra notes: ",         $extra_notes, "\n";
+}
+
+=item list()
+
+List all available WLAN hotspot entries.
+
+=cut
+
+sub list {
+    my $json = JSON->new();
+    $json->utf8();
+
+    open my $hotspots_fh, "<", "hannover_hotspots.json";
+    my @hotspots_lines = <$hotspots_fh>;
+    close $hotspots_fh;
+
+    my $hotspots_json = join "", @hotspots_lines;
+    my $geojson = $json->decode($hotspots_json);
+    my @features = @{$geojson->{'features'}};
+    my $index = 1;
+    for my $location ( @features ) {
+        print "[", $index, "] ", $location->{'properties'}->{'name'}, "\n";
+        $index++;
+    }
 }
 
 hotzen_spots() unless caller();
