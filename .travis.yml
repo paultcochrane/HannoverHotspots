@@ -10,6 +10,7 @@ install:
     - "sudo pip install requests"
     - "cpanm Method::Signatures"
     - "cpanm Expect"
+    - "cpanm IO::Prompt"
     - "cpanm Test::BDD::Cucumber"
 
 script: make test
