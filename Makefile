@@ -3,7 +3,7 @@
 test: check_json accept podchecker
 
 check_json:
-	python bin/check_geojson.py
+	bin/check_geojson.pl
 
 accept:
 	pherkin -t ~@wip
