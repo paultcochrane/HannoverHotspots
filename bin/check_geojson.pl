@@ -8,6 +8,25 @@ use HTTP::Request::Common;
 use LWP::UserAgent;
 use JSON;
 
+=head1 NAME
+
+check_geojson.pl - check Hannover Hotspots JSON file for correctness
+
+=head1 DESCRIPTION
+
+A script which connects to the C<http://geojsonlint.com> GeoJSON validation
+site and checks the C<hannover_hotspots.json> file for correctness.
+
+=head1 SYNOPSIS
+
+    $ check_geojson.pl
+
+=head1 AUTHOR
+
+Paul Cochrane <paul@leikut.de>
+
+=cut
+
 sub load_json {
     open my $json_fh, "<", "hannover_hotspots.json";
     my @lines = <$json_fh>;
