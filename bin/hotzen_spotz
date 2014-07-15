@@ -64,7 +64,7 @@ sub hotzen_spots {
             exit(0);
         }
         elsif ($_ eq "add") {
-            add();
+            add_entry();
         }
         elsif ($_ eq "list") {
             list();
@@ -78,13 +78,13 @@ sub hotzen_spots {
     }
 }
 
-=item add()
+=item add_entry()
 
 Add a WLAN hotspot entry.
 
 =cut
 
-sub add {
+sub add_entry {
     my $prompt = "Please enter the location's name: ";
     my $location_name = prompt("-p" => $prompt, -raw_input);
 
