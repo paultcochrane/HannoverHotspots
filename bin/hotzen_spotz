@@ -61,7 +61,7 @@ sub hotzen_spots {
     my $prompt = "spotz_editor> ";
     while( prompt $prompt ) {
         if ($_ eq "exit") {
-            exit(0);
+            exit_program();
         }
         elsif ($_ eq "add") {
             add_entry();
@@ -76,6 +76,16 @@ sub hotzen_spots {
             print "Unknown command: $_\n";
         }
     }
+}
+
+=item exit_program()
+
+Exit the hotspots editor program.
+
+=cut
+
+sub exit_program {
+    exit(0);
 }
 
 =item add_entry()
