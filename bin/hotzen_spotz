@@ -40,7 +40,6 @@ use autodie;
 use Pod::Usage;
 
 use IO::Prompt;
-use JSON;
 
 use lib qw( lib );
 use HotspotsEditor;
@@ -67,7 +66,7 @@ sub hotzen_spots {
             $editor->add_entry();
         }
         elsif ($_ eq "list") {
-            list_entries();
+            $editor->list_entries();
         }
         elsif ($_ eq "help") {
             print_help();
@@ -75,30 +74,6 @@ sub hotzen_spots {
         else {
             print "Unknown command: $_\n";
         }
-    }
-}
-
-=item list_entries()
-
-List all available WLAN hotspot entries.
-
-=cut
-
-sub list_entries {
-    my $json = JSON->new();
-    $json->utf8();
-
-    open my $hotspots_fh, "<", "hannover_hotspots.json";
-    my @hotspots_lines = <$hotspots_fh>;
-    close $hotspots_fh;
-
-    my $hotspots_json = join "", @hotspots_lines;
-    my $geojson = $json->decode($hotspots_json);
-    my @features = @{$geojson->{'features'}};
-    my $index = 1;
-    for my $location ( @features ) {
-        print "[", $index, "] ", $location->{'properties'}->{'name'}, "\n";
-        $index++;
     }
 }
 
