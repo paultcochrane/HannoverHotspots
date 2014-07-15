@@ -4,6 +4,11 @@ use Moose;
 use IO::Prompt;
 use JSON;
 
+has 'command_prompt' => (
+    is => 'ro',
+    default => "spotz_editor> ",
+);
+
 =item print_welcome()
 
 Print the program's welcome text
@@ -24,8 +29,7 @@ Start the command loop
 sub command_loop {
     my $self = shift;
 
-    my $prompt = "spotz_editor> ";
-    while( prompt $prompt ) {
+    while( prompt $self->command_prompt ) {
         if ($_ eq "exit") {
             $self->exit_program();
         }
