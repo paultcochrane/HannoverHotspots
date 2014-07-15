@@ -67,7 +67,7 @@ sub hotzen_spots {
             add_entry();
         }
         elsif ($_ eq "list") {
-            list();
+            list_entries();
         }
         elsif ($_ eq "help") {
             help();
@@ -132,13 +132,13 @@ sub add_entry {
     print "    Extra notes: ",         $extra_notes, "\n";
 }
 
-=item list()
+=item list_entries()
 
 List all available WLAN hotspot entries.
 
 =cut
 
-sub list {
+sub list_entries {
     my $json = JSON->new();
     $json->utf8();
 
