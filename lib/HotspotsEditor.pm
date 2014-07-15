@@ -92,6 +92,19 @@ sub list_entries {
     }
 }
 
+=item print_help()
+
+Print a list of available commands.
+
+=cut
+
+sub print_help {
+    print "Available commands:\n";
+    print "    add:  add a new hotspot entry\n";
+    print "    list: list available hotspot entries\n";
+    print "    help: display this help\n";
+}
+
 1;
 
 # vim: expandtab shiftwidth=4 softtabstop=4
