@@ -53,10 +53,9 @@ Run the main command loop.
 =cut
 
 sub hotzen_spots {
-    print "Welcome to the Hannover Hotspot editor, version 0.1\n";
-    print "Use Ctrl+D to exit, type 'help' or '?' for help.\n";
-
     my $editor = HotspotsEditor->new();
+    $editor->print_welcome();
+
     my $prompt = "spotz_editor> ";
     while( prompt $prompt ) {
         if ($_ eq "exit") {

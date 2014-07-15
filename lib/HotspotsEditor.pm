@@ -4,6 +4,17 @@ use Moose;
 use IO::Prompt;
 use JSON;
 
+=item print_welcome()
+
+Print the program's welcome text
+
+=cut
+
+sub print_welcome {
+    print "Welcome to the Hannover Hotspot editor, version 0.1\n";
+    print "Use Ctrl+D to exit, type 'help' or '?' for help.\n";
+}
+
 =item exit_program()
 
 Exit the hotspots editor program.
