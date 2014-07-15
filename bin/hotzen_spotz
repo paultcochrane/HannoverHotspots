@@ -70,7 +70,7 @@ sub hotzen_spots {
             list_entries();
         }
         elsif ($_ eq "help") {
-            help();
+            print_help();
         }
         else {
             print "Unknown command: $_\n";
@@ -156,13 +156,13 @@ sub list_entries {
     }
 }
 
-=item help()
+=item print_help()
 
 Print a list of available commands.
 
 =cut
 
-sub help {
+sub print_help {
     print "Available commands:\n";
     print "    add:  add a new hotspot entry\n";
     print "    list: list available hotspot entries\n";
