@@ -42,6 +42,9 @@ use Pod::Usage;
 use IO::Prompt;
 use JSON;
 
+use lib qw( lib );
+use HotspotsEditor;
+
 =over 4
 
 =item hotzen_spotz()
@@ -54,6 +57,7 @@ sub hotzen_spots {
     print "Welcome to the Hannover Hotspot editor, version 0.1\n";
     print "Use Ctrl+D to exit, type 'help' or '?' for help.\n";
 
+    my $editor = HotspotsEditor->new();
     my $prompt = "spotz_editor> ";
     while( prompt $prompt ) {
         if ($_ eq "exit") {
