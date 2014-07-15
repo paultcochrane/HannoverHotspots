@@ -47,7 +47,6 @@ Feature: interactive commands
         Then I should receive confirmation that the item was deleted
         And I should see the command prompt
 
-    @wip
     Scenario: list command
         When I enter "list"
         Then I should see a list of available entries
