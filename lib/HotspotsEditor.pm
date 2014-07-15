@@ -9,6 +9,11 @@ has 'command_prompt' => (
     default => "spotz_editor> ",
 );
 
+has 'version' => (
+    is => 'ro',
+    default => 0.1,
+);
+
 =item print_welcome()
 
 Print the program's welcome text
@@ -16,8 +21,11 @@ Print the program's welcome text
 =cut
 
 sub print_welcome {
-    print "Welcome to the Hannover Hotspot editor, version 0.1\n";
-    print "Use Ctrl+D to exit, type 'help' or '?' for help.\n";
+    my $self = shift;
+
+    print "Welcome to the Hannover Hotspot editor, version ",
+        $self->version, "\n",
+        "Use Ctrl+D to exit, type 'help' or '?' for help.\n";
 }
 
 =item command_loop
