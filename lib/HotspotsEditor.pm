@@ -14,6 +14,11 @@ has 'version' => (
     default => 0.1,
 );
 
+has 'location_name' => (
+    is => 'rw',
+    default => '',
+);
+
 =item print_welcome()
 
 Print the program's welcome text
@@ -73,8 +78,10 @@ Add a WLAN hotspot entry.
 =cut
 
 sub add_entry {
+    my $self = shift;
+
     my $prompt = "Please enter the location's name: ";
-    my $location_name = prompt("-p" => $prompt, -raw_input);
+    $self->location_name(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter location's type (cafe, bar, restaurant): ";
     my $location_type = prompt("-p" => $prompt, -raw_input);
@@ -107,7 +114,7 @@ sub add_entry {
     my $extra_notes = prompt("-p" => $prompt, -raw_input);
 
     print "Entry information:\n";
-    print "    Location name: ",       $location_name, "\n";
+    print "    Location name: ",       $self->location_name, "\n";
     print "    Location type: ",       $location_type, "\n";
     print "    Location SSID: ",       $location_ssid, "\n";
     print "    Free WLAN?: ",          $is_wlan_free, "\n";
