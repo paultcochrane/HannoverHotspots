@@ -55,25 +55,7 @@ Run the main command loop.
 sub hotzen_spots {
     my $editor = HotspotsEditor->new();
     $editor->print_welcome();
-
-    my $prompt = "spotz_editor> ";
-    while( prompt $prompt ) {
-        if ($_ eq "exit") {
-            $editor->exit_program();
-        }
-        elsif ($_ eq "add") {
-            $editor->add_entry();
-        }
-        elsif ($_ eq "list") {
-            $editor->list_entries();
-        }
-        elsif ($_ eq "help") {
-            $editor->print_help();
-        }
-        else {
-            print "Unknown command: $_\n";
-        }
-    }
+    $editor->command_loop();
 }
 
 hotzen_spots() unless caller();

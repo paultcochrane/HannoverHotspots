@@ -15,6 +15,35 @@ sub print_welcome {
     print "Use Ctrl+D to exit, type 'help' or '?' for help.\n";
 }
 
+=item command_loop
+
+Start the command loop
+
+=cut
+
+sub command_loop {
+    my $self = shift;
+
+    my $prompt = "spotz_editor> ";
+    while( prompt $prompt ) {
+        if ($_ eq "exit") {
+            $self->exit_program();
+        }
+        elsif ($_ eq "add") {
+            $self->add_entry();
+        }
+        elsif ($_ eq "list") {
+            $self->list_entries();
+        }
+        elsif ($_ eq "help") {
+            $self->print_help();
+        }
+        else {
+            print "Unknown command: $_\n";
+        }
+    }
+}
+
 =item exit_program()
 
 Exit the hotspots editor program.
