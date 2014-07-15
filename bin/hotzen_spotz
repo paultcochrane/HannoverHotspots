@@ -61,6 +61,9 @@ sub hotzen_spots {
         elsif ($_ eq "list") {
             list();
         }
+        elsif ($_ eq "help") {
+            help();
+        }
         else {
             print "Unknown command: $_\n";
         }
@@ -143,6 +146,19 @@ sub list {
         print "[", $index, "] ", $location->{'properties'}->{'name'}, "\n";
         $index++;
     }
+}
+
+=item help()
+
+Print a list of available commands.
+
+=cut
+
+sub help {
+    print "Available commands:\n";
+    print "    add:  add a new hotspot entry\n";
+    print "    list: list available hotspot entries\n";
+    print "    help: display this help\n";
 }
 
 hotzen_spots() unless caller();

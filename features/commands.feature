@@ -52,6 +52,11 @@ Feature: interactive commands
         Then I should see a list of available entries
         And I should see the command prompt
 
+    Scenario: help command
+        When I enter "help"
+        Then I should see a list of available commands
+        And I should see the command prompt
+
     Scenario: unknown command
         When I enter an unknown command
         Then I should be told that the command is unknown
