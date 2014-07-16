@@ -14,7 +14,19 @@ has 'version' => (
     default => 0.1,
 );
 
-my @attrs = qw(location_name location_type location_ssid);
+my @attrs = qw(
+    location_name
+    location_type
+    location_ssid
+    is_wlan_free
+    location_street_address
+    location_url
+    location_latitude
+    location_longitude
+    power_points_notes
+    network_speed_notes
+    extra_notes
+    );
 has \@attrs => (
     is => 'rw',
     default => '',
@@ -91,41 +103,41 @@ sub add_entry {
     $self->location_ssid(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Is WLAN free here? (yes/no): ";
-    my $is_wlan_free = prompt("-p" => $prompt, -yes_no);
+    $self->is_wlan_free(prompt("-p" => $prompt, -yes_no));
 
     $prompt = "Please enter the location's street address: ";
-    my $location_street_address = prompt("-p" => $prompt, -raw_input);
+    $self->location_street_address(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter the location's URL: ";
-    my $location_url = prompt("-p" => $prompt, -raw_input);
+    $self->location_url(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter the location's latitude (in degrees): ";
-    my $location_latitude = prompt("-p" => $prompt, -num);
+    $self->location_latitude(prompt("-p" => $prompt, -num));
 
     $prompt = "Please enter the location's longitude (in degrees): ";
-    my $location_longitude = prompt("-p" => $prompt, -num);
+    $self->location_longitude(prompt("-p" => $prompt, -num));
 
     $prompt = "Please enter notes about location's power points: ";
-    my $power_points_notes = prompt("-p" => $prompt, -raw_input);
+    $self->power_points_notes(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter notes about location's network speed: ";
-    my $network_speed_notes = prompt("-p" => $prompt, -raw_input);
+    $self->network_speed_notes(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter extra notes about the location: ";
-    my $extra_notes = prompt("-p" => $prompt, -raw_input);
+    $self->extra_notes(prompt("-p" => $prompt, -raw_input));
 
     print "Entry information:\n";
     print "    Location name: ",       $self->location_name, "\n";
     print "    Location type: ",       $self->location_type, "\n";
     print "    Location SSID: ",       $self->location_ssid, "\n";
-    print "    Free WLAN?: ",          $is_wlan_free, "\n";
-    print "    Street address: ",      $location_street_address, "\n";
-    print "    Location URL: ",        $location_url, "\n";
-    print "    Location latitude: ",   $location_latitude, "\n";
-    print "    Location longitude: ",  $location_longitude, "\n";
-    print "    Power points notes: ",  $power_points_notes, "\n";
-    print "    Network speed notes: ", $network_speed_notes, "\n";
-    print "    Extra notes: ",         $extra_notes, "\n";
+    print "    Free WLAN?: ",          $self->is_wlan_free, "\n";
+    print "    Street address: ",      $self->location_street_address, "\n";
+    print "    Location URL: ",        $self->location_url, "\n";
+    print "    Location latitude: ",   $self->location_latitude, "\n";
+    print "    Location longitude: ",  $self->location_longitude, "\n";
+    print "    Power points notes: ",  $self->power_points_notes, "\n";
+    print "    Network speed notes: ", $self->network_speed_notes, "\n";
+    print "    Extra notes: ",         $self->extra_notes, "\n";
 }
 
 =item list_entries()
