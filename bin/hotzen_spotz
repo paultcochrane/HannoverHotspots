@@ -42,7 +42,7 @@ use Pod::Usage;
 use IO::Prompt;
 
 use lib qw( lib );
-use HotspotsEditor;
+use Hotspotz::Editor;
 
 =over 4
 
@@ -53,7 +53,7 @@ Run the main command loop.
 =cut
 
 sub hotzen_spots {
-    my $editor = HotspotsEditor->new();
+    my $editor = Hotspotz::Editor->new();
     $editor->print_welcome();
     $editor->command_loop();
 }

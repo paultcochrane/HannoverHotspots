@@ -1,4 +1,4 @@
-package HotspotsEditor;
+package Hotspotz::Editor;
 
 use Moose;
 use IO::Prompt;
