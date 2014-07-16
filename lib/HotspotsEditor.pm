@@ -14,7 +14,7 @@ has 'version' => (
     default => 0.1,
 );
 
-my @attrs = qw(location_name location_type);
+my @attrs = qw(location_name location_type location_ssid);
 has \@attrs => (
     is => 'rw',
     default => '',
@@ -88,7 +88,7 @@ sub add_entry {
     $self->location_type(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter location's SSID: ";
-    my $location_ssid = prompt("-p" => $prompt, -raw_input);
+    $self->location_ssid(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Is WLAN free here? (yes/no): ";
     my $is_wlan_free = prompt("-p" => $prompt, -yes_no);
@@ -117,7 +117,7 @@ sub add_entry {
     print "Entry information:\n";
     print "    Location name: ",       $self->location_name, "\n";
     print "    Location type: ",       $self->location_type, "\n";
-    print "    Location SSID: ",       $location_ssid, "\n";
+    print "    Location SSID: ",       $self->location_ssid, "\n";
     print "    Free WLAN?: ",          $is_wlan_free, "\n";
     print "    Street address: ",      $location_street_address, "\n";
     print "    Location URL: ",        $location_url, "\n";
