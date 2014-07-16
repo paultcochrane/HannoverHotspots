@@ -14,7 +14,8 @@ has 'version' => (
     default => 0.1,
 );
 
-has 'location_name' => (
+my @attrs = qw(location_name);
+has \@attrs => (
     is => 'rw',
     default => '',
 );
