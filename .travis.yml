@@ -11,6 +11,7 @@ install:
     - "cpanm Method::Signatures"
     - "cpanm Expect"
     - "cpanm IO::Prompt"
+    - "cpanm FindBin::libs-1.10.tar.gz"
     - "cpanm Test::BDD::Cucumber"
 
 script: make test
