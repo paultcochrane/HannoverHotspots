@@ -161,6 +161,16 @@ sub print_help {
     print "    help: display this help\n";
 }
 
+=item load_geojson(filename)
+
+Load GeoJSON data
+
+=cut
+
+sub load_geojson {
+    my ($self, $file) = @_;
+}
+
 1;
 
 # vim: expandtab shiftwidth=4 softtabstop=4
