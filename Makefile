@@ -8,5 +8,8 @@ check_json:
 accept:
 	pherkin -t ~@wip
 
+unittest:
+	prove -lr t
+
 podchecker:
 	podchecker bin/hotzen_spotz
