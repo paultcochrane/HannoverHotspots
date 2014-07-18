@@ -11,3 +11,4 @@
    * El Solin
    * Meiers Lebenslust (Friedrichswall)
    * Ständige Vertretung
+   * Piu (Goethestraße)
