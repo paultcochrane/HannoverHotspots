@@ -9,3 +9,5 @@
    * Gretchen
    * Cafe Safran
    * El Solin
+   * Meiers Lebenslust (Friedrichswall)
+   * Ständige Vertretung
