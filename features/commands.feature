@@ -57,6 +57,11 @@ Feature: interactive commands
         Then I should see a list of available commands
         And I should see the command prompt
 
+    Scenario: ask for help with a question mark
+        When I enter "?"
+        Then I should see a list of available commands
+        And I should see the command prompt
+
     Scenario: unknown command
         When I enter an unknown command
         Then I should be told that the command is unknown

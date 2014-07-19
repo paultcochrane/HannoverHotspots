@@ -13,6 +13,12 @@ When qr/I enter "help"/, func($context) {
     is($spotz->match_number(), 1, "Help command entry");
 };
 
+When qr/I enter "?"/, func($context) {
+    my $spotz = $context->stash->{'scenario'}->{'object'};
+    $spotz->send("?\n");
+    is($spotz->match_number(), 1, "Help command entry");
+};
+
 Then qr/I should see a list of available commands/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
     my $index = $spotz->expect(1, "Available commands:");

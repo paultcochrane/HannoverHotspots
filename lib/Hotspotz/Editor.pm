@@ -49,7 +49,7 @@ sub command_loop {
         elsif ($_ eq "list") {
             $self->list_entries();
         }
-        elsif ($_ eq "help") {
+        elsif ($_ eq "help" or $_ eq "?") {
             $self->print_help();
         }
         else {
