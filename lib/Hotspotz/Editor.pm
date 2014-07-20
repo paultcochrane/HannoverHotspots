@@ -3,6 +3,7 @@ package Hotspotz::Editor;
 use Moose;
 use IO::Prompt;
 use JSON;
+use Carp;
 
 use Hotspotz::Location;
 
@@ -169,6 +170,8 @@ Load GeoJSON data
 
 sub load_geojson {
     my ($self, $file) = @_;
+
+    croak "Missing filename argument." unless $file;
 }
 
 1;
