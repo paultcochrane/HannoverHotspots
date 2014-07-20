@@ -80,28 +80,28 @@ sub add_entry {
     my $location = Hotspotz::Location->new();
 
     my $prompt = "Please enter the location's name: ";
-    $location->location_name(prompt("-p" => $prompt, -raw_input));
+    $location->name(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter location's type (cafe, bar, restaurant): ";
-    $location->location_type(prompt("-p" => $prompt, -raw_input));
+    $location->type(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter location's SSID: ";
-    $location->location_ssid(prompt("-p" => $prompt, -raw_input));
+    $location->ssid(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Is WLAN free here? (yes/no): ";
     $location->is_wlan_free(prompt("-p" => $prompt, -yes_no));
 
     $prompt = "Please enter the location's street address: ";
-    $location->location_street_address(prompt("-p" => $prompt, -raw_input));
+    $location->street_address(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter the location's URL: ";
-    $location->location_url(prompt("-p" => $prompt, -raw_input));
+    $location->url(prompt("-p" => $prompt, -raw_input));
 
     $prompt = "Please enter the location's latitude (in degrees): ";
-    $location->location_latitude(prompt("-p" => $prompt, -num));
+    $location->latitude(prompt("-p" => $prompt, -num));
 
     $prompt = "Please enter the location's longitude (in degrees): ";
-    $location->location_longitude(prompt("-p" => $prompt, -num));
+    $location->longitude(prompt("-p" => $prompt, -num));
 
     $prompt = "Please enter notes about location's power points: ";
     $location->power_points_notes(prompt("-p" => $prompt, -raw_input));
@@ -113,14 +113,14 @@ sub add_entry {
     $location->extra_notes(prompt("-p" => $prompt, -raw_input));
 
     print "Entry information:\n";
-    print "    Location name: ",       $location->location_name, "\n";
-    print "    Location type: ",       $location->location_type, "\n";
-    print "    Location SSID: ",       $location->location_ssid, "\n";
+    print "    Location name: ",       $location->name, "\n";
+    print "    Location type: ",       $location->type, "\n";
+    print "    Location SSID: ",       $location->ssid, "\n";
     print "    Free WLAN?: ",          $location->is_wlan_free, "\n";
-    print "    Street address: ",      $location->location_street_address, "\n";
-    print "    Location URL: ",        $location->location_url, "\n";
-    print "    Location latitude: ",   $location->location_latitude, "\n";
-    print "    Location longitude: ",  $location->location_longitude, "\n";
+    print "    Street address: ",      $location->street_address, "\n";
+    print "    Location URL: ",        $location->url, "\n";
+    print "    Location latitude: ",   $location->latitude, "\n";
+    print "    Location longitude: ",  $location->longitude, "\n";
     print "    Power points notes: ",  $location->power_points_notes, "\n";
     print "    Network speed notes: ", $location->network_speed_notes, "\n";
     print "    Extra notes: ",         $location->extra_notes, "\n";
