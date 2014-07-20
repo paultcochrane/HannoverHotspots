@@ -45,6 +45,8 @@ Start the command loop
 sub command_loop {
     my $self = shift;
 
+    $self->load_geojson("hannover_hotspots.json");
+
     while( prompt $self->command_prompt ) {
         if ($_ eq "exit") {
             $self->exit_program();
@@ -137,19 +139,11 @@ List all available WLAN hotspot entries.
 =cut
 
 sub list_entries {
-    my $json = JSON->new();
-    $json->utf8();
+    my $self = shift;
 
-    open my $hotspots_fh, "<", "hannover_hotspots.json";
-    my @hotspots_lines = <$hotspots_fh>;
-    close $hotspots_fh;
-
-    my $hotspots_json = join "", @hotspots_lines;
-    my $geojson = $json->decode($hotspots_json);
-    my @features = @{$geojson->{'features'}};
     my $index = 1;
-    for my $location ( @features ) {
-        print "[", $index, "] ", $location->{'properties'}->{'name'}, "\n";
+    for my $location ( @{$self->locations} ) {
+        print "[", $index, "] ", $location->name, "\n";
         $index++;
     }
 }
