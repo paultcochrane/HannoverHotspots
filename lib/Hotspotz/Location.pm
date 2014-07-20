@@ -14,6 +14,7 @@ my @attrs = qw(
     power_points_notes
     network_speed_notes
     extra_notes
+    last_update
     );
 has \@attrs => (
     is => 'rw',
