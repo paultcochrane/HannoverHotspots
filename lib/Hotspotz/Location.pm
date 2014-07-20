@@ -3,14 +3,14 @@ package Hotspotz::Location;
 use Moose;
 
 my @attrs = qw(
-    location_name
-    location_type
-    location_ssid
+    name
+    type
+    ssid
     is_wlan_free
-    location_street_address
-    location_url
-    location_latitude
-    location_longitude
+    street_address
+    url
+    latitude
+    longitude
     power_points_notes
     network_speed_notes
     extra_notes
