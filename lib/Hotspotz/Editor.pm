@@ -172,6 +172,7 @@ sub load_geojson {
     my ($self, $file) = @_;
 
     croak "Missing filename argument." unless $file;
+    croak "Input file '$file' not found." unless -e $file;
 }
 
 1;
