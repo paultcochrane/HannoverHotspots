@@ -18,6 +18,10 @@ has 'version' => (
     default => 0.1,
 );
 
+has 'locations' => (
+    is => 'rw',
+);
+
 =item print_welcome()
 
 Print the program's welcome text
@@ -174,6 +178,25 @@ sub load_geojson {
 
     croak "Missing filename argument." unless $file;
     croak "Input file '$file' not found." unless -e $file;
+
+    my $json = JSON->new();
+    $json->utf8();
+
+    open my $hotspots_fh, "<", $file;
+    my @hotspots_lines = <$hotspots_fh>;
+    close $hotspots_fh;
+
+    my $hotspots_json = join "", @hotspots_lines;
+    my $geojson = $json->decode($hotspots_json);
+    my @features = @{$geojson->{'features'}};
+    my @locations;
+    for my $feature ( @features ) {
+        my $location = Hotspotz::Location->new();
+        $location->name($feature->{'properties'}->{'name'});
+        push @locations, $location;
+    }
+
+    $self->locations(\@locations);
 }
 
 1;

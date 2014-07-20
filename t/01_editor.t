@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-use Test::More tests => 3;
+use Test::More tests => 4;
 
 require_ok( "Hotspotz::Editor" );
 
@@ -23,6 +23,14 @@ require_ok( "Hotspotz::Editor" );
     };
     like( $@, qr/Input file 'nonexistent.json' not found./,
         "load_geojson() input file not found error message" );
+}
+
+{
+    my $editor = Hotspotz::Editor->new();
+    $editor->load_geojson("test.json");
+
+    my @locations = @{$editor->locations()};
+    is( @locations, 2, "Number of locations loaded" );
 }
 
 # vim: expandtab shiftwidth=4 softtabstop=4
