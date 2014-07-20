@@ -4,6 +4,7 @@ use Moose;
 use IO::Prompt;
 use JSON;
 use Carp;
+use autodie;
 
 use Hotspotz::Location;
 

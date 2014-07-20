@@ -1,6 +1,7 @@
 package Hotspotz::Location;
 
 use Moose;
+use autodie;
 
 my @attrs = qw(
     name
