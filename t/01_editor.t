@@ -10,7 +10,7 @@ require_ok( "Hotspotz::Editor" );
 {
     my $editor = Hotspotz::Editor->new();
     eval {
-        $editor->load_geojson();
+        $editor->load_locations();
     };
     like( $@, qr/Missing filename argument./,
         "load_geojson() no arg error message" );
@@ -19,7 +19,7 @@ require_ok( "Hotspotz::Editor" );
 {
     my $editor = Hotspotz::Editor->new();
     eval {
-        $editor->load_geojson("nonexistent.json");
+        $editor->load_locations("nonexistent.json");
     };
     like( $@, qr/Input file 'nonexistent.json' not found./,
         "load_geojson() input file not found error message" );

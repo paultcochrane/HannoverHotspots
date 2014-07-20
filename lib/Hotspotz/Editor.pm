@@ -45,7 +45,7 @@ Start the command loop
 sub command_loop {
     my $self = shift;
 
-    $self->load_geojson("hannover_hotspots.json");
+    $self->load_locations("hannover_hotspots.json");
 
     while( prompt $self->command_prompt ) {
         if ($_ eq "exit") {
@@ -161,13 +161,13 @@ sub print_help {
     print "    help: display this help\n";
 }
 
-=item load_geojson(filename)
+=item load_locations(filename)
 
-Load GeoJSON data
+Load location information from the given filename
 
 =cut
 
-sub load_geojson {
+sub load_locations {
     my ($self, $file) = @_;
 
     croak "Missing filename argument." unless $file;
@@ -187,6 +187,7 @@ sub load_geojson {
     for my $feature ( @features ) {
         my $location = Hotspotz::Location->new();
         $location->name($feature->{'properties'}->{'name'});
+
         push @locations, $location;
     }
 
