@@ -62,6 +62,18 @@ Feature: interactive commands
         Then I should see a list of available commands
         And I should see the command prompt
 
+    @wip
+    Scenario: show command without entries
+        Given there are no entries
+        When I enter "show"
+        Then I should see a warning about no entries
+
+    @now
+    Scenario: show command with at least one entry
+        Given a non-empty list of entries
+        When I enter "show" for entry [2]
+        Then I should see all information for the given entry
+
     Scenario: unknown command
         When I enter an unknown command
         Then I should be told that the command is unknown
