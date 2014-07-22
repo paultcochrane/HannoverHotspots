@@ -1,4 +1,4 @@
-.PHONY: check_json acceptance
+.PHONY: check_json acceptance tags
 
 test: check_json accept podchecker
 
@@ -13,3 +13,6 @@ unittest:
 
 podchecker:
 	podchecker bin/hotzen_spotz
+
+tags:
+	ctags --recurse
