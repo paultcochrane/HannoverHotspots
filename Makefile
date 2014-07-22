@@ -6,7 +6,7 @@ check_json:
 	bin/check_geojson.pl
 
 accept:
-	pherkin -t ~@wip
+	pherkin -l -t ~@wip
 
 unittest:
 	prove -lr t
