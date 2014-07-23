@@ -208,7 +208,23 @@ sub load_locations {
     my @locations;
     for my $feature ( @features ) {
         my $location = Hotspotz::Location->new();
-        $location->name($feature->{'properties'}->{'name'});
+        my $props = $feature->{'properties'};
+        $location->name($props->{'name'});
+        $location->type(ucfirst $props->{'marker-symbol'});
+        $location->ssid($props->{'ssid'});
+        $location->is_wlan_free($props->{'free'});
+        $location->street_address($props->{'address'});
+        $location->url($props->{'url'});
+        $location->power_points_notes($props->{'power_points'});
+        $location->network_speed_notes($props->{'speed'});
+        $props->{'notes'}
+            ? $location->extra_notes($props->{'notes'})
+            : $location->extra_notes('');
+        $location->last_update($props->{'last_update'});
+
+        my @geometry = @{$feature->{'geometry'}->{'coordinates'}};
+        $location->latitude($geometry[1]);
+        $location->longitude($geometry[0]);
 
         push @locations, $location;
     }
