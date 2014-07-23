@@ -162,10 +162,12 @@ Show all information for the given entry id
 
 sub show_entry {
     my ($self, $command_line) = @_;
-    my ($command, $arg) = split '\s+', $command_line;
+    my ($command, $location_index) = split '\s+', $command_line;
 
     my @locations = @{$self->locations};
-    print scalar @locations, "\n";
+    my $location = $locations[$location_index-1];
+
+    $location->print();
 }
 
 =item print_help()
