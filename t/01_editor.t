@@ -27,7 +27,7 @@ require_ok( "Hotspotz::Editor" );
 
 {
     my $editor = Hotspotz::Editor->new();
-    $editor->load_geojson("test.json");
+    $editor->load_locations("test.json");
 
     my @locations = @{$editor->locations()};
     is( @locations, 2, "Number of locations loaded" );
