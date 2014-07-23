@@ -68,9 +68,8 @@ Feature: interactive commands
         When I enter "show"
         Then I should see a warning about no entries
 
-    @now
     Scenario: show command with at least one entry
-        Given a non-empty list of entries
+        Given I have explicitly loaded a location file
         When I enter "show" for entry [2]
         Then I should see all information for the given entry
 
