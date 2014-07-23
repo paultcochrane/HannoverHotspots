@@ -30,9 +30,9 @@ Given qr/a non-empty list of entries/, func($context) {
     ok(0);
 };
 
-When qr/I enter "show" for entry \[2\]/, func($context) {
+When qr/^I enter "show" for entry \[2\]$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    ok(0);
+    $spotz->send("show 2\n");
 };
 
 Then qr/I should see all information for the given entry/, func($context) {
