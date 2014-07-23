@@ -13,7 +13,7 @@ Given qr/there are no entries/, func($context) {
     ok(0);
 };
 
-When qr/I enter "show"/, func($context) {
+When qr/^I enter "show"$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
     $spotz->send("show\n");
     is($spotz->match_number(), 1, "Show command entry");
