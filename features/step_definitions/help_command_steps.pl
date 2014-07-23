@@ -13,7 +13,7 @@ When qr/^I enter \"help\"$/, func($context) {
     is($spotz->match_number(), 1, "Help command entry");
 };
 
-When qr/^I enter \"?\"$/, func($context) {
+When qr/^I enter \"\?\"$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
     $spotz->send("?\n");
     is($spotz->match_number(), 1, "Help command entry");
