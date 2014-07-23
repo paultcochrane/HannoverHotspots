@@ -57,6 +57,9 @@ sub command_loop {
         elsif ($_ eq "list") {
             $self->list_entries();
         }
+        elsif ($_ =~ /^show/) {
+            $self->show_entry($_);
+        }
         elsif ($_ eq "help" or $_ eq "?") {
             $self->print_help();
         }
@@ -146,6 +149,20 @@ sub list_entries {
         print "[", $index, "] ", $location->name, "\n";
         $index++;
     }
+}
+
+=item show_entry(entry_id)
+
+Show all information for the given entry id
+
+=cut
+
+sub show_entry {
+    my ($self, $command_line) = @_;
+    my ($command, $arg) = split '\s+', $command_line;
+
+    my @locations = @{$self->locations};
+    print scalar @locations, "\n";
 }
 
 =item print_help()
