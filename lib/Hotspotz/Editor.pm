@@ -60,6 +60,9 @@ sub command_loop {
         elsif ($_ =~ /^show/) {
             $self->show_entry($_);
         }
+        elsif ($_ =~ /^load (.*)$/) {
+            $self->load_locations($1);
+        }
         elsif ($_ eq "help" or $_ eq "?") {
             $self->print_help();
         }

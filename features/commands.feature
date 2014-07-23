@@ -74,6 +74,11 @@ Feature: interactive commands
         When I enter "show" for entry [2]
         Then I should see all information for the given entry
 
+    Scenario: load command
+        When I enter "load" with an existing filename
+        And I enter "list"
+        Then I should see the entries in the loaded file
+
     Scenario: unknown command
         When I enter an unknown command
         Then I should be told that the command is unknown
