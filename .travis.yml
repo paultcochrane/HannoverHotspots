@@ -11,8 +11,7 @@ install:
     - "cpanm Method::Signatures"
     - "cpanm Expect"
     - "cpanm Term::ReadLine::Perl5"
-    #- "cpanm LEMBARK/FindBin-libs-1.10.tar.gz"
-    - "cpanm FindBin::libs"
+    - "cpanm --mirror http://cpan.cpantesters.org/ FindBin::libs"
     - "cpanm Test::BDD::Cucumber"
 
 script: make test
