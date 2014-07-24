@@ -10,7 +10,7 @@ install:
     - "sudo pip install requests"
     - "cpanm Method::Signatures"
     - "cpanm Expect"
-    - "cpanm IO::Prompt"
+    - "cpanm Term::ReadLine::Perl5"
     - "cpanm LEMBARK/FindBin-libs-1.10.tar.gz"
     - "cpanm Test::BDD::Cucumber"
 
