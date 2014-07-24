@@ -18,7 +18,7 @@ When qr/^I enter "add"$/, func($context) {
 
 Then qr/^I should be prompted for the location's name$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter the location's name: ";
+    my $prompt = "Please enter the location's name:";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location name prompt");
 };
@@ -34,7 +34,7 @@ When qr/^I enter the location's name$/, func($context) {
 
 Then qr/^I should be prompted for the type of location$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter location's type (cafe, bar, restaurant): ";
+    my $prompt = "Please enter location's type (cafe, bar, restaurant):";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location type prompt");
 };
@@ -50,7 +50,7 @@ When qr/^I enter the location's type$/, func($context) {
 
 Then qr/^I should be prompted for the location's SSID$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter location's SSID: ";
+    my $prompt = "Please enter location's SSID:";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location SSID prompt");
 };
@@ -66,7 +66,7 @@ When qr/^I enter the location's SSID$/, func($context) {
 
 Then qr/^I should be asked if the WLAN is free$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Is WLAN free here? (yes/no): ";
+    my $prompt = "Is WLAN free here? (yes/no):";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Is WLAN free prompt");
 };
@@ -83,7 +83,7 @@ When qr/^I enter yes$/, func($context) {
 Then qr/^I should be prompted for the location's street address$/,
     func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter the location's street address: ";
+    my $prompt = "Please enter the location's street address:";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location street address prompt");
 };
@@ -99,7 +99,7 @@ When qr/^I enter the location's street address$/, func($context) {
 
 Then qr/^I should be prompted for the location's URL$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter the location's URL: ";
+    my $prompt = "Please enter the location's URL:";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location URL prompt");
 };
@@ -115,7 +115,7 @@ When qr/^I enter the location's URL$/, func($context) {
 
 Then qr/^I should be prompted for the location's latitude$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter the location's latitude (in degrees): ";
+    my $prompt = "Please enter the location's latitude (in degrees):";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location latitude prompt");
 };
@@ -131,7 +131,7 @@ When qr/^I enter the location's latitude$/, func($context) {
 
 Then qr/^I should be prompted for the location's longitude$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter the location's longitude (in degrees): ";
+    my $prompt = "Please enter the location's longitude (in degrees):";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Location longitude prompt");
 };
@@ -147,7 +147,7 @@ When qr/^I enter the location's longitude$/, func($context) {
 
 Then qr/^I should be asked about power points$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter notes about location's power points: ";
+    my $prompt = "Please enter notes about location's power points:";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Power points prompt");
 };
@@ -163,7 +163,7 @@ When qr/^I enter notes about power points$/, func($context) {
 
 Then qr/^I should be asked about the network speed$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter notes about location's network speed: ";
+    my $prompt = "Please enter notes about location's network speed:";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Network speed prompt");
 };
@@ -179,7 +179,7 @@ When qr/^I enter notes about the network speed$/, func($context) {
 
 Then qr/^I should be asked for extra notes$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $prompt = "Please enter extra notes about the location: ";
+    my $prompt = "Please enter extra notes about the location:";
     my $index = $spotz->expect(1, $prompt);
     is($index, 1, "Extra notes prompt");
 };

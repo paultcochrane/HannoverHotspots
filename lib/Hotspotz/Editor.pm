@@ -1,7 +1,6 @@
 package Hotspotz::Editor;
 
 use Moose;
-use IO::Prompt;
 use Term::ReadLine::Perl5;
 use JSON;
 use Carp;
@@ -54,7 +53,7 @@ sub command_loop {
             $self->exit_program();
         }
         elsif ($_ eq "add") {
-            $self->add_entry();
+            $self->add_entry($term);
         }
         elsif ($_ eq "list") {
             $self->list_entries();
@@ -91,40 +90,42 @@ Add a WLAN hotspot entry.
 =cut
 
 sub add_entry {
+    my ($self, $term) = @_;
+
     my $location = Hotspotz::Location->new();
 
     my $prompt = "Please enter the location's name: ";
-    $location->name(prompt("-p" => $prompt, -raw_input));
+    $location->name($term->readline($prompt));
 
     $prompt = "Please enter location's type (cafe, bar, restaurant): ";
-    $location->type(prompt("-p" => $prompt, -raw_input));
+    $location->type($term->readline($prompt));
 
     $prompt = "Please enter location's SSID: ";
-    $location->ssid(prompt("-p" => $prompt, -raw_input));
+    $location->ssid($term->readline($prompt));
 
     $prompt = "Is WLAN free here? (yes/no): ";
-    $location->is_wlan_free(prompt("-p" => $prompt, -yes_no));
+    $location->is_wlan_free($term->readline($prompt));
 
     $prompt = "Please enter the location's street address: ";
-    $location->street_address(prompt("-p" => $prompt, -raw_input));
+    $location->street_address($term->readline($prompt));
 
     $prompt = "Please enter the location's URL: ";
-    $location->url(prompt("-p" => $prompt, -raw_input));
+    $location->url($term->readline($prompt));
 
     $prompt = "Please enter the location's latitude (in degrees): ";
-    $location->latitude(prompt("-p" => $prompt, -num));
+    $location->latitude($term->readline($prompt));
 
     $prompt = "Please enter the location's longitude (in degrees): ";
-    $location->longitude(prompt("-p" => $prompt, -num));
+    $location->longitude($term->readline($prompt));
 
     $prompt = "Please enter notes about location's power points: ";
-    $location->power_points_notes(prompt("-p" => $prompt, -raw_input));
+    $location->power_points_notes($term->readline($prompt));
 
     $prompt = "Please enter notes about location's network speed: ";
-    $location->network_speed_notes(prompt("-p" => $prompt, -raw_input));
+    $location->network_speed_notes($term->readline($prompt));
 
     $prompt = "Please enter extra notes about the location: ";
-    $location->extra_notes(prompt("-p" => $prompt, -raw_input));
+    $location->extra_notes($term->readline($prompt));
 
     print "Entry information:\n";
     print "    Location name: ",       $location->name, "\n";
