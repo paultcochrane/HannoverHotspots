@@ -34,6 +34,7 @@ Given qr/^I have explicitly loaded a location file$/, func($context) {
 When qr/^I enter \"show\" for entry \[2\]$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
     $spotz->send("show 2\n");
+    is($spotz->match_number(), 1, "Show command entry");
 };
 
 Then qr/^I should see all information for the given entry$/, func($context) {
