@@ -181,9 +181,10 @@ Print a list of available commands.
 
 sub print_help {
     print "Available commands:\n";
-    print "    add:  add a new hotspot entry\n";
-    print "    list: list available hotspot entries\n";
-    print "    help: display this help\n";
+    print "    add:                add a new hotspot entry\n";
+    print "    list:               list available hotspot entries\n";
+    print "    show <entry_index>: display entry's details\n";
+    print "    help:               display this help\n";
 }
 
 =item load_locations(filename)
