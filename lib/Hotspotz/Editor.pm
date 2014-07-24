@@ -49,7 +49,7 @@ sub command_loop {
 
     my $term = new Term::ReadLine::Perl5 'Hannover Hotspots Editor';
     while( defined ($_ = $term->readline($self->command_prompt)) ) {
-        if ($_ eq "exit") {
+        if ($_ =~ /exit|x|quit|q/) {
             $self->exit_program();
         }
         elsif ($_ eq "add") {

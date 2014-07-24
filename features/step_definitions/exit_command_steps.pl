@@ -7,9 +7,10 @@ use Method::Signatures;
 
 use Expect;
 
-When qr/^I enter \"exit\"$/, func($context) {
+When qr/^I enter \"(exit|x|quit|q)\"$/, func($context) {
+    my $exit_command = $1;
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("exit\n");
+    $spotz->send("$exit_command\n");
 };
 
 Then qr/^the program should exit cleanly$/, func($context) {

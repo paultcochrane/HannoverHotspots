@@ -11,6 +11,18 @@ Feature: interactive commands
         When I enter "exit"
         Then the program should exit cleanly
 
+    Scenario: exit command, x shortcut
+        When I enter "x"
+        Then the program should exit cleanly
+
+    Scenario: exit command, quit alternative
+        When I enter "quit"
+        Then the program should exit cleanly
+
+    Scenario: exit command, q shortcut
+        When I enter "q"
+        Then the program should exit cleanly
+
     Scenario: add command
         When I enter "add"
         Then I should be prompted for the location's name
