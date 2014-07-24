@@ -39,7 +39,7 @@ Given qr/^I have seen the welcome screen$/, func($context) {
 
 Then qr/^I should see the command prompt$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $index = $spotz->expect(1, 'spotz_editor> ');
+    my $index = $spotz->expect(1, 'spotz_editor>');
     is($index, 1, "Command prompt incorrect");
 };
 

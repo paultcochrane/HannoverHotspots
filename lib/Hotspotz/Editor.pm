@@ -2,6 +2,7 @@ package Hotspotz::Editor;
 
 use Moose;
 use IO::Prompt;
+use Term::ReadLine::Perl5;
 use JSON;
 use Carp;
 use autodie;
@@ -47,7 +48,8 @@ sub command_loop {
 
     $self->load_locations("hannover_hotspots.json");
 
-    while( prompt $self->command_prompt ) {
+    my $term = new Term::ReadLine::Perl5 'Hannover Hotspots Editor';
+    while( defined ($_ = $term->readline($self->command_prompt)) ) {
         if ($_ eq "exit") {
             $self->exit_program();
         }
