@@ -17,7 +17,8 @@ Given qr/^there are no entries$/, func($context) {
 
 Then qr/^I should see a warning about no entries$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    my $index = $spotz->expect(1, "Entry at index 2 not found");
+    my $entry_index = $context->stash->{'scenario'}->{'entry_index'};
+    my $index = $spotz->expect(1, "Entry at index $entry_index not found");
     is($index, 1, "Empty input file error message");
 };
 
@@ -28,9 +29,11 @@ Given qr/^I have explicitly loaded a location file$/, func($context) {
     is($spotz->match_number(), 1, "Load command entry");
 };
 
-When qr/^I enter \"show\" for entry \[2\]$/, func($context) {
+When qr/^I enter \"show\" for entry \[(\d+)\]$/, func($context) {
+    my $entry_index = $1;
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("show 2\n");
+    $spotz->send("show $entry_index\n");
+    $context->stash->{'scenario'}->{'entry_index'} = $entry_index;
     is($spotz->match_number(), 1, "Show command entry");
 };
 
