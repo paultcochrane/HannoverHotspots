@@ -9,9 +9,11 @@ use Expect;
 
 After sub {
     my $context = shift;
-    my $test_file = "empty_test.json";
-    unlink $test_file;
-    ok( not -e $test_file );
+    my @test_files = qw( test.json empty_test.json);
+    for my $test_file ( @test_files ) {
+        unlink $test_file;
+        ok( not -e $test_file );
+    }
 };
 
 # No entries to show
