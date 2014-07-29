@@ -59,6 +59,14 @@ Feature: interactive commands
         Then I should receive confirmation that the item was deleted
         And I should see the command prompt
 
+    @wip
+    Scenario: delete command on a non-existent entry
+        Given I have explicitly loaded a location file
+        When I enter "list"
+        And I enter "delete" for entry [3]
+        Then I should be told the entry couldn't be deleted
+        And I should see the command prompt
+
     Scenario: list command
         When I enter "list"
         Then I should see a list of available entries
