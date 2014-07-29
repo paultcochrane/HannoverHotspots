@@ -168,6 +168,11 @@ sub show_entry {
     my ($command, $location_index) = split '\s+', $command_line;
 
     my @locations = @{$self->locations};
+
+    if (not defined $locations[$location_index-1]) {
+        print "Entry at index $location_index not found\n";
+        return;
+    }
     my $location = $locations[$location_index-1];
 
     $location->print();

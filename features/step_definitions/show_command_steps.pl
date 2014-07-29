@@ -10,18 +10,15 @@ use Expect;
 # No entries to show
 Given qr/^there are no entries$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    ok(0);
-};
-
-When qr/^I enter \"show\"$/, func($context) {
-    my $spotz = $context->stash->{'scenario'}->{'object'};
-    $spotz->send("show\n");
-    is($spotz->match_number(), 1, "Show command entry");
+    create_empty_json_file();
+    $spotz->send("load empty_test.json\n");
+    ok( -f "empty_test.json", "Empty input file created" );
 };
 
 Then qr/^I should see a warning about no entries$/, func($context) {
     my $spotz = $context->stash->{'scenario'}->{'object'};
-    ok(0);
+    my $index = $spotz->expect(1, "Entry at index 2 not found");
+    is($index, 1, "Empty input file error message");
 };
 
 # entries to show
@@ -73,5 +70,16 @@ Then qr/^I should see all information for the given entry$/, func($context) {
     $index = $spotz->expect(1, '-re', qr{Last update:\s+});
     is($index, 1, "Show command output: last update");
 };
+
+sub create_empty_json_file {
+    open my $fh, ">", "empty_test.json" or die "$!";
+    print $fh <<EOF;
+{
+    "type": "FeatureCollection",
+    "features": []
+}
+EOF
+    close $fh;
+}
 
 # vim: expandtab shiftwidth=4 softtabstop=4

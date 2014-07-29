@@ -74,10 +74,9 @@ Feature: interactive commands
         Then I should see a list of available commands
         And I should see the command prompt
 
-    @wip
     Scenario: show command without entries
         Given there are no entries
-        When I enter "show"
+        When I enter "show" for entry [2]
         Then I should see a warning about no entries
 
     Scenario: show command with at least one entry
