@@ -39,8 +39,6 @@ use strict;
 use autodie;
 use Pod::Usage;
 
-use IO::Prompt;
-
 use lib qw( lib );
 use Hotspotz::Editor;
 
