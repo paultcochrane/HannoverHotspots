@@ -11,6 +11,7 @@ install:
     - "cpanm Method::Signatures"
     - "cpanm Expect"
     - "cpanm Term::ReadLine::Perl5"
+    - "cpanm HTTP::Request::Common"
     - "cpanm --mirror http://cpan.cpantesters.org/ FindBin::libs"
     - "cpanm Test::BDD::Cucumber"
 
