@@ -14,5 +14,6 @@ Which cafes and pubs in Hannover have wireless internet?
   2. add a new entry or edit an existing one
   3. check that the geoJSON works, either
     * see http://geojsonlint.com/, or
+    * run `make check_geojson`, or
     * run the test script `bin/check_geojson.pl`
   4. submit a pull request
