@@ -51,6 +51,13 @@ Feature: interactive commands
         And I should see the command prompt
 
     @wip
+    Scenario: add command creates a new entry
+        Given I have explicitly loaded a location file
+        When I add a new entry
+        And I enter "list"
+        Then I should see the new entry in the output
+
+    @wip
     Scenario: delete command
         When I enter "delete"
         Then I should see a list of available entries
