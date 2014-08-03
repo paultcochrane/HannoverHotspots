@@ -434,6 +434,31 @@
                 "last_update" : "2014-06-27",
                 "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.710455, 52.372585
+                    ]
+            },
+            "properties": {
+                "marker-symbol": "bar",
+                "marker-color": "00ff00",
+                "title" : "Lindenblatt",
+                "name" : "Lindenblatt",
+                "type" : "Bar",
+                "address" : "Limmerstrasse 20",
+                "ssid" : "Lindenblatt",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "good",
+                "url"  : "",
+                "power_points" : "",
+                "last_update" : "2014-08-03"
+            },
         }
     ]
 }
