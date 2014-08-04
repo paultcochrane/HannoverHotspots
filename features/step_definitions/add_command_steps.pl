@@ -300,4 +300,8 @@ When qr/^I add a new entry$/, func($context) {
     }
 };
 
+Then qr/^I should see the new entry in the output$/, func($context) {
+    ok(0);
+};
+
 # vim: expandtab shiftwidth=4 softtabstop=4
