@@ -490,7 +490,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    , 
+                    9.737985, 52.376003
                     ]
             },
             "properties": {
@@ -499,9 +499,9 @@
                 "title" : "Le Crobag (Schillerstraße)",
                 "name" : "Le Crobag (Schillerstraße)",
                 "type" : "Cafe",
-                "address" : "Schillerstraße ",
+                "address" : "Schillerstraße 29",
                 "ssid" : "mycloud",
-                "password" : "Sign in necessary",
+                "password" : "Web sign in required",
                 "wlan" : "yes",
                 "free" : "yes",
                 "speed" : "",
