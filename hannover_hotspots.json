@@ -484,6 +484,31 @@
                 "power_points" : "",
                 "last_update" : "2014-08-04"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    , 
+                    ]
+            },
+            "properties": {
+                "marker-symbol": "cafe",
+                "marker-color": "00ff00",
+                "title" : "Le Crobag (Schillerstraße)",
+                "name" : "Le Crobag (Schillerstraße)",
+                "type" : "Cafe",
+                "address" : "Schillerstraße ",
+                "ssid" : "mycloud",
+                "password" : "Sign in necessary",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "",
+                "url"  : "",
+                "power_points" : "",
+                "last_update" : "2014-08-04"
+            }
         }
     ]
 }
