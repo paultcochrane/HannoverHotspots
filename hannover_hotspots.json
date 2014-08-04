@@ -459,6 +459,31 @@
                 "power_points" : "",
                 "last_update" : "2014-08-03"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.735947, 52.375507
+                    ]
+            },
+            "properties": {
+                "marker-symbol": "cafe",
+                "marker-color": "00ff00",
+                "title" : "Cafe El Solin (Schillerstraße)",
+                "name" : "Cafe El Solin (Schillerstraße)",
+                "type" : "Cafe",
+                "address" : "Schillerstraße 34",
+                "ssid" : "ElSolin",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "",
+                "url"  : "http://www.elsolin.de",
+                "power_points" : "",
+                "last_update" : "2014-08-04"
+            }
         }
     ]
 }
