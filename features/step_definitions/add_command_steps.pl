@@ -215,12 +215,15 @@ When qr/^I add a new entry$/, func($context) {
 
     my $prompt = "Please enter the location's name:";
     $spotz->expect(1, $prompt);
-    $spotz->send("Cafe with WLAN\n");
+
+    my $answer = "Cafe with WLAN";
+    $spotz->send("$answer\n");
+    push @add_entry_overview, $answer;
 
     $prompt = "Please enter location's type (cafe, bar, restaurant):";
     $spotz->expect(1, $prompt);
 
-    my $answer = "cafe";
+    $answer = "cafe";
     $spotz->send("$answer\n");
     push @add_entry_overview, $answer;
 
