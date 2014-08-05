@@ -18,14 +18,14 @@ After sub {
 
 # No entries to show
 Given qr/^there are no entries$/, func($context) {
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     create_empty_json_file();
     $spotz->send("load empty_test.json\n");
     ok( -f "empty_test.json", "Empty input file created" );
 };
 
 Then qr/^I should see a warning about no entries$/, func($context) {
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     my $entry_index = $context->stash->{'scenario'}->{'entry_index'};
     my $index = $spotz->expect(1, "Entry at index $entry_index not found");
     is($index, 1, "Empty input file error message");
@@ -34,14 +34,14 @@ Then qr/^I should see a warning about no entries$/, func($context) {
 # entries to show
 When qr/^I enter \"show\" for entry \[(\d+)\]$/, func($context) {
     my $entry_index = $1;
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     $spotz->send("show $entry_index\n");
     $context->stash->{'scenario'}->{'entry_index'} = $entry_index;
     is($spotz->match_number(), 1, "Show command entry");
 };
 
 Then qr/^I should see all information for the given entry$/, func($context) {
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
 
     my $index = $spotz->expect(1, '-re', qr{Name:\s+Cafe Spandau});
     is($index, 1, "Show command output: name");

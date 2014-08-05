@@ -9,12 +9,12 @@ use Expect;
 
 When qr/^I enter \"(exit|x|quit|q)\"$/, func($context) {
     my $exit_command = $1;
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     $spotz->send("$exit_command\n");
 };
 
 Then qr/^the program should exit cleanly$/, func($context) {
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     $spotz->soft_close();
     is($spotz->exitstatus(), 0, "hotzen_spotz appears to be still running");
 };

@@ -12,11 +12,11 @@ Given qr/^the program hotzen_spotz is run$/, func($context) {
     my $spotz = Expect->spawn($command)
 	or die "Cannot spawn $command: $!\n";
     ok(defined($spotz->pid()), "No PID; command appears not to be running");
-    S->{'object'} = $spotz;
+    S->{'spotz'} = $spotz;
 };
 
 Then qr/^I should see the welcome screen$/, func($context) {
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     my $message = "Welcome to the Hannover Hotspot editor, version 0.1";
     my $index = $spotz->expect(1, $message);
     is($index, 1, "Welcome message line 1");
@@ -27,7 +27,7 @@ Then qr/^I should see the welcome screen$/, func($context) {
 };
 
 Given qr/^I have seen the welcome screen$/, func($context) {
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     my $message = "Welcome to the Hannover Hotspot editor, version 0.1";
     my $index = $spotz->expect(1, $message);
     is($index, 1, "Welcome message line 1");
@@ -38,7 +38,7 @@ Given qr/^I have seen the welcome screen$/, func($context) {
 };
 
 Then qr/^I should see the command prompt$/, func($context) {
-    my $spotz = S->{'object'};
+    my $spotz = S->{'spotz'};
     my $index = $spotz->expect(1, 'spotz_editor>');
     is($index, 1, "Command prompt incorrect");
 };
