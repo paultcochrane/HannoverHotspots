@@ -56,6 +56,7 @@ Feature: interactive commands
         When I add a new entry
         And I enter "list"
         Then I should see the new entry in the output
+        And I should see the command prompt
 
     @wip
     Scenario: delete command
