@@ -93,7 +93,6 @@ When qr/^I add a new entry$/, func($context) {
     my $index = $spotz->expect(1, $message);
     is($index, 1, "Entry information overview");
 
-    print join "\n", @add_entry_overview;
     for my $entry ( @add_entry_overview ) {
         $index = $spotz->expect(1, $entry);
         is($index, 1, "Entry overview: $entry");
