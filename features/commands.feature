@@ -23,13 +23,13 @@ Feature: interactive commands
         When I enter "q"
         Then the program should exit cleanly
 
-    @wip
     Scenario: add command creates a new entry
         Given I have explicitly loaded a location file
         When I add a new entry
         And I enter "list"
         Then I should see the new entry in the output
         And I should see the command prompt
+        # note, not yet persistent
 
     @wip
     Scenario: delete command
