@@ -139,6 +139,8 @@ sub add_entry {
     print "    Power points notes: ",  $location->power_points_notes, "\n";
     print "    Network speed notes: ", $location->network_speed_notes, "\n";
     print "    Extra notes: ",         $location->extra_notes, "\n";
+
+    push $self->locations, $location;
 }
 
 =item list_entries()

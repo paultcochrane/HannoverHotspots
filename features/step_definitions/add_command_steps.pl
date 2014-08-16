@@ -93,7 +93,6 @@ When qr/^I add a new entry$/, func($context) {
     my $index = $spotz->expect(1, $message);
     is($index, 1, "Entry information overview");
 
-    print join "\n", @add_entry_overview;
     for my $entry ( @add_entry_overview ) {
         $index = $spotz->expect(1, $entry);
         is($index, 1, "Entry overview: $entry");
@@ -101,7 +100,9 @@ When qr/^I add a new entry$/, func($context) {
 };
 
 Then qr/^I should see the new entry in the output$/, func($context) {
-    ok(0);
+    my $spotz = S->{'spotz'};
+    my $index = $spotz->expect(1, "Cafe with WLAN");
+    is($index, 1, "New location added");
 };
 
 # vim: expandtab shiftwidth=4 softtabstop=4
