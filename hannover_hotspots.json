@@ -509,6 +509,31 @@
                 "power_points" : "",
                 "last_update" : "2014-08-04"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+		    9.714428, 52.366698
+                    ]
+            },
+            "properties": {
+                "marker-symbol": "bar",
+                "marker-color": "00ff00",
+                "title" : "Gig Linden",
+                "name" : "Gig Linden",
+                "type" : "Bar",
+                "address" : "Lindener Marktplatz 1",
+                "ssid" : "Becks Hot Spot",
+                "password" : "30 minutes 'free' (account creation required upon submission of mobile phone number); 1 hour more after purchase of a Beck's beer",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "",
+                "url"  : "http://www.gig-linden.de/",
+                "power_points" : "",
+                "last_update" : "2014-08-16"
+            }
         }
     ]
 }
