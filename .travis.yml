@@ -8,7 +8,7 @@ perl:
 install:
     - "sudo pip install requests"
     - "cpanm Method::Signatures"
-    - "cpanm Expect"
+    - "cpanm -v Expect"
     - "cpanm Term::ReadLine::Perl5"
     - "cpanm HTTP::Request::Common"
     - "cpanm FindBin::libs"
