@@ -12,6 +12,7 @@ install:
     - "cpanm Term::ReadLine::Perl5"
     - "cpanm HTTP::Request::Common"
     - "cpanm FindBin::libs"
+    - "cpanm Capture::Tiny"
     - "cpanm Test::BDD::Cucumber"
 
 script: make test
