@@ -5,6 +5,9 @@ perl:
     - "5.16"
     - "5.14"
 
+before_install:
+    - sudo apt-get mailx
+
 install:
     - "sudo pip install requests"
     - "cpanm Method::Signatures"
@@ -16,3 +19,5 @@ install:
     - "cpanm Test::BDD::Cucumber"
 
 script: make test
+
+after_failure: mailx -s "Hannover Hotspots install log" paultcochrane@gmail.com < /home/travis/.cpanm/work/*/build.log
