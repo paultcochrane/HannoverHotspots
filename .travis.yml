@@ -5,6 +5,10 @@ perl:
     - "5.16"
     - "5.14"
 
+before_install:
+    - echo "moo" > /home/travis/moo
+    - mailx -s "test" paultcochrane@gmail.com < /home/travis/moo
+
 install:
     - "sudo pip install requests"
     - "cpanm Method::Signatures"
@@ -17,4 +21,5 @@ install:
 
 script: make test
 
-after_failure: mailx -s "Hannover Hotspots install log" paultcochrane@gmail.com < /home/travis/.cpanm/work/*/build.log
+after_failure:
+    - mailx -s "Hannover Hotspots install log" paultcochrane@gmail.com < /home/travis/.cpanm/work/*/build.log
