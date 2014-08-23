@@ -96,7 +96,7 @@ When qr/^I add a new entry$/, func($context) {
 
 Then qr/^I should see the new entry in the output$/, func($context) {
     my $spotz = S->{'spotz'};
-    my $index = $spotz->expect(1, "Cafe with WLAN");
+    my $index = $spotz->expect(1, '-re', qr/\[\d+\] Cafe with WLAN/);
     is($index, 1, "New location added");
 };
 
