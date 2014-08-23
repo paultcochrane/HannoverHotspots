@@ -29,6 +29,12 @@ Then qr/^I should see the entries in the loaded file$/, func($context) {
     is($index, 1, "Display entry from explicitly loaded file");
 };
 
+When qr/^I reload the location file$/, func($context) {
+    my $spotz = S->{'spotz'};
+    $spotz->send("load test.json\n");
+    is($spotz->match_number(), 1, "Reload location file");
+};
+
 sub create_test_json_file {
     open my $fh, ">", "test.json" or die "$!";
     print $fh <<EOF;
