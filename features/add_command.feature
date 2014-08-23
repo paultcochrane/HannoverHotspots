@@ -20,6 +20,7 @@ Feature: add command
         Given I have explicitly loaded a location file
         When I add a new entry
         And I reload the location file
+        And I enter "list"
         Then I should see the new entry in the output
         And I should see the command prompt
 
