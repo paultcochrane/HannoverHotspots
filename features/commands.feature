@@ -32,6 +32,14 @@ Feature: interactive commands
         # note, not yet persistent
 
     @wip
+    Scenario: add command creates a persistent entry
+        Given I have explicitly loaded a location file
+        When I add a new entry
+        And I reload the location file
+        Then I should see the new entry in the output
+        And I should see the command prompt
+
+    @wip
     Scenario: delete command
         When I enter "delete"
         Then I should see a list of available entries
