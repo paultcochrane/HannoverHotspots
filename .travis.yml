@@ -6,7 +6,9 @@ perl:
     - "5.14"
 
 before_install:
-    - sudo apt-get install mailutils
+    - sudo apt-get update
+    - sudo apt-get -y upgrade
+    - sudo apt-get install -y mailutils
 
 install:
     - "sudo pip install requests"
