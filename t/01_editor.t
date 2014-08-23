@@ -32,6 +32,8 @@ require_ok( "Hotspotz::Editor" );
 
     my @locations = @{$editor->locations()};
     is( @locations, 2, "Number of locations loaded" );
+
+    unlink("test.json") if -f "test.json";
 }
 
 sub create_test_json_file {
