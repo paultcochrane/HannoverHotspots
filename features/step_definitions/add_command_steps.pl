@@ -92,11 +92,6 @@ When qr/^I add a new entry$/, func($context) {
     my $message = "Entry information:";
     my $index = $spotz->expect(1, $message);
     is($index, 1, "Entry information overview");
-
-    for my $entry ( @add_entry_overview ) {
-        $index = $spotz->expect(1, $entry);
-        is($index, 1, "Entry overview: $entry");
-    }
 };
 
 Then qr/^I should see the new entry in the output$/, func($context) {

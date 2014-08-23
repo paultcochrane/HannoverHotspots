@@ -128,17 +128,7 @@ sub add_entry {
     $location->extra_notes($term->readline($prompt));
 
     print "Entry information:\n";
-    print "    Location name: ",       $location->name, "\n";
-    print "    Location type: ",       $location->type, "\n";
-    print "    Location SSID: ",       $location->ssid, "\n";
-    print "    Free WLAN?: ",          $location->is_wlan_free, "\n";
-    print "    Street address: ",      $location->street_address, "\n";
-    print "    Location URL: ",        $location->url, "\n";
-    print "    Location latitude: ",   $location->latitude, "\n";
-    print "    Location longitude: ",  $location->longitude, "\n";
-    print "    Power points notes: ",  $location->power_points_notes, "\n";
-    print "    Network speed notes: ", $location->network_speed_notes, "\n";
-    print "    Extra notes: ",         $location->extra_notes, "\n";
+    $location->print();
 
     push $self->locations, $location;
 }
