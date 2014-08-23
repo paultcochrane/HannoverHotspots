@@ -6,8 +6,10 @@ perl:
     - "5.14"
 
 before_install:
+    - sudo apt-get install sendmail
+    - sudo apt-get install mailutils
     - echo "moo" > /home/travis/moo
-    - mail -s "test" paultcochrane@gmail.com < /home/travis/moo
+    - mailx -s "test" paultcochrane@gmail.com < /home/travis/moo
 
 install:
     - "sudo pip install requests"
@@ -22,4 +24,4 @@ install:
 script: make test
 
 after_failure:
-    - mail -s "Hannover Hotspots install log" paultcochrane@gmail.com < /home/travis/.cpanm/work/*/build.log
+    - mailx -s "Hannover Hotspots install log" paultcochrane@gmail.com < /home/travis/.cpanm/work/*/build.log
