@@ -39,21 +39,6 @@ Feature: interactive commands
         Then I should see a list of available commands
         And I should see the command prompt
 
-    Scenario: show command without entries
-        Given there are no entries
-        When I enter "show" for entry [2]
-        Then I should see a warning about no entries
-
-    Scenario: show command with at least one entry
-        Given I have explicitly loaded a location file
-        When I enter "show" for entry [2]
-        Then I should see all information for the given entry
-
-    Scenario: show command with an incorrect index
-        Given I have explicitly loaded a location file
-        When I enter "show" for entry [200]
-        Then I should see a warning about no entries
-
     Scenario: load command
         When I enter "load" with an existing filename
         And I enter "list"
