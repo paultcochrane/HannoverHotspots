@@ -5,8 +5,6 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
-use Expect;
-
 After sub {
     my $context = shift;
     my @test_files = qw( test.json empty_test.json);

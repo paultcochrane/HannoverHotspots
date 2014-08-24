@@ -5,8 +5,6 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
-use Expect;
-
 When qr/^I add a new entry$/, func($context) {
     my $spotz = S->{'spotz'};
     my @add_entry_overview = [];

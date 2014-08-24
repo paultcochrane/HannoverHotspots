@@ -5,8 +5,6 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
-use Expect;
-
 Given qr/^I have explicitly loaded a location file$/, func($context) {
     my $spotz = S->{'spotz'};
     create_test_json_file();
