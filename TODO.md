@@ -7,7 +7,6 @@
    * Gig Linden Mitte
    * Uni Biergarten
    * Gretchen
-   * Cafe Safran
    * Meiers Lebenslust (Friedrichswall)
    * Ständige Vertretung
    * Piu (Goethestraße)
