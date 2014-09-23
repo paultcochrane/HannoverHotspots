@@ -5,8 +5,6 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
-use Expect;
-
 When qr/^I enter \"list\"$/, func($context) {
     my $spotz = S->{'spotz'};
     $spotz->send("list\n");

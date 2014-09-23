@@ -5,8 +5,6 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
-use Expect;
-
 When qr/^I enter \"(exit|x|quit|q)\"$/, func($context) {
     my $exit_command = $1;
     my $spotz = S->{'spotz'};

@@ -5,8 +5,6 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
-use Expect;
-
 When qr/^I enter an unknown command$/, func($context) {
     my $spotz = S->{'spotz'};
     $spotz->send("moo\n");

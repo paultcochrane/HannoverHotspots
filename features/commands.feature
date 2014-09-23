@@ -7,47 +7,6 @@ Feature: interactive commands
         Given the program hotzen_spotz is run
         And I have seen the welcome screen
 
-    Scenario: exit command
-        When I enter "exit"
-        Then the program should exit cleanly
-
-    Scenario: exit command, x shortcut
-        When I enter "x"
-        Then the program should exit cleanly
-
-    Scenario: exit command, quit alternative
-        When I enter "quit"
-        Then the program should exit cleanly
-
-    Scenario: exit command, q shortcut
-        When I enter "q"
-        Then the program should exit cleanly
-
-    Scenario: add command creates a new entry
-        Given I have explicitly loaded a location file
-        When I add a new entry
-        And I enter "list"
-        Then I should see the new entry in the output
-        And I should see the command prompt
-        # note, not yet persistent
-
-    @wip
-    Scenario: delete command
-        When I enter "delete"
-        Then I should see a list of available entries
-        And I should be asked which entry to delete
-        When I specify an item to delete
-        Then I should receive confirmation that the item was deleted
-        And I should see the command prompt
-
-    @wip
-    Scenario: delete command on a non-existent entry
-        Given I have explicitly loaded a location file
-        When I enter "list"
-        And I enter "delete" for entry [3]
-        Then I should be told the entry couldn't be deleted
-        And I should see the command prompt
-
     Scenario: list command
         When I enter "list"
         Then I should see a list of available entries
@@ -62,21 +21,6 @@ Feature: interactive commands
         When I enter "?"
         Then I should see a list of available commands
         And I should see the command prompt
-
-    Scenario: show command without entries
-        Given there are no entries
-        When I enter "show" for entry [2]
-        Then I should see a warning about no entries
-
-    Scenario: show command with at least one entry
-        Given I have explicitly loaded a location file
-        When I enter "show" for entry [2]
-        Then I should see all information for the given entry
-
-    Scenario: show command with an incorrect index
-        Given I have explicitly loaded a location file
-        When I enter "show" for entry [200]
-        Then I should see a warning about no entries
 
     Scenario: load command
         When I enter "load" with an existing filename

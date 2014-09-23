@@ -1,6 +1,6 @@
-.PHONY: check_json acceptance tags
+.PHONY: check_json acceptance tags unittest
 
-test: check_json accept podchecker
+test: check_json accept podchecker unittest
 
 check_json:
 	bin/check_geojson.pl
