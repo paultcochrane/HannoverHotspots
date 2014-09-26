@@ -534,6 +534,31 @@
                 "power_points" : "",
                 "last_update" : "2014-08-16"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+		    9.741507, 52.373866
+                    ]
+            },
+            "properties": {
+                "marker-symbol": "cafe",
+                "marker-color": "00ff00",
+                "title" : "Miles: Cafe Bar Bistro",
+                "name" : "Miles: Cafe Bar Bistro",
+                "type" : "Cafe",
+                "address" : "Rathenaustraße 9",
+                "ssid" : "MILWLAN2",
+                "password" : "Ask the friendly staff",
+                "wlan" : "yes",
+                "free" : "yes",
+                "speed" : "",
+                "url"  : "http://www.miles-hannover.de/",
+                "power_points" : "",
+                "last_update" : "2014-09-24"
+            }
         }
     ]
 }
