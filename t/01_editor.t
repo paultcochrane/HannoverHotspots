@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-use Test::More tests => 4;
+use Test::More tests => 5;
 
 require_ok( "Hotspotz::Editor" );
 
@@ -32,6 +32,34 @@ require_ok( "Hotspotz::Editor" );
 
     my @locations = @{$editor->locations()};
     is( @locations, 2, "Number of locations loaded" );
+
+    unlink("test.json") if -f "test.json";
+}
+
+{
+    my $location = Hotspotz::Location->new();
+    $location->name("Cafe with WLAN");
+    $location->type("cafe");
+    $location->ssid("CafeWLAN");
+    $location->is_wlan_free("yes");
+    $location->street_address("Unbekannter Weg 1");
+    $location->url("http://cafewlan.de");
+    $location->latitude(50.123456);
+    $location->longitude(9.654321);
+    $location->power_points_notes("Upstairs, in the corner");
+    $location->network_speed_notes("Good; 500kbs download; 200kbs upload");
+    $location->extra_notes("SSH blocked; HTTP(S) allowed");
+
+    my $editor = Hotspotz::Editor->new();
+    my @locations;
+    push @locations, $location;
+    $editor->locations(\@locations);
+    $editor->save_locations("test.json");
+
+    $editor->load_locations("test.json");
+    @locations = @{$editor->locations()};
+
+    is( @locations, 1, "Number of locations loaded" );
 
     unlink("test.json") if -f "test.json";
 }

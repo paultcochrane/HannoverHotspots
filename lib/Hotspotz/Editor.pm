@@ -233,6 +233,60 @@ sub load_locations {
     $self->locations(\@locations);
 }
 
+=item save_locations(filename)
+
+Save the current locations list to file
+
+=cut
+
+sub save_locations {
+    my ($self, $file) = @_;
+
+    my $json = JSON->new();
+    $json->utf8();
+
+    my @locations = @{$self->locations()};
+
+    my @features;
+    for my $location ( @locations ) {
+        my %point;
+        $point{"type"} = "Point";
+        $point{"coordinates"} = [$location->latitude(), $location->longitude()];
+
+        my %properties;
+        $properties{"marker-symbol"} = lc $location->type();
+        $properties{"marker-color"} = "00ff00";  # if wlan exists!
+        $properties{"title"} = $location->name();
+        $properties{"name"} = $location->name();
+        $properties{"address"} = $location->street_address();
+        $properties{"ssid"} = $location->ssid();
+        $properties{"password"} = "Ask the friendly staff";  # this needs to be handled
+        $properties{"wlan"} = "yes";  # do we need this property?
+        $properties{"free"} = $location->is_wlan_free();
+        $properties{"speed"} = $location->network_speed_notes();
+        $properties{"url"} = $location->url();
+        $properties{"power_points"} = $location->power_points_notes();
+        $properties{"last_update"} = $location->last_update();
+
+        my %feature;
+        $feature{"type"} = "Feature";
+        $feature{"geometry"} = \%point;
+        $feature{"properties"} = \%properties;
+
+        push @features, \%feature;
+    }
+
+    my %feature_collection;
+    $feature_collection{"type"} = "FeatureCollection";
+    $feature_collection{"features"} = \@features;
+
+    my $json_text = $json->pretty->encode(\%feature_collection);
+
+    open my $hotspots_fh, ">", $file;
+    print $hotspots_fh $json_text;
+    close $hotspots_fh;
+}
+
 1;
 
 # vim: expandtab shiftwidth=4 softtabstop=4
