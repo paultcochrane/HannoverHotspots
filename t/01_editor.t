@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-use Test::More tests => 6;
+use Test::More tests => 7;
 
 require_ok( "Hotspotz::Editor" );
 
@@ -23,6 +23,16 @@ require_ok( "Hotspotz::Editor" );
     };
     like( $@, qr/Input file 'nonexistent.json' not found./,
         "load_geojson() input file not found error message" );
+}
+
+{
+    my $editor = Hotspotz::Editor->new();
+    create_test_json_file();
+    $editor->load_locations("test.json");
+
+    is( $editor->locations_file, "test.json", "Locations file name" );
+
+    unlink("test.json") if -f "test.json";
 }
 
 {

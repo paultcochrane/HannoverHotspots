@@ -18,6 +18,11 @@ has 'version' => (
     default => 0.1,
 );
 
+has 'locations_file' => (
+    is => 'rw',
+    default => 'hannover_hotspots.json',
+);
+
 has 'locations' => (
     is => 'rw',
 );
@@ -195,6 +200,8 @@ sub load_locations {
 
     croak "Missing filename argument." unless $file;
     croak "Input file '$file' not found." unless -e $file;
+
+    $self->locations_file($file);
 
     my $json = JSON->new();
     $json->utf8();
