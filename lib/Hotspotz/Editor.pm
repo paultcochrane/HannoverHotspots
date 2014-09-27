@@ -136,6 +136,8 @@ sub add_entry {
     $location->print();
 
     push $self->locations, $location;
+
+    $self->save_locations();
 }
 
 =item list_entries()

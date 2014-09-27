@@ -15,7 +15,6 @@ Feature: add command
         And I should see the command prompt
         # note, not yet persistent
 
-    @wip
     Scenario: add command creates a persistent entry
         Given I have explicitly loaded a location file
         When I add a new entry
