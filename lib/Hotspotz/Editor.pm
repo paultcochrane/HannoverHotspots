@@ -261,7 +261,6 @@ sub save_locations {
         $properties{"address"} = $location->street_address();
         $properties{"ssid"} = $location->ssid();
         $properties{"password"} = "Ask the friendly staff";  # this needs to be handled
-        $properties{"wlan"} = "yes";  # do we need this property?
         $properties{"free"} = $location->is_wlan_free();
         $properties{"speed"} = $location->network_speed_notes();
         $properties{"url"} = $location->url();
