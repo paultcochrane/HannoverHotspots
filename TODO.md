@@ -4,7 +4,6 @@
 
    * Campus Suite Callinstrasse
    * Cafe K
-   * Gig Linden Mitte
    * Uni Biergarten
    * Gretchen
    * Meiers Lebenslust (Friedrichswall)
