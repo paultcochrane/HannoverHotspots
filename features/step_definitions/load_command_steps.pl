@@ -33,6 +33,12 @@ When qr/^I reload the location file$/, func($context) {
     is($spotz->match_number(), 1, "Reload location file");
 };
 
+Then qr/^I should see the new entry in the output$/, func($context) {
+    my $spotz = S->{'spotz'};
+    my $index = $spotz->expect(1, '-re', qr/\[\d+\] Cafe with WLAN/);
+    is($index, 1, "New location added");
+};
+
 sub create_test_json_file {
     open my $fh, ">", "test.json" or die "$!";
     print $fh <<EOF;

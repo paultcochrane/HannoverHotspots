@@ -92,10 +92,4 @@ When qr/^I add a new entry$/, func($context) {
     is($index, 1, "Entry information overview");
 };
 
-Then qr/^I should see the new entry in the output$/, func($context) {
-    my $spotz = S->{'spotz'};
-    my $index = $spotz->expect(1, '-re', qr/\[\d+\] Cafe with WLAN/);
-    is($index, 1, "New location added");
-};
-
 # vim: expandtab shiftwidth=4 softtabstop=4
