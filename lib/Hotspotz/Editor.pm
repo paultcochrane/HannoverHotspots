@@ -213,7 +213,7 @@ sub load_locations {
         $location->name($props->{'name'});
         $location->type(ucfirst $props->{'marker-symbol'});
         $location->ssid($props->{'ssid'});
-        $location->is_wlan_free($props->{'free'});
+        $location->is_wlan_free($props->{'wlan_is_free'});
         $location->street_address($props->{'address'});
         $location->url($props->{'url'});
         $location->power_points_notes($props->{'power_points'});
@@ -255,13 +255,13 @@ sub save_locations {
 
         my %properties;
         $properties{"marker-symbol"} = lc $location->type();
-        $properties{"marker-color"} = "00ff00";  # if wlan exists!
+        $properties{"marker-color"} = "00ff00";
         $properties{"title"} = $location->name();
         $properties{"name"} = $location->name();
         $properties{"address"} = $location->street_address();
         $properties{"ssid"} = $location->ssid();
         $properties{"password"} = "Ask the friendly staff";  # this needs to be handled
-        $properties{"free"} = $location->is_wlan_free();
+        $properties{"wlan_is_free"} = $location->is_wlan_free();
         $properties{"speed"} = $location->network_speed_notes();
         $properties{"url"} = $location->url();
         $properties{"power_points"} = $location->power_points_notes();
