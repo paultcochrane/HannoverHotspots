@@ -320,27 +320,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.732651, 52.377223
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "ff0000",
-                "name" : "Moca",
-                "type" : "Cafe",
-                "address" : "Goseriede 4",
-                "wlan" : "no",
-                "free" : "no",
-                "url"  : "http://www.mocacafe.de/",
-                "power_points" : "",
-                "last_update" : "2014-06-06"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     9.740596, 52.376546
                     ]
             },
