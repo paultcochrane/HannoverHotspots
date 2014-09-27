@@ -63,8 +63,9 @@ require_ok( "Hotspotz::Editor" );
     my $editor = Hotspotz::Editor->new();
     my @locations;
     push @locations, $location;
+    $editor->locations_file("test.json");
     $editor->locations(\@locations);
-    $editor->save_locations("test.json");
+    $editor->save_locations();
 
     $editor->load_locations("test.json");
     @locations = @{$editor->locations()};
@@ -94,7 +95,7 @@ require_ok( "Hotspotz::Editor" );
     my @locations = @{$editor->locations()};
     push @locations, $location;
     $editor->locations(\@locations);
-    $editor->save_locations("test.json");
+    $editor->save_locations();
 
     $editor->load_locations("test.json");
     @locations = @{$editor->locations()};

@@ -247,7 +247,7 @@ Save the current locations list to file
 =cut
 
 sub save_locations {
-    my ($self, $file) = @_;
+    my ($self) = @_;
 
     my $json = JSON->new();
     $json->utf8();
@@ -288,7 +288,7 @@ sub save_locations {
 
     my $json_text = $json->pretty->encode(\%feature_collection);
 
-    open my $hotspots_fh, ">", $file;
+    open my $hotspots_fh, ">", $self->locations_file();
     print $hotspots_fh $json_text;
     close $hotspots_fh;
 }
