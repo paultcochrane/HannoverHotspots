@@ -13,7 +13,6 @@ Feature: add command
         And I enter "list"
         Then I should see the new entry in the output
         And I should see the command prompt
-        # note, not yet persistent
 
     Scenario: add command creates a persistent entry
         Given I have explicitly loaded a location file
