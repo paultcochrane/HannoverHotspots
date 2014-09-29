@@ -17,3 +17,14 @@ Which cafes and pubs in Hannover have wireless internet?
     * run `make check_geojson`, or
     * run the test script `bin/check_geojson.pl`
   4. submit a pull request
+
+## Project Dependencies
+
+The entire project can be tested by simply running
+
+    $ make test
+
+However, before doing so, you'll need to install some Perl modules:
+
+    $ cpanm FindBin::libs Number::Range File::Slurp \
+              Method::Signatures Expect Term::ReadLine::Perl5
