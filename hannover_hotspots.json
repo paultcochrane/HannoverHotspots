@@ -313,16 +313,16 @@
             "properties" : {
                 "marker-symbol": "cafe",
                 "marker-color": "00ff00",
-                "name" : "World Coffee (Ernst August Platz)",
+                "name" : "Balzac Coffee (Hauptbahnhof)",
                 "type" : "Cafe",
                 "address" : "Ernst-August-Platz 1",
                 "ssid" : "Worldcoffee-23001-Hannover",
-                "password" : "after purchasing a 1-hour ticket via web interface",
-                "wlan_is_free" : "no",
+                "password" : "access tickets available from the friendly staff",
+                "wlan_is_free" : "yes",
                 "speed" : "not yet tested",
-                "url" : "http://www.worldcoffee.de/de/site/index.xml",
+                "url" : "http://balzaccoffee.com",
                 "power_points" : "4 in the mezzanine level",
-                "last_update" : "2014-06-13"
+                "last_update" : "2015-04-25"
             }
         },
         {
