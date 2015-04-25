@@ -516,6 +516,29 @@
                 "power_points" : "",
                 "last_update" : "2014-09-24"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+		    9.735971, 52.371796
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "marker-color": "00ff00",
+                "name" : "Beans",
+                "type" : "Cafe",
+                "address" : "Grupenstraße 7",
+                "ssid" : "PS-BEANS",
+                "password" : "Ask the friendly staff",
+                "wlan_is_free" : "yes",
+                "speed" : "unknown",
+                "url"  : "http://www.sincecoffee.de/",
+                "power_points" : "unknown",
+                "last_update" : "2015-04-25"
+            }
         }
     ]
 }
