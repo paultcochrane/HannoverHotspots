@@ -539,6 +539,29 @@
                 "power_points" : "unknown",
                 "last_update" : "2015-04-25"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+		    9.73586, 52.37076
+                    ]
+            },
+            "properties" : {
+                "marker-symbol": "cafe",
+                "marker-color": "00ff00",
+                "name" : "Balzac",
+                "type" : "Cafe",
+                "address" : "Karmarschstrasse 42",
+                "ssid" : "BalzacCoffee-23005-Hannover",
+                "password" : "1-hour access tickets available from the friendly staff",
+                "wlan_is_free" : "yes and no",
+                "speed" : "unknown",
+                "url" : "http://balzaccoffee.com",
+                "power_points" : "unknown",
+                "last_update" : "2015-08-03"
+            }
         }
     ]
 }
