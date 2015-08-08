@@ -17,5 +17,6 @@ install:
     - "cpanm FindBin::libs"
     - "cpanm Capture::Tiny"
     - "cpanm Test::BDD::Cucumber"
+    - "cpanm JSON"
 
 script: make test
