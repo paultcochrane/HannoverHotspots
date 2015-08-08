@@ -8,7 +8,6 @@ perl:
     - "5.14"
 
 install:
-    - "sudo pip install requests"
     - "cpanm Method::Signatures"
     - "cpanm --force Expect"
     - "cpanm Term::ReadLine::Perl5"
