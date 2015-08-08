@@ -135,7 +135,7 @@ sub add_entry {
     print "Entry information:\n";
     $location->print();
 
-    push $self->locations, $location;
+    push @{$self->locations}, $location;
 
     $self->save_locations();
 }
