@@ -39,13 +39,13 @@
                 "name" : "Beans",
                 "type" : "Cafe",
                 "address" : "Heiligerstraße 4",
-                "ssid" : "WLBEANS",
+                "ssid" : "PS-BEANS",
                 "password" : "Ask the friendly staff",
                 "wlan_is_free" : "yes",
                 "speed" : "bad",
                 "url"  : "http://www.sincecoffee.de/",
                 "power_points" : "One, upstairs, next to corner window",
-                "last_update" : "2014-08-02"
+                "last_update" : "2016-01-13"
             }
         },
         {
