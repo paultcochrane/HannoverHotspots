@@ -1,567 +1,605 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.714223, 52.367205
-                    ]
-            },
-            "properties": {
-                "marker-symbol": "bar",
-                "marker-color": "00ff00",
-                "title" : "Lindens Centrum",
-                "name" : "Lindens Centrum",
-                "type" : "Bar",
-                "address" : "Lindener Marktplatz 3",
-                "ssid" : "LindenerCentrum",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "good",
-                "url"  : "http://www.lindens-centrum.de/",
-                "power_points" : "",
-                "last_update" : "2014-05-30"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.735836, 52.374242
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Beans",
-                "type" : "Cafe",
-                "address" : "Heiligerstraße 4",
-                "ssid" : "PS-BEANS",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "bad",
-                "url"  : "http://www.sincecoffee.de/",
-                "power_points" : "One, upstairs, next to corner window",
-                "last_update" : "2016-01-13"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.725181, 52.384377
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Cafe Spandau",
-                "type" : "Cafe",
-                "address" : "Engelbosteler Damm 30",
-                "ssid" : "SPANDAU_G",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "good",
-                "url" : "http://www.spandau-projekt.de/",
-                "power_points" : "",
-                "last_update" : ""
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.726451, 52.382126
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "bar",
-                "marker-color": "00ff00",
-                "name" : "Cheers",
-                "type" : "Bar",
-                "address" : "Marschnerstraße 2",
-                "ssid" : "Cheers-Gast",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "good",
-                "url" : "http://www.cheers-hannover.de/",
-                "power_points" : "",
-                "last_update" : ""
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.735485, 52.371187
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "bar",
-                "marker-color": "00ff00",
-                "name" : "Dublin Inn",
-                "type" : "Bar",
-                "address" : "Am Markte 13",
-                "ssid" : "DublinInn",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "ok",
-                "url" : "http://www.irishpub-hannover.de/",
-                "power_points" : "",
-                "last_update" : ""
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.716048, 52.386535
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Pausentraum",
-                "type" : "Cafe",
-                "address" : "Callinstraße 10",
-                "ssid" : "Pausentraum",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "good",
-                "url" : "http://pausentraum.de",
-                "power_points" : "",
-                "last_update" : ""
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.741249, 52.370834
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Extrablatt (Georgsplatz)",
-                "type" : "Cafe",
-                "address" : "Georgsplatz 3",
-                "ssid" : "Cafe Extrablatt (FREE)",
-                "password" : "none (web login required)",
-                "wlan_is_free" : "yes",
-                "speed" : "ok",
-                "url" : "http://www.cafe-extrablatt.com/",
-                "power_points" : "",
-                "last_update" : ""
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.749105, 52.390394
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "restaurant",
-                "marker-color": "00ff00",
-                "name" : "Treibhaus",
-                "type" : "Restaurant",
-                "address" : "Ferdinand-Wallbrecht-Straße 14",
-                "ssid" : "Kabel Deutschland Hotspot",
-                "password" : "none (web login required)",
-                "wlan_is_free" : "yes",
-                "speed" : "ok",
-                "url" : "http://www.treibhaus-hannover.de/",
-                "power_points" : "Several",
-                "last_update" : "2014-05-30"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.740914, 52.376393
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Starbucks (Hauptbahnhof)",
-                "type" : "Cafe",
-                "address" : "Ernst-August-Platz 1",
-                "ssid" : "BTOpenzone",
-                "password" : "none (web login required)",
-                "wlan_is_free" : "yes",
-                "speed" : "ok",
-                "url" : "http://www.starbucks.de/",
-                "power_points" : "One, rear end of the shop",
-                "last_update" : "2014-05-26"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.737735, 52.377250
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Starbucks (Ernst August Gallerie)",
-                "type" : "Cafe",
-                "address" : "Ernst-August-Platz 2",
-                "ssid" : "BTOpenzone",
-                "password" : "none (web login required)",
-                "wlan_is_free" : "yes",
-                "speed" : "ok",
-                "url" : "http://www.starbucks.de/",
-                "power_points" : "None",
-                "last_update" : "2014-06-03"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.734129, 52.371885
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Cafe & Bar Celona (Altstadt)",
-                "type" : "Cafe",
-                "address" : "Knochenhauer Straße 42",
-                "ssid" : "htp-hotspot",
-                "password" : "none (web login required)",
-                "wlan_is_free" : "yes",
-                "speed" : "ok",
-                "url" : "http://www.cafe-bar-celona.de/",
-                "power_points" : "several, spread around ",
-                "last_update" : "2014-06-07",
-                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.735396, 52.373713
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Balzac Coffee (Innenstadt)",
-                "type" : "Cafe",
-                "address" : "Limburgstraße 1",
-                "ssid" : "BalzacCoffee-23007-Hannover",
-                "password" : "1-hour access tickets available from the friendly staff",
-                "wlan_is_free" : "yes and no",
-                "speed" : "Download: 4.9 Mbps; Upload: 0.3 Mbps",
-                "url" : "http://balzaccoffee.com",
-                "power_points" : "Upstairs: at almost every table",
-                "last_update" : "2014-06-07"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.739055, 52.376569
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Balzac Coffee (Ernst August Platz)",
-                "type" : "Cafe",
-                "address" : "Ernst-August-Platz 3",
-                "ssid" : "BalzacCoffee-23004-Hannover",
-                "password" : "1-hour access tickets available from the friendly staff (?)",
-                "wlan_is_free" : "yes and no",
-                "speed" : "not yet tested",
-                "url" : "http://balzaccoffee.com",
-                "power_points" : "At table in the corner",
-                "last_update" : "2014-06-13"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.740596, 52.376546
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Balzac Coffee (Hauptbahnhof)",
-                "type" : "Cafe",
-                "address" : "Ernst-August-Platz 1",
-                "ssid" : "Worldcoffee-23001-Hannover",
-                "password" : "access tickets available from the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "not yet tested",
-                "url" : "http://balzaccoffee.com",
-                "power_points" : "4 in the mezzanine level",
-                "last_update" : "2015-04-25"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.738669, 52.374874
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "World Coffee (Hugendubel)",
-                "type" : "Cafe",
-                "address" : "Bahnhofstraße 14",
-                "ssid" : "Hugendubel",
-                "password" : "none",
-                "wlan_is_free" : "yes",
-                "speed" : "good",
-                "url" : "http://www.hugendubel.de/",
-                "power_points" : "in the pillars next to the windows",
-                "last_update" : "2014-06-13",
-                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.704928, 52.374461
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "bar",
-                "marker-color": "00ff00",
-                "name" : "Stubenwechsel",
-                "type" : "Bar",
-                "address" : "Kötnerholzweg 30",
-                "ssid" : "Stubenwechsel",
-                "password" : "ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "not yet tested",
-                "url" : "",
-                "power_points" : "",
-                "last_update" : "2014-06-27",
-                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.735165, 52.374303
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "restaurant",
-                "marker-color": "00ff00",
-                "name" : "Vapiano",
-                "type" : "Restaurant",
-                "address" : "Heiliger Straße 3",
-                "ssid" : "htp-hotspot",
-                "password" : "none (web login required)",
-                "wlan_is_free" : "yes",
-                "speed" : "not yet tested",
-                "url" : "http://vapiano.de",
-                "power_points" : "",
-                "last_update" : "2014-06-27",
-                "notes" : "SSH blocked; HTTP(S) works; see https://help.github.com/articles/using-ssh-over-the-https-port for some options"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.710455, 52.372585
-                    ]
-            },
-            "properties": {
-                "marker-symbol": "bar",
-                "marker-color": "00ff00",
-                "title" : "Lindenblatt",
-                "name" : "Lindenblatt",
-                "type" : "Bar",
-                "address" : "Limmerstrasse 20",
-                "ssid" : "Lindenblatt",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "good",
-                "url"  : "",
-                "power_points" : "",
-                "last_update" : "2014-08-03"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.735947, 52.375507
-                    ]
-            },
-            "properties": {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "title" : "Cafe El Solin (Schillerstraße)",
-                "name" : "Cafe El Solin (Schillerstraße)",
-                "type" : "Cafe",
-                "address" : "Schillerstraße 34",
-                "ssid" : "ElSolin",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "",
-                "url"  : "http://www.elsolin.de",
-                "power_points" : "",
-                "last_update" : "2014-08-04"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.737985, 52.376003
-                    ]
-            },
-            "properties": {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "title" : "Le Crobag (Schillerstraße)",
-                "name" : "Le Crobag (Schillerstraße)",
-                "type" : "Cafe",
-                "address" : "Schillerstraße 29",
-                "ssid" : "mycloud",
-                "password" : "Web sign in required",
-                "wlan_is_free" : "yes",
-                "speed" : "",
-                "url"  : "",
-                "power_points" : "",
-                "last_update" : "2014-08-04"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.714428, 52.366698
-                    ]
-            },
-            "properties": {
-                "marker-symbol": "bar",
-                "marker-color": "00ff00",
-                "title" : "Gig Linden",
-                "name" : "Gig Linden",
-                "type" : "Bar",
-                "address" : "Lindener Marktplatz 1",
-                "ssid" : "Becks Hot Spot",
-                "password" : "30 minutes 'free' (account creation required upon submission of mobile phone number); 1 hour more after purchase of a Beck's beer",
-                "wlan_is_free" : "yes",
-                "speed" : "",
-                "url"  : "http://www.gig-linden.de/",
-                "power_points" : "",
-                "last_update" : "2014-08-16"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.741507, 52.373866
-                    ]
-            },
-            "properties": {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "title" : "Miles: Cafe Bar Bistro",
-                "name" : "Miles: Cafe Bar Bistro",
-                "type" : "Cafe",
-                "address" : "Rathenaustraße 9",
-                "ssid" : "MILWLAN2",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "",
-                "url"  : "http://www.miles-hannover.de/",
-                "power_points" : "",
-                "last_update" : "2014-09-24"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.735971, 52.371796
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Beans",
-                "type" : "Cafe",
-                "address" : "Grupenstraße 7",
-                "ssid" : "PS-BEANS",
-                "password" : "Ask the friendly staff",
-                "wlan_is_free" : "yes",
-                "speed" : "unknown",
-                "url"  : "http://www.sincecoffee.de/",
-                "power_points" : "unknown",
-                "last_update" : "2015-04-25"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-		    9.73586, 52.37076
-                    ]
-            },
-            "properties" : {
-                "marker-symbol": "cafe",
-                "marker-color": "00ff00",
-                "name" : "Balzac",
-                "type" : "Cafe",
-                "address" : "Karmarschstrasse 42",
-                "ssid" : "BalzacCoffee-23005-Hannover",
-                "password" : "1-hour access tickets available from the friendly staff",
-                "wlan_is_free" : "yes and no",
-                "speed" : "unknown",
-                "url" : "http://balzaccoffee.com",
-                "power_points" : "one, in the corner next to the service area on the Marktstrasse side of the cafe",
-                "last_update" : "2016-01-13"
-            }
-        }
-    ]
+   "features" : [
+      {
+         "properties" : {
+            "last_update" : "2014-05-30",
+            "speed" : "good",
+            "password" : "Ask the friendly staff",
+            "address" : "Lindener Marktplatz 3",
+            "url" : "http://www.lindens-centrum.de/",
+            "name" : "Lindens Centrum",
+            "marker-symbol" : "bar",
+            "wlan_is_free" : "yes",
+            "power_points" : "",
+            "ssid" : "LindenerCentrum",
+            "title" : "Lindens Centrum",
+            "marker-color" : "00ff00"
+         },
+         "type" : "Feature",
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.367205,
+               9.714223
+            ]
+         }
+      },
+      {
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.374242,
+               9.735836
+            ]
+         },
+         "type" : "Feature",
+         "properties" : {
+            "marker-symbol" : "cafe",
+            "name" : "Beans",
+            "marker-color" : "00ff00",
+            "power_points" : "One, upstairs, next to corner window",
+            "ssid" : "PS-BEANS",
+            "title" : "Beans",
+            "wlan_is_free" : "yes",
+            "last_update" : "2016-01-13",
+            "url" : "http://www.sincecoffee.de/",
+            "address" : "Heiligerstraße 4",
+            "password" : "Ask the friendly staff",
+            "speed" : "bad"
+         }
+      },
+      {
+         "type" : "Feature",
+         "geometry" : {
+            "coordinates" : [
+               52.384377,
+               9.725181
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "marker-color" : "00ff00",
+            "power_points" : "",
+            "ssid" : "SPANDAU_G",
+            "title" : "Cafe Spandau",
+            "wlan_is_free" : "yes",
+            "marker-symbol" : "cafe",
+            "name" : "Cafe Spandau",
+            "url" : "http://www.spandau-projekt.de/",
+            "address" : "Engelbosteler Damm 30",
+            "password" : "Ask the friendly staff",
+            "speed" : "good",
+            "last_update" : ""
+         }
+      },
+      {
+         "type" : "Feature",
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.382126,
+               9.726451
+            ]
+         },
+         "properties" : {
+            "marker-symbol" : "bar",
+            "name" : "Cheers",
+            "wlan_is_free" : "yes",
+            "marker-color" : "00ff00",
+            "power_points" : "",
+            "ssid" : "Cheers-Gast",
+            "title" : "Cheers",
+            "last_update" : "",
+            "speed" : "good",
+            "url" : "http://www.cheers-hannover.de/",
+            "password" : "Ask the friendly staff",
+            "address" : "Marschnerstraße 2"
+         }
+      },
+      {
+         "type" : "Feature",
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.371187,
+               9.735485
+            ]
+         },
+         "properties" : {
+            "last_update" : "",
+            "password" : "Ask the friendly staff",
+            "address" : "Am Markte 13",
+            "url" : "http://www.irishpub-hannover.de/",
+            "speed" : "ok",
+            "name" : "Dublin Inn",
+            "marker-symbol" : "bar",
+            "ssid" : "DublinInn",
+            "power_points" : "",
+            "title" : "Dublin Inn",
+            "marker-color" : "00ff00",
+            "wlan_is_free" : "yes"
+         }
+      },
+      {
+         "properties" : {
+            "last_update" : "",
+            "speed" : "good",
+            "url" : "http://pausentraum.de",
+            "password" : "Ask the friendly staff",
+            "address" : "Callinstraße 10",
+            "marker-symbol" : "cafe",
+            "name" : "Pausentraum",
+            "wlan_is_free" : "yes",
+            "marker-color" : "00ff00",
+            "title" : "Pausentraum",
+            "power_points" : "",
+            "ssid" : "Pausentraum"
+         },
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.386535,
+               9.716048
+            ]
+         },
+         "type" : "Feature"
+      },
+      {
+         "type" : "Feature",
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.370834,
+               9.741249
+            ]
+         },
+         "properties" : {
+            "wlan_is_free" : "yes",
+            "marker-color" : "00ff00",
+            "ssid" : "Cafe Extrablatt (FREE)",
+            "power_points" : "",
+            "title" : "Extrablatt (Georgsplatz)",
+            "marker-symbol" : "cafe",
+            "name" : "Extrablatt (Georgsplatz)",
+            "speed" : "ok",
+            "url" : "http://www.cafe-extrablatt.com/",
+            "password" : "Ask the friendly staff",
+            "address" : "Georgsplatz 3",
+            "last_update" : ""
+         }
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               52.390394,
+               9.749105
+            ],
+            "type" : "Point"
+         },
+         "type" : "Feature",
+         "properties" : {
+            "password" : "Ask the friendly staff",
+            "address" : "Ferdinand-Wallbrecht-Straße 14",
+            "url" : "http://www.treibhaus-hannover.de/",
+            "speed" : "ok",
+            "last_update" : "2014-05-30",
+            "power_points" : "Several",
+            "title" : "Treibhaus",
+            "ssid" : "Kabel Deutschland Hotspot",
+            "marker-color" : "00ff00",
+            "wlan_is_free" : "yes",
+            "name" : "Treibhaus",
+            "marker-symbol" : "restaurant"
+         }
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               52.376393,
+               9.740914
+            ],
+            "type" : "Point"
+         },
+         "type" : "Feature",
+         "properties" : {
+            "speed" : "ok",
+            "url" : "http://www.starbucks.de/",
+            "password" : "Ask the friendly staff",
+            "address" : "Ernst-August-Platz 1",
+            "last_update" : "2014-05-26",
+            "wlan_is_free" : "yes",
+            "marker-color" : "00ff00",
+            "ssid" : "BTOpenzone",
+            "power_points" : "One, rear end of the shop",
+            "title" : "Starbucks (Hauptbahnhof)",
+            "marker-symbol" : "cafe",
+            "name" : "Starbucks (Hauptbahnhof)"
+         }
+      },
+      {
+         "properties" : {
+            "wlan_is_free" : "yes",
+            "power_points" : "None",
+            "title" : "Starbucks (Ernst August Gallerie)",
+            "ssid" : "BTOpenzone",
+            "marker-color" : "00ff00",
+            "name" : "Starbucks (Ernst August Gallerie)",
+            "marker-symbol" : "cafe",
+            "speed" : "ok",
+            "address" : "Ernst-August-Platz 2",
+            "password" : "Ask the friendly staff",
+            "url" : "http://www.starbucks.de/",
+            "last_update" : "2014-06-03"
+         },
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.37725,
+               9.737735
+            ]
+         },
+         "type" : "Feature"
+      },
+      {
+         "type" : "Feature",
+         "geometry" : {
+            "coordinates" : [
+               52.371885,
+               9.734129
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "marker-symbol" : "cafe",
+            "name" : "Cafe & Bar Celona (Altstadt)",
+            "marker-color" : "00ff00",
+            "power_points" : "several, spread around ",
+            "ssid" : "htp-hotspot",
+            "title" : "Cafe & Bar Celona (Altstadt)",
+            "wlan_is_free" : "yes",
+            "last_update" : "2014-06-07",
+            "url" : "http://www.cafe-bar-celona.de/",
+            "password" : "Ask the friendly staff",
+            "address" : "Knochenhauer Straße 42",
+            "speed" : "ok"
+         }
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               52.373713,
+               9.735396
+            ],
+            "type" : "Point"
+         },
+         "type" : "Feature",
+         "properties" : {
+            "marker-symbol" : "cafe",
+            "name" : "Balzac Coffee (Innenstadt)",
+            "wlan_is_free" : "yes and no",
+            "marker-color" : "00ff00",
+            "ssid" : "BalzacCoffee-23007-Hannover",
+            "power_points" : "Upstairs: at almost every table",
+            "title" : "Balzac Coffee (Innenstadt)",
+            "last_update" : "2014-06-07",
+            "speed" : "Download: 4.9 Mbps; Upload: 0.3 Mbps",
+            "url" : "http://balzaccoffee.com",
+            "address" : "Limburgstraße 1",
+            "password" : "Ask the friendly staff"
+         }
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               52.376569,
+               9.739055
+            ],
+            "type" : "Point"
+         },
+         "type" : "Feature",
+         "properties" : {
+            "last_update" : "2014-06-13",
+            "address" : "Ernst-August-Platz 3",
+            "password" : "Ask the friendly staff",
+            "url" : "http://balzaccoffee.com",
+            "speed" : "not yet tested",
+            "name" : "Balzac Coffee (Ernst August Platz)",
+            "marker-symbol" : "cafe",
+            "ssid" : "BalzacCoffee-23004-Hannover",
+            "power_points" : "At table in the corner",
+            "title" : "Balzac Coffee (Ernst August Platz)",
+            "marker-color" : "00ff00",
+            "wlan_is_free" : "yes and no"
+         }
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               52.376546,
+               9.740596
+            ],
+            "type" : "Point"
+         },
+         "type" : "Feature",
+         "properties" : {
+            "ssid" : "Worldcoffee-23001-Hannover",
+            "power_points" : "4 in the mezzanine level",
+            "title" : "Balzac Coffee (Hauptbahnhof)",
+            "marker-color" : "00ff00",
+            "wlan_is_free" : "yes",
+            "name" : "Balzac Coffee (Hauptbahnhof)",
+            "marker-symbol" : "cafe",
+            "address" : "Ernst-August-Platz 1",
+            "password" : "Ask the friendly staff",
+            "url" : "http://balzaccoffee.com",
+            "speed" : "not yet tested",
+            "last_update" : "2015-04-25"
+         }
+      },
+      {
+         "properties" : {
+            "speed" : "good",
+            "password" : "Ask the friendly staff",
+            "address" : "Bahnhofstraße 14",
+            "url" : "http://www.hugendubel.de/",
+            "last_update" : "2014-06-13",
+            "wlan_is_free" : "yes",
+            "power_points" : "in the pillars next to the windows",
+            "title" : "World Coffee (Hugendubel)",
+            "ssid" : "Hugendubel",
+            "marker-color" : "00ff00",
+            "name" : "World Coffee (Hugendubel)",
+            "marker-symbol" : "cafe"
+         },
+         "type" : "Feature",
+         "geometry" : {
+            "coordinates" : [
+               52.374874,
+               9.738669
+            ],
+            "type" : "Point"
+         }
+      },
+      {
+         "properties" : {
+            "last_update" : "2014-06-27",
+            "url" : "",
+            "address" : "Kötnerholzweg 30",
+            "password" : "Ask the friendly staff",
+            "speed" : "not yet tested",
+            "marker-symbol" : "bar",
+            "name" : "Stubenwechsel",
+            "marker-color" : "00ff00",
+            "ssid" : "Stubenwechsel",
+            "power_points" : "",
+            "title" : "Stubenwechsel",
+            "wlan_is_free" : "yes"
+         },
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.374461,
+               9.704928
+            ]
+         },
+         "type" : "Feature"
+      },
+      {
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.374303,
+               9.735165
+            ]
+         },
+         "type" : "Feature",
+         "properties" : {
+            "power_points" : "",
+            "ssid" : "htp-hotspot",
+            "title" : "Vapiano",
+            "marker-color" : "00ff00",
+            "wlan_is_free" : "yes",
+            "name" : "Vapiano",
+            "marker-symbol" : "restaurant",
+            "address" : "Heiliger Straße 3",
+            "password" : "Ask the friendly staff",
+            "url" : "http://vapiano.de",
+            "speed" : "not yet tested",
+            "last_update" : "2014-06-27"
+         }
+      },
+      {
+         "properties" : {
+            "marker-color" : "00ff00",
+            "title" : "Lindenblatt",
+            "power_points" : "",
+            "ssid" : "Lindenblatt",
+            "wlan_is_free" : "yes",
+            "marker-symbol" : "bar",
+            "name" : "Lindenblatt",
+            "url" : "",
+            "password" : "Ask the friendly staff",
+            "address" : "Limmerstrasse 20",
+            "speed" : "good",
+            "last_update" : "2014-08-03"
+         },
+         "type" : "Feature",
+         "geometry" : {
+            "coordinates" : [
+               52.372585,
+               9.710455
+            ],
+            "type" : "Point"
+         }
+      },
+      {
+         "type" : "Feature",
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.375507,
+               9.735947
+            ]
+         },
+         "properties" : {
+            "wlan_is_free" : "yes",
+            "ssid" : "ElSolin",
+            "power_points" : "",
+            "title" : "Cafe El Solin (Schillerstraße)",
+            "marker-color" : "00ff00",
+            "name" : "Cafe El Solin (Schillerstraße)",
+            "marker-symbol" : "cafe",
+            "speed" : "",
+            "address" : "Schillerstraße 34",
+            "password" : "Ask the friendly staff",
+            "url" : "http://www.elsolin.de",
+            "last_update" : "2014-08-04"
+         }
+      },
+      {
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.376003,
+               9.737985
+            ]
+         },
+         "type" : "Feature",
+         "properties" : {
+            "name" : "Le Crobag (Schillerstraße)",
+            "marker-symbol" : "cafe",
+            "wlan_is_free" : "yes",
+            "power_points" : "",
+            "ssid" : "mycloud",
+            "title" : "Le Crobag (Schillerstraße)",
+            "marker-color" : "00ff00",
+            "last_update" : "2014-08-04",
+            "speed" : "",
+            "address" : "Schillerstraße 29",
+            "password" : "Ask the friendly staff",
+            "url" : ""
+         }
+      },
+      {
+         "properties" : {
+            "wlan_is_free" : "yes",
+            "power_points" : "",
+            "ssid" : "Becks Hot Spot",
+            "title" : "Gig Linden",
+            "marker-color" : "00ff00",
+            "name" : "Gig Linden",
+            "marker-symbol" : "bar",
+            "speed" : "",
+            "address" : "Lindener Marktplatz 1",
+            "password" : "Ask the friendly staff",
+            "url" : "http://www.gig-linden.de/",
+            "last_update" : "2014-08-16"
+         },
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.366698,
+               9.714428
+            ]
+         },
+         "type" : "Feature"
+      },
+      {
+         "properties" : {
+            "last_update" : "2014-09-24",
+            "address" : "Rathenaustraße 9",
+            "password" : "Ask the friendly staff",
+            "url" : "http://www.miles-hannover.de/",
+            "speed" : "",
+            "name" : "Miles: Cafe Bar Bistro",
+            "marker-symbol" : "cafe",
+            "ssid" : "MILWLAN2",
+            "power_points" : "",
+            "title" : "Miles: Cafe Bar Bistro",
+            "marker-color" : "00ff00",
+            "wlan_is_free" : "yes"
+         },
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.373866,
+               9.741507
+            ]
+         },
+         "type" : "Feature"
+      },
+      {
+         "properties" : {
+            "name" : "Beans",
+            "marker-symbol" : "cafe",
+            "title" : "Beans",
+            "power_points" : "unknown",
+            "ssid" : "PS-BEANS",
+            "marker-color" : "00ff00",
+            "wlan_is_free" : "yes",
+            "last_update" : "2015-04-25",
+            "address" : "Grupenstraße 7",
+            "password" : "Ask the friendly staff",
+            "url" : "http://www.sincecoffee.de/",
+            "speed" : "unknown"
+         },
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.371796,
+               9.735971
+            ]
+         },
+         "type" : "Feature"
+      },
+      {
+         "properties" : {
+            "wlan_is_free" : "yes and no",
+            "power_points" : "one, in the corner next to the service area on the Marktstrasse side of the cafe",
+            "title" : "Balzac",
+            "ssid" : "BalzacCoffee-23005-Hannover",
+            "marker-color" : "00ff00",
+            "name" : "Balzac",
+            "marker-symbol" : "cafe",
+            "speed" : "unknown",
+            "password" : "Ask the friendly staff",
+            "address" : "Karmarschstrasse 42",
+            "url" : "http://balzaccoffee.com",
+            "last_update" : "2016-01-13"
+         },
+         "geometry" : {
+            "type" : "Point",
+            "coordinates" : [
+               52.37076,
+               9.73586
+            ]
+         },
+         "type" : "Feature"
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               "52.3725575",
+               "9.7357131"
+            ],
+            "type" : "Point"
+         },
+         "type" : "Feature",
+         "properties" : {
+            "name" : "Extrablatt (Grupenstrasse)",
+            "marker-symbol" : "cafe",
+            "wlan_is_free" : "yes",
+            "ssid" : "cafeextrablatt.openspot.net",
+            "power_points" : "",
+            "title" : "Extrablatt (Grupenstrasse)",
+            "marker-color" : "00ff00",
+            "last_update" : "",
+            "speed" : "ok",
+            "password" : "Ask the friendly staff",
+            "address" : "Grupenstrasse 2",
+            "url" : "https://cafe-extrablatt.de/"
+         }
+      }
+   ],
+   "type" : "FeatureCollection"
 }
