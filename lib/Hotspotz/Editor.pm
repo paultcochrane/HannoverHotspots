@@ -6,6 +6,7 @@ use JSON;
 use Carp;
 use autodie;
 
+use App::Hotspotz;
 use Hotspotz::Location;
 
 has 'command_prompt' => (
@@ -15,7 +16,7 @@ has 'command_prompt' => (
 
 has 'version' => (
     is => 'ro',
-    default => 0.1,
+    default => sub { $App::Hotspotz::VERSION },
 );
 
 has 'locations_file' => (
