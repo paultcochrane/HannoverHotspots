@@ -10,7 +10,7 @@ WriteMakefile(
       'Which cafes and pubs in Hannover (Germany) have wireless internet?',
     VERSION_FROM   => 'lib/App/Hotspotz.pm',
     BUILD_REQUIRES => {
-        "ExtUtils::MakeMaker"   => 0,
+        "ExtUtils::MakeMaker"   => 6.48,
         "Moose"                 => 0,
         "Term::ReadLine::Perl5" => 0,
         "JSON"                  => 0,
@@ -27,6 +27,7 @@ WriteMakefile(
         "Method::Signatures"  => 0,
         "Capture::Tiny"       => 0,
     },
+    MIN_PERL_VERSION => '5.12.0',
 );
 
 sub MY::postamble {
