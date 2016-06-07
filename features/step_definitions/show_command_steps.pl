@@ -5,6 +5,8 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
+our $timeout = 2;
+
 After sub {
     my $context = shift;
     my @test_files = qw( test.json empty_test.json);
@@ -25,7 +27,7 @@ Given qr/^there are no entries$/, func($context) {
 Then qr/^I should see a warning about no entries$/, func($context) {
     my $spotz = S->{'spotz'};
     my $entry_index = $context->stash->{'scenario'}->{'entry_index'};
-    my $index = $spotz->expect(1, "Entry at index $entry_index not found");
+    my $index = $spotz->expect($timeout, "Entry at index $entry_index not found");
     is($index, 1, "Empty input file error message");
 };
 
@@ -41,37 +43,37 @@ When qr/^I enter \"show\" for entry \[(\d+)\]$/, func($context) {
 Then qr/^I should see all information for the given entry$/, func($context) {
     my $spotz = S->{'spotz'};
 
-    my $index = $spotz->expect(1, '-re', qr{Name:\s+Cafe Spandau});
+    my $index = $spotz->expect($timeout, '-re', qr{Name:\s+Cafe Spandau});
     is($index, 1, "Show command output: name");
 
-    $index = $spotz->expect(1, '-re', qr{Type:\s+Cafe});
+    $index = $spotz->expect($timeout, '-re', qr{Type:\s+Cafe});
     is($index, 1, "Show command output: type");
 
-    $index = $spotz->expect(1, '-re', qr{SSID:\s+SPANDAU_G});
+    $index = $spotz->expect($timeout, '-re', qr{SSID:\s+SPANDAU_G});
     is($index, 1, "Show command output: ssid");
 
-    $index = $spotz->expect(1, '-re', qr{Free WLAN\?:\s+yes});
+    $index = $spotz->expect($timeout, '-re', qr{Free WLAN\?:\s+yes});
     is($index, 1, "Show command output: free wlan?");
 
-    $index = $spotz->expect(1, '-re', qr{Street address:\s+Engelbosteler Damm 30});
+    $index = $spotz->expect($timeout, '-re', qr{Street address:\s+Engelbosteler Damm 30});
     is($index, 1, "Show command output: street address");
 
-    $index = $spotz->expect(1, '-re', qr{URL:\s+http://www.spandau-projekt.de/});
+    $index = $spotz->expect($timeout, '-re', qr{URL:\s+http://www.spandau-projekt.de/});
     is($index, 1, "Show command output: url");
 
-    $index = $spotz->expect(1, '-re', qr{Coordinates:\s+9.725181E, 52.384377N});
+    $index = $spotz->expect($timeout, '-re', qr{Coordinates:\s+9.725181E, 52.384377N});
     is($index, 1, "Show command output: coordinates");
 
-    $index = $spotz->expect(1, '-re', qr{Power points info:\s+});
+    $index = $spotz->expect($timeout, '-re', qr{Power points info:\s+});
     is($index, 1, "Show command output: power points");
 
-    $index = $spotz->expect(1, '-re', qr{Network speed info:\s+good});
+    $index = $spotz->expect($timeout, '-re', qr{Network speed info:\s+good});
     is($index, 1, "Show command output: network speed");
 
-    $index = $spotz->expect(1, '-re', qr{Extra info:\s+});
+    $index = $spotz->expect($timeout, '-re', qr{Extra info:\s+});
     is($index, 1, "Show command output: extra info");
 
-    $index = $spotz->expect(1, '-re', qr{Last update:\s+});
+    $index = $spotz->expect($timeout, '-re', qr{Last update:\s+});
     is($index, 1, "Show command output: last update");
 };
 

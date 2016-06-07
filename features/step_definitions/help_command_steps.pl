@@ -5,6 +5,8 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
+our $timeout = 2;
+
 When qr/^I enter \"help\"$/, func($context) {
     my $spotz = S->{'spotz'};
     $spotz->send("help\n");
@@ -19,11 +21,11 @@ When qr/^I enter \"\?\"$/, func($context) {
 
 Then qr/^I should see a list of available commands$/, func($context) {
     my $spotz = S->{'spotz'};
-    my $index = $spotz->expect(1, "Available commands:");
+    my $index = $spotz->expect($timeout, "Available commands:");
     is($index, 1, "Help command output");
-    $index = $spotz->expect(1, "add");
+    $index = $spotz->expect($timeout, "add");
     is($index, 1, "Help command output (add)");
-    $index = $spotz->expect(1, "list");
+    $index = $spotz->expect($timeout, "list");
     is($index, 1, "Help command output (list)");
 };
 

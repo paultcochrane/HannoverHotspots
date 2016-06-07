@@ -5,6 +5,8 @@ use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Method::Signatures;
 
+our $timeout = 2;
+
 Given qr/^I have explicitly loaded a location file$/, func($context) {
     my $spotz = S->{'spotz'};
     create_test_json_file();
@@ -21,9 +23,9 @@ When qr/^I enter \"load\" with an existing filename$/, func($context) {
 
 Then qr/^I should see the entries in the loaded file$/, func($context) {
     my $spotz = S->{'spotz'};
-    my $index = $spotz->expect(1, "Lindens Centrum");
+    my $index = $spotz->expect($timeout, "Lindens Centrum");
     is($index, 1, "Display entry from explicitly loaded file");
-    $index = $spotz->expect(1, "Cafe Spandau");
+    $index = $spotz->expect($timeout, "Cafe Spandau");
     is($index, 1, "Display entry from explicitly loaded file");
 };
 
@@ -35,7 +37,7 @@ When qr/^I reload the location file$/, func($context) {
 
 Then qr/^I should see the new entry in the output$/, func($context) {
     my $spotz = S->{'spotz'};
-    my $index = $spotz->expect(1, '-re', qr/\[\d+\] Cafe with WLAN/);
+    my $index = $spotz->expect($timeout, '-re', qr/\[\d+\] Cafe with WLAN/);
     is($index, 1, "New location added");
 };
 
