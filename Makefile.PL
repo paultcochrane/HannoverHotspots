@@ -4,7 +4,10 @@ use strict;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME           => 'App::Hotspotz',
+    NAME   => 'App::Hotspotz',
+    AUTHOR => 'Paul Cochrane <paul@liekut.de>',
+    ABSTRACT =>
+      'Which cafes and pubs in Hannover (Germany) have wireless internet?',
     VERSION_FROM   => 'lib/App/Hotspotz.pm',
     BUILD_REQUIRES => {
         "ExtUtils::MakeMaker"   => 0,
