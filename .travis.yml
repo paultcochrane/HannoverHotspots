@@ -3,19 +3,17 @@ sudo: false
 language: perl
 
 perl:
+    - "5.22"
     - "5.20"
     - "5.18"
     - "5.16"
     - "5.14"
+    - "5.12"
+    - "5.10"
 
 install:
-    - "cpanm Method::Signatures"
-    - "cpanm --force Expect"
-    - "cpanm Term::ReadLine::Perl5"
-    - "cpanm HTTP::Request::Common"
-    - "cpanm FindBin::libs"
-    - "cpanm Capture::Tiny"
-    - "cpanm Test::BDD::Cucumber"
-    - "cpanm JSON"
+    cpanm --installdeps .
 
-script: make test
+script:
+    make test
+    make accept
