@@ -10,8 +10,6 @@ my @attrs = qw(
     is_wlan_free
     street_address
     url
-    latitude
-    longitude
     power_points_notes
     network_speed_notes
     extra_notes
@@ -20,6 +18,18 @@ my @attrs = qw(
 has \@attrs => (
     is => 'rw',
     default => '',
+);
+
+has latitude => (
+    is => 'rw',
+    default => 0.0,
+    isa => 'Num',
+);
+
+has longitude => (
+    is => 'rw',
+    default => 0.0,
+    isa => 'Num',
 );
 
 =item print
