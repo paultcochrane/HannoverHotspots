@@ -26,5 +26,4 @@ The entire project can be tested by simply running
 
 However, before doing so, you'll need to install some Perl modules:
 
-    $ cpanm FindBin::libs Number::Range File::Slurp \
-              Method::Signatures Expect Term::ReadLine::Perl5
+    $ cpanm --installdeps .
