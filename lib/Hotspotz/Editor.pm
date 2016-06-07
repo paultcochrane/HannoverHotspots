@@ -261,7 +261,7 @@ sub save_locations {
     for my $location ( @locations ) {
         my %point;
         $point{"type"} = "Point";
-        $point{"coordinates"} = [$location->latitude(), $location->longitude()];
+        $point{"coordinates"} = [$location->longitude, $location->latitude];
 
         my %properties;
         $properties{"marker-symbol"} = lc $location->type();

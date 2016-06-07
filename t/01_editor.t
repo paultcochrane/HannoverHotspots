@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-use Test::More tests => 7;
+use Test::More tests => 10;
 
 require_ok( "Hotspotz::Editor" );
 
@@ -101,6 +101,40 @@ require_ok( "Hotspotz::Editor" );
     @locations = @{$editor->locations()};
 
     is( @locations, 3, "Number of locations loaded" );
+
+    unlink("test.json") if -f "test.json";
+}
+
+{
+    my $location = Hotspotz::Location->new();
+    $location->name("Cafe with WLAN");
+    $location->type("cafe");
+    $location->ssid("CafeWLAN");
+    $location->is_wlan_free("yes");
+    $location->street_address("Unbekannter Weg 1");
+    $location->url("http://cafewlan.de");
+    $location->latitude(50.123456);
+    $location->longitude(9.654321);
+    $location->power_points_notes("Upstairs, in the corner");
+    $location->network_speed_notes("Good; 500kbs download; 200kbs upload");
+    $location->extra_notes("SSH blocked; HTTP(S) allowed");
+
+    my $editor = Hotspotz::Editor->new();
+    my @locations;
+    push @locations, $location;
+    $editor->locations_file("test.json");
+    $editor->locations(\@locations);
+    $editor->save_locations();
+
+    $editor->load_locations("test.json");
+    @locations = @{$editor->locations()};
+
+    is( @locations, 1, "Number of locations loaded" );
+    my $loaded_location = $locations[0];
+    is($loaded_location->latitude, $location->latitude,
+        "Input and output latitudes match");
+    is($loaded_location->longitude, $location->longitude,
+        "Input and output longitudes match");
 
     unlink("test.json") if -f "test.json";
 }
