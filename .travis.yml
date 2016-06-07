@@ -12,8 +12,8 @@ perl:
     - "5.10"
 
 install:
-    cpanm --installdeps .
+    - cpanm --installdeps .
 
 script:
-    make test
-    make accept
+    - make test
+    - make accept
