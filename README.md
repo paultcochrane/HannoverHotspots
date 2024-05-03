@@ -1,8 +1,6 @@
 # Hannover Hotspots
 
-<a href="https://travis-ci.org/paultcochrane/HannoverHotspots">
-<img src="https://travis-ci.org/paultcochrane/HannoverHotspots.svg?branch=master">
-</a>
+![unit tests](https://github.com/paultcochrane/HannoverHotspots/actions/workflows/unit-tests.yml/badge.svg)
 
 Which cafes and pubs in Hannover have wireless internet?
 
