@@ -1,0 +1,22 @@
+name: Unit tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  run-unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: 5.30
+      - run: perl -v
+      - run: cpanm --installdeps --with-develop --notest .
+      - run: |
+        perl Makefile.PL
+        make
+        make test
