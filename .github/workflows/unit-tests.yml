@@ -17,6 +17,6 @@ jobs:
       - run: perl -v
       - run: cpanm --installdeps --with-develop --notest .
       - run: |
-        perl Makefile.PL
-        make
-        make test
+          perl Makefile.PL
+          make
+          make test
